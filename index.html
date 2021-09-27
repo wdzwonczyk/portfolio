@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a29188a2f6.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <title>Wojciech Dzwończyk portfolio</title>
+</head>
+<body>
+    <section class="main-header">
+        <nav class="nav">
+            <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+            <img src="icons/x.svg" class="close-nav-btn">
+            <ul class="nav__list">
+                <li><i class="fas fa-times"></i></li>            
+            </ul>
+        </nav>
+        <div class="nav-mobile-container">
+            <div class="nav-mobile-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="main-header-container">
+            <h1 id="main-heading"><span class="heading">Hi! I'm <span class="my-name">Wojciech</span></span><br>
+                <span class="sub-heading">and I'm a front-end developer and an interaction designer based in Aarhus</span>
+            </h1>
+            <img src="img/me.svg" class="pic-me" id="kunste-project" alt="Wojciech Dzwonczyk">
+            <img src="img/dots.svg" class="dots dots1" alt="dots">
+            <img src="img/dots.svg" class="dots dots2" alt="dots">
+            <div class="btn"></div>
+        </div>
+    </section>
+    <section class="about-me" id="About">
+        <div class="about-me-container">
+            <h2>I am...</h2>
+            <div class="about-me-box designer">
+                <h4 class="profession">UX/UI designer</h4>
+                <ul>
+                    <li>Mockups</li>
+                    <li>Prototypes</li>
+                    <li>Wireframes</li>
+                    <li>Design systems</li>
+                    <li>Style guides</li>
+                    <li>Sketches</li>
+                </ul>
+            </div>
+            <div class="about-me-box designer">
+                <h4 class="profession">Front-end developer</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS/SCSS</li>
+                    <li>JavaScript</li>
+                    <li>BEM</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="main-project" id="Projects" onclick="openProject('slepfi-project')">
+        <div class="main-project-container">
+            <h3>Slepfi</h3>
+            <img src="img/slepfi/Slepfi-mockup-cut.png" class="main-project-mockups" alt="project mockup">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id ipsum magna. Donec ut nibh turpis.</p>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="projects-item kunste" onclick="openProject('kunste-project')">
+            <img src="img/kunste/kunste-mockup1.png" class="parallax phone" alt="project mockup">
+        </div>
+        <div class="projects-item arla" onclick="openProject('arla-project')">
+            <img src="img/arla/arla-homepage.png" class="parallax laptop" alt="project mockup">
+        </div>
+        <div class="projects-item salvatio" onclick="openProject('salvatio-project')">
+            <img src="img/salvatio/salvatio-mockup.png" class="parallax phone" alt="project mockup">
+        </div>
+        <div class="projects-item korepetycje" onclick="openProject('korepetycje-project')">
+            <img src="img/korepetycje/korepetycje24.png" class="parallax all-devices" alt="project mockup">
+        </div>
+    </section>
+    <section class="experience experience-page" id="Experience">
+        <h2>My experience</h2>
+        <div class="wrapper">
+            
+        </div>
+    </section>
+    <section class="page cv-page" id="My CV">
+    </section>
+    <section class="contact" id="Contact">
+    </section>
+    <!--KUNSTE PROJECT-->
+    <section class="project" id="kunste">
+        <div class="blocker" onclick="hideProject()"></div>
+        <div class="project-container">
+            <div class="close-btn" onclick="hideProject()"><img src="icons/x.svg"></div>
+            <div class="project-container-top project-container-top-kunste">
+                <h4 class="project-solution-name">Kunste museum app</h4>
+                <p class="project-solution-type">Mobile web application</p>
+            </div>
+            <div class="project-details">
+                <span class="project-details-item">
+                    <i class="fas fa-user"></i>
+                    <p>UX/UI designer, Front-end developer</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-tools"></i>
+                    <p>Adobe XD, Github, JavaScript,</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-link"></i>
+                    <a href="https://wojo3214.github.io/Kunste/" class="prototyp" target="_blank"><p>Explore the prototype</p></a>
+                </span>
+                <div class="devices">Solution prepared for: <i class="fas fa-mobile"></i></div> 
+            </div>
+            
+            <p class="problem">The Kunste app is a mobile application created for the most famous art museum in Aarhus. The main goal of this app is to expand museum’s digital potential. By this solution we want to allow visitor to check information about the latest exhibitions and make it possible to buy online tickets and keep them as a virtual card, especially during the pandemic time when contact with other person should be limited.</p>
+            
+
+            <div class="project-process-content">
+                <h3>Sketches</h3>
+                <p>Based on our research we were able to sketch some our idea of how app should look like and what options it should contain. Our sketches are taking under consideration only the mobile version, because following
+                    our first idea we decided to create only a mobile version of our solution. The main
+                    purpose of it is to use it in the museum while exploring the exhibitions, and no one
+                    takes laptop to the exhibition tours.</p>
+                <img src="img/kunste/kunste-sketches.jpg" class="project-item-img" alt="kunste sketches">
+            </div>
+            <div class="project-process-content">
+                <h3>Wireframes</h3>
+                <p>After the first part of a design process (sketching), we created a first part of our digital solution - wireframes. Thanks to that we could place elements such as navigation and sliders in the right places and decide on how the layout of the app will look like. As you can see, we decided to use a lot of white spaces. Thanks to that, we were able to further direct the user's attention to the focal point of our application yet communicate a sense of professionalism and simplicity.</p>
+                <img src="img/kunste/kunste-wireframes.png" class="project-item-img" alt="kunste wireframes">
+            </div>
+            <div class="project-process-content">
+                <h3>Style tiles</h3>
+                <p>Before we went to the mockups we had had to to prepare the design that will follow the museum’s visual identity. During demanding discussions we chose font called Futura PT for headers and Lato for block of text. Also we decided to use colors that matches to museum visual identity the most. In addition, when it comes to icons, we decided to keep them in minimalistic and thin style.</p>
+                
+                <img src="img/kunste/kunste-style-tiles.jpg" class="project-item-img" alt="kunste style tiles">
+            </div>
+            <div class="project-process-content">
+                <h3>Mockups</h3>
+                <p>Based on created wireframes and style tiles we were ready to prepare mockups of our app. Our goal was to keep the design minimalistic, however, elegant and clean that is why the first conspicuous thing is a slider with current exhibitions on the bottom of the screen and a lot of white space.</p>
+                <p>Going further, when we choose „Exhibition” section in the menu we will be moved to the page where we can find information about current exhibitions. On each exhibition preview we can read its title and finish date.</p>
+                <p>Also, in the „My profile” page user can open his virtual card to scan in the entrance and get a digital coffee stamp for each visit. If you collect 10 of them, you will be able to get a free coffee in the museum’s cafe.</p>
+                <img src="img/kunste/kunste-mockups.png" class="project-item-img" alt="kunste mockups">
+            </div>
+            <div class="project-process-mockups-final">
+                <h3>Final product</h3>
+                <img src="img/kunste/kunste-mockup1.png" class="project-item-img" alt="kunste mockups">
+                <img src="img/kunste/kunste-mockup2.png" class="project-item-img" alt="kunste mockups">
+                <img src="img/kunste/kunste-mockup3.png" class="project-item-img" alt="kunste mockups">
+            </div>
+        </div>
+    </section>
+    <!--SALVATIO PUSH PROJECT-->
+    <section class="project" id="salvatio">
+        <div class="blocker" onclick="hideProject()"></div>
+        <div class="project-container">
+            <div class="close-btn" onclick="hideProject()"><img src="icons/x.svg"></div>
+            <div class="project-container-top project-container-top-salvatio">
+                <h4 class="project-solution-name">Salvatio Push app</h4>
+                <p class="project-solution-type">Mobile web application</p>
+            </div>
+            <div class="project-details">
+                <span class="project-details-item">
+                    <i class="fas fa-user"></i>
+                    <p>UX/UI designer</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-tools"></i>
+                    <p>Adobe XD, Photoshop</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-link"></i>
+                    <a href="https://xd.adobe.com/view/3c08bf60-dd34-4fbe-5798-48b2ff4913c1-4a39/screen/bd3ee32d-043e-405c-8bdf-9ceedb59b17c?hints=off" class="prototyp" target="_blank"><p>Explore the prototype</p></a>
+                </span>
+                <div class="devices">Solution prepared for: <i class="fas fa-mobile"></i></div> 
+            </div>
+            
+            <p class="problem">The Salvatio push company is a start up which helps people in danger. User, in dangerous situation, has to tap 1-3 times the salvatio push''s device which sends information by app in his phone to closest friends. The product is reserved mostly for women, elder people and atheletes. In cooperation with Magda Polakowska, we had to improve current (at this time) design and also create new stuff to mockup.</p>
+
+            <div class="project-process-content">
+                <h3>Style tiles</h3>
+                <p>Before we joined to Salvatio push team, they've had already a logo and visual identity. That's why we decided to use those color in our improved version of digital prototype. The same like in logo we used this gradient as a colors for elements like top bar, navigation and call to action buttons.</p>
+                <img src="img/salvatio/salvatio-style-tile.png" class="project-item-img" alt="style tile">
+            </div>
+            <div class="project-process-content">
+                <h3>Mockups</h3>
+                <p>In mockup we had to show whole process of using this app, starting from creating an account and connecting app with device, finishing on searching people in danger and changing settings. Because not only women are in target group but also elder people we tried to keep layout and main function as simple as possible.</p>
+
+                <p>Generally the main page contains information with types of messages and easy access to settings where user can change the text of messages. In navigation user can find options with where can manage close contact, map with people in danger, settings and also user profile. Regarding map, user can check there how many people responded, how muh time it will take him to go to this place and the address.</p>
+                <img src="img/salvatio/salvatio-mockups.jpg" class="project-item-img" alt="salvatio mockups">
+            </div>
+            <div class="project-process-mockups-final">
+                <h3>Final product</h3>
+                <img src="img/salvatio/salvatio-push-final1.png" class="project-item-img" alt="salvatio mockups">
+                <img src="img/salvatio/salvatio-push-final2.png" class="project-item-img" alt="salvatio mockups">
+                <img src="img/salvatio/salvatio-push-final3.png" class="project-item-img" alt="salvatio mockups">
+                <img src="img/salvatio/salvatio-push-final4.png" class="project-item-img" alt="salvatio mockups">
+            </div>
+            
+        </div>
+    </section>
+    <!--ARLA PROJECT-->
+    <section class="project" id="arla">
+        <div class="blocker" onclick="hideProject()"></div>
+        <div class="project-container">
+            <div class="close-btn" onclick="hideProject()"><img src="icons/x.svg"></div>
+            <div class="project-container-top project-container-top-arla">
+                <h4 class="project-solution-name">Arla farmers</h4>
+            <p class="project-solution-type">Digital prototype</p>
+            </div>
+            <div class="project-details">
+                <span class="project-details-item">
+                    <i class="fas fa-user"></i>
+                    <p>UX/UI designer</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-tools"></i>
+                    <p>Adobe XD</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-link"></i>
+                    <a href="https://xd.adobe.com/view/4252eb91-ca5a-4c6b-9767-f0d8b09da18c-1701/?fullscreen" class="prototyp" target="_blank"><p>Explore the prototype</p></a>
+                </span>
+                <div class="devices">Solution prepared for: <i class="fas fa-desktop"></i></div> 
+            </div>
+            
+            <p class="problem">Our solution for Arla is prepared for its farmers. The main purpose was to create an easy and convinient way for them to fill up a form with data about their farms. Also me and my group had to convinced them to stay on website after sending form. Last but not least, we had to follow the Arla's CVI. So here we are, take a cup of tea and check what we've already created.</p>
+
+            <div class="project-process-content">
+                <h3>Sketches</h3>
+                <p>After thorough research, we can move on to the next step and put our ideas on piece of paper. Each of us took a pen/pencil and draw his/her visualisation of our future solution. Thanks to that, we got many ideas of template for not only main page but also other pages like form, data and profile. </p>
+            </div>
+            <div class="project-process-content">
+                <h3>Wireframes</h3>
+                <p>After sketching we created a first part of our digital solution - wireframes. It enabled us to placed elements and boxes with content in rights places.</p>
+
+                <img src="img/arla/arla-wireframes.jpg" class="project-item-img" alt="arla wireframes">
+            </div>
+            <div class="project-process-content">
+                <h3>Style tiles</h3>
+                <p>This first time we didn't have to create our own design becuase the purpose was to following Arla CVI. In this case, we analized whole details in document and chose elements which the most suits to our solution. 
+                </p>
+
+                <img src="img/arla/arla-style-tile.jpg" class="project-item-img" alt="arla style tile">
+            </div>
+            <div class="project-process-content">
+                <h3>Mockups</h3>
+                <p>We want to present our mockups of first desktop version. Our main goal was to create a solution that enables farmers to have an easy access to check their data and fast way to fill up a form. That's why our home page is a dashboard with the most important information for farmers and shortcuts to other pages.
+                </p>
+
+                <img src="img/arla/arla-mockups.jpg" class="project-item-img" alt="arla mockups">
+            </div>
+            <div class="project-process-mockups-final">
+                <h3>Final product</h3>
+                <img src="img/arla/arla-homepage.png" class="project-item-img computer" alt="arla final product">
+                <img src="img/arla/arla-form.png" class="project-item-img computer" alt="arla final product">
+                <img src="img/arla/arla-questions.png" class="project-item-img computer" alt="arla final product">
+                <img src="img/arla/arla-stats.png" class="project-item-img computer" alt="arla final product">
+            </div>
+            
+        </div>
+    </section>
+    <!--KOREPETYCJE PROJECT-->
+    <section class="project" id="korepetycje">
+        <div class="blocker" onclick="hideProject()"></div>
+        <div class="project-container">
+            <div class="close-btn" onclick="hideProject()"><img src="icons/x.svg"></div>
+            <div class="project-container-top project-container-top-korepetycje">
+                <h4 class="project-solution-name">Korepetycje24</h4>
+                <p class="project-solution-type">Website</p>
+            </div>
+            <div class="project-details">
+                <span class="project-details-item">
+                    <i class="fas fa-user"></i>
+                    <p>UX/UI designer, front-end developer, back-end developer</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-tools"></i>
+                    <p>Adobe XD, JS, jQuery, PHP, Headless CMS, SEO</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-link"></i>
+                    <a href="https://www.Korepetycje24.com.pl" class="prototyp" target="_blank"><p>Explore the prototype</p></a>
+                </span>
+                <div class="devices">Solution prepared for: <i class="fas fa-desktop"></i><i class="fas fa-tablet"></i><i class="fas fa-mobile"></i></div> 
+            </div>
+            
+            <p class="problem">The Korepetycje24 is a website created for a teacher who coaches pupils and students in math, chemisty and physic. She needed a one page website where students/pupils and their parents will be able to read about what subjects she learns, what is the price for the lesson and also have posibility to sign up for the lesson or ask a question.</p>
+
+            <div class="project-process-content">
+                <h3>Code</h3>
+                <p>In the previous section I wrote that I had to create contact/sign up form. To do that I used PHP and becuase no one can see this code in the browser, I would like to show you it here.<br><br>
+                    At the beginning I wrote the script which disables default form behavior. Then, I took all values written by user from each input and put into variables. After that, I downloaded data from mail.php file and put varaibles from inputs into POST variables (from PHP).</p>
+                <img src="img/korepetycje/math-js-code.jpg" class="project-item-img" alt="korepetycje code">
+                <p>Subsequently, I wrote validation in PHP and used <b>mail()</b> function to send form directly on teacher's mail. What is more, in jQuery I added visualisation of my validation in PHP. Thanks to that user will know if the form was sent or some data are invalid immidiately after click send button. 
+                </p>
+                <img src="img/korepetycje/math-php-code.jpg" class="project-item-img" alt="korepetycje code">
+                <img src="img/korepetycje/math-php-code2.jpg" class="project-item-img" alt="korepetycje code">
+            </div>
+        </div>
+    </section>
+    <!--SLEPFI PROJECT-->
+    <section class="project" id="slepfi">
+        <div class="blocker" onclick="hideProject()"></div>
+        <div class="project-container">
+            <div class="close-btn" onclick="hideProject()"><img src="icons/x.svg"></div>
+            <div class="project-container-top project-container-top-slepfi">
+                <h4 class="project-solution-name">Slepfi</h4>
+            <p class="project-solution-type">Digital prototype</p>
+            </div>
+            <div class="project-details">
+                <span class="project-details-item">
+                    <i class="fas fa-user"></i>
+                    <p>X/UI designer</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-tools"></i>
+                    <p>Figma</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-link"></i>
+                    <a href="https://www.figma.com/file/5SjybKNe26NP8DRfwPPAqF/Mockups?node-id=8%3A2" class="prototyp" target="_blank"><p>Explore the prototype</p></a>
+                </span>
+                <div class="devices">Solution prepared for: <i class="fas fa-desktop"></i></div> 
+            </div>
+            
+            <p class="problem">The Slepfi is a hobbyist’s project created by a passionates of good design and solutions that can make people’s life easier. The main purpose of this website is to provide a solution that will allow user to find a place to stay based on attractions around this place. The website's filters will try to search a place that matches users preferences. This prototype is just a beginning. Next step is to code the entire product.</p>
+
+            <div class="project-process-content">
+                <h3>Design system</h3>
+                <p>In the shortest way we can say that design system is a set of deliverables such as reusable components, design rules and pattern library. This is an extremely helpful tool for the company and its design department. <br><br>
+                
+                    That is why we decided to create a whole prototype based on design system. Thanks to that we were able to keep the consistency and design style through all pages. Moreover, due to the fact that one of our member is a developer, we wanted to make not only our work easier but also his one.</p>
+                <p>As the fact that each design system is based on the components, there is the same with Slepfi website. The whole platform is created by components starting from buttons and inputs and so on, ending on cards. If we look at the screen with button components we can find out that they are made by putting each each element of all variants to one main component and then creating other components with various variants by hiding unnecessary elements and changing backgrounds.</p>
+                <img src="img/slepfi/Slepfi-components.png" class="project-item-img" alt="slepfi components">
+                <img src="img/slepfi/slepfi-color-organization.png" class="project-item-img" alt="slepfi components">
+            </div>
+            <div class="project-process-content">
+                <h3>Mockups</h3>
+                <p>As it can be noticed, the whole platform is about traveling and searching perfect place to stay based on our attractions’ preferences. Because of that we are aware that this is one of the most essential part in the whole project and platform will be useless if it doesn’t work perfectly. User  needs to be able to search this place in a quick and fast way. That is why, we placed the search on the visible place on the home screen where user can’t miss it. Furthermore, user has an access to the search in any place on the platform due to the fixed navigation.</p>
+                
+                <p>With keeping this in mind we decided to focus on images that will show say more than just a block of text. That is why, user can see the huge image on the login page with short information about the place on the picture, just in case if he or she would like to visit it in the future. </p>
+
+                <p>Also due to a lot of information and content we wanted to balance them all. That is why we used a lot of white space. This allows us to create a readable, easy to navigate design that people will not have problem to use. </p>
+                <p>Last but not least, our target group are people, mostly young, so we made a decision to make the whole platform less official and formal. Thanks to that, the communication with user will be kind and warm and everyone can feel comfortable and welcome.</p>
+                <img src="img/slepfi/slepfi-mockups.png" class="project-item-img" alt="slepfi mockups">
+            </div>
+            <div class="project-process-mockups-final">
+                <h3>Final product</h3>
+                <img src="img/slepfi/Slepfi-mockup1.png" class="project-item-img-final computer" alt="slepfi mockups">
+                <img src="img/slepfi/Slepfi-mockup2.png" class="project-item-img-final computer" alt="slepfi mockups">
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
