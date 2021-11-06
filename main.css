@@ -265,7 +265,7 @@ h1{
 
 .main-project-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .main-project img{
@@ -912,6 +912,7 @@ box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
     .main-project img{
         height: 400px;
         width: auto;
+
     }
 
     .main-project-container h3, 

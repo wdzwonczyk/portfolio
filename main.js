@@ -217,7 +217,7 @@ appendExperience();
 function appendCV(){
     let htmlTemplate = `
     <h2>Get my CV</h2>
-    <a href="Wojciech Dzwonczyk - CV.pdf"><button class="download-btn"><i class="fab fa-facebook-messenger"></i></button></a>
+    <a href="Wojciech Dzwonczyk - CV.pdf"><button class="download-btn"><i class="fas fa-file-download"></i></button></a>
     `;
 
     document.querySelector(".cv-page").innerHTML = htmlTemplate;
