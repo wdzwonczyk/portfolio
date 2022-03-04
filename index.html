@@ -71,36 +71,167 @@
             </div>
         </div>
     </section>
-    <section class="main-project" id="Projects" onclick="openProject('slepfi-project')">
+    <section class="main-project" onclick="openProject('rawshare')">
         <div class="main-project-container">
-            <h3>Slepfi</h3>
-            <img src="img/slepfi/Slepfi-mockup-cut.png" class="main-project-mockups" alt="project mockup">
-            <p>App that allows you to find a place anywhere and anytime, in your hand.</p>
+            <div class="main-project-info">
+                <h3>RawShare</h3>
+                <p>App that allows users to share their food with others to avoid food wasting process.</p>
+            </div>
+            <img src="img/rawshare/rs-home-page.png" class="main-project-mockups" alt="project mockup">
         </div>
     </section>
     <section class="projects">
-        <div class="projects-item kunste" onclick="openProject('kunste-project')">
+        <div class="projects-item kunste" onclick="openProject('kunste')">
             <img src="img/kunste/kunste-mockup1.png" class="parallax phone" alt="project mockup">
         </div>
-        <div class="projects-item arla" onclick="openProject('arla-project')">
+        <div class="projects-item arla" onclick="openProject('arla')">
             <img src="img/arla/arla-homepage.png" class="parallax laptop" alt="project mockup">
         </div>
-        <div class="projects-item salvatio" onclick="openProject('salvatio-project')">
+        <div class="projects-item salvatio" onclick="openProject('salvatio')">
             <img src="img/salvatio/salvatio-mockup.png" class="parallax phone" alt="project mockup">
         </div>
-        <div class="projects-item korepetycje" onclick="openProject('korepetycje-project')">
+        <div class="projects-item korepetycje" onclick="openProject('korepetycje')">
             <img src="img/korepetycje/korepetycje24.png" class="parallax all-devices" alt="project mockup">
         </div>
     </section>
     <section class="experience experience-page" id="Experience">
         <h2>My experience</h2>
-        <div class="wrapper">
-            
-        </div>
+        <div class="wrapper"></div>
     </section>
     <section class="page cv-page" id="My CV">
     </section>
     <section class="contact" id="Contact">
+    </section>
+    <!--RAWSHARE PROJECT-->
+    <section class="project" id="rawshare">
+        <div class="blocker" onclick="hideProject()"></div>
+        <div class="project-container">
+            <div class="close-btn" onclick="hideProject()"><img src="icons/x.svg"></div>
+            <div class="project-container-top project-container-top-rawshare">
+                <h4 class="project-solution-name">RawShare app</h4>
+                <p class="project-solution-type">Mobile web application</p>
+            </div>
+            <div class="project-details">
+                <span class="project-details-item">
+                    <i class="fas fa-user"></i>
+                    <p>UX/UI designer, Front-end developer, Back-end developer</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-tools"></i>
+                    <p>Figma, JavaScript, PHP, MySQL</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/Wojo3214/foodwaste-app" class="prototyp" target="_blank"><p>Github repository</p></a>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-link"></i>
+                    <a href="https://www.figma.com/proto/X95CXJZU7cnLTiMDnbNAcy/Mockups?page-id=1%3A6&node-id=35%3A1120&viewport=241%2C48%2C0.13&scaling=scale-down&starting-point-node-id=35%3A1120&show-proto-sidebar=1" class="prototyp" target="_blank"><p>Explore the prototype</p></a>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-link"></i>
+                    <a href="https://rawshare.magdalenapolakowska.com/#/start" class="prototyp" target="_blank"><p>Explore the app</p></a>
+                </span>
+                <div class="devices">Solution prepared for: <i class="fas fa-mobile"></i></div> 
+            </div>
+            
+            <p class="problem">RawShare is a web app created by a group of 3 people for a school project. Its purpose is to allow users to share their food with other people in their area. The app is built based on the strong research (desk and field research, focus group, surveys and interviews) with people that are interested in food waste preventing. Thanks to collected information and data, we came to the conclusion that people do not like a surprise elements (TooGoodToGo) and are willing to share their food with others in their area without any extra costs..</p>
+            
+
+            <div class="project-process-content">
+                <h3>Sketches</h3>
+                <p>Based on the research, we wanted to enable users to find products in their area easily. Sketches easily allowed us to put our ideas on a paper. That is why, we decided that the main feature will be a map with pins that symbolise a food products. </p><br>
+            </div>
+            <div class="project-process-content">
+                <h3>Design system</h3>
+                <p>We all know how essential design systems are these days. First of all, it improves design process workflow and the communication between designers and developers. Secondly, it allows to keep the consistency through the whole solution. Keeping this in our mind, we also decided to create our own design system based on the components in Figma.</p><br>
+
+                <p>As you can see on the picture below, we have three connected to each other files such as: Mockups, Components and Foundation. What is important, in Foundation file, you can find information about colors that we decided to use, fonts, and spacing. If you wonder why we made a decision to use a green color, the answer is quite simple, the main color is associated to ecology.</p><br>
+
+                <img src="img/rawshare/rs-ds-files.png" class="project-item-img" alt="Rawshare's design system files organisation">
+                <img src="img/rawshare/rs-ds-foundation.png" class="project-item-img" alt="Rawshare's design system foundation">
+
+                <p>Here, you can find see an example of our components, their variants and states.</p>
+                
+                <img src="img/rawshare/rs-ds-components.png" class="project-item-img" alt="Rawshare's design system components">
+            </div>
+            <div class="project-process-content">
+                <h3>Mockups</h3>
+                <p>Based on created wireframes and style tiles we were ready to prepare mockups of our app. Our goal was to keep the design minimalistic, however, elegant and clean that is why the first conspicuous thing is a slider with current exhibitions on the bottom of the screen and a lot of white space.</p><br>
+                <p>Going further, when we choose „Exhibition” section in the menu we will be moved to the page where we can find information about current exhibitions. On each exhibition preview we can read its title and finish date.</p>
+                <p>Also, in the „My profile” page user can open his virtual card to scan in the entrance and get a digital coffee stamp for each visit. If you collect 10 of them, you will be able to get a free coffee in the museum’s cafe.</p><br>
+                <p>Furthermore, the booking and sharing items system is very intuitive. Thanks to step progress, user can feel guided through the whole fill up the form process without being lost and confused. In addition, we created modules that inform users about the status of the booking process e.g. that the order has been accepted by the owner and it is ready to pick up.</p><br>
+                <p>Last but not least, we know that people would like to know if they can they can trust to each other. Because of that, we prepared a rating system that user has to fill up after picking up the order. We are aware that some people do not like to spend their time on writing reviews so they only have to choose the amount of stars that represent their satisfaction. The average score will be displayed next to the owner’s name on the <i>Product page</i> or on the owner <i>Profile page</i>. Moreover, they can leave a short review but it is not a requirement. </p>
+                
+
+                <img src="img/rawshare/rs-mockups.png" class="project-item-img" alt="Rawshare's mockups">
+            </div>
+            <div class="project-process-mockups-final">
+                <h3>Final product</h3>
+                <img src="img/rawshare/rs-home-page.png" class="project-item-img" alt="Rawshare mockups">
+                <img src="img/rawshare/rs-booked.png" class="project-item-img" alt="Rawshare mockups">
+                <img src="img/rawshare/rs-product-item.png" class="project-item-img" alt="Rawshare mockups">
+            </div>
+            <div class="project-process-content">
+                <h3>Code</h3>
+                <p>Last but not least, I would like to say few words about the our code. Firstly, our app is created in JavaScript (front-end), PHP (back-end) and connected to database (MySQL). Thanks to that we were able to create a full stack solution with authorisation. </p><br>
+                <p>In this place, I will focus on the piece of code that gets data from the database on the Home Screen. First of all, we create a function called <code>getFoodProducts()</code> and put an authorised user’s ID from the localStorage to the variable. Then we create an object called user with this ID. After that we fetch data from the the food products.php file and send there a GET variable called action with value <i>getFoodProducts</i> by method POST and convert the user object into JSON string.</p><br>
+                <p>Later, in a const data variable we get data sent from the database and display its content in HTML by using a for of loop.</p><br>
+                <img src="img/rawshare/rs-code-frontend.png" class="project-item-img" alt="RawShare front-end code">
+                <p>In terms of back-end, let’s check out how this code allow us to read data from database in the JavaScript. First and foremost, we need to allow to use sessions and include the database connection that is another file called <i>mysql.php</i>. After that, we check if the GET variable exists, if so, check its value. Then, we need to decode sent object as a JSON string and put it to the variable called <code>$id</code>. </p><br>
+                <p>After decoding, we are able to create a query that will display all items except authorised user’s items. Now we are ready to send the request to the database and read the result by using while loop. What’s important, each result raw is put to the array called data and then data is moved to the array called response and encode. Thanks to that, the data that we got from the database is ready to read in JavaScript.</p><br>
+                <img src="img/rawshare/rs-code-backend.png" class="project-item-img" alt="RawShare back-end code">
+            </div>
+        </div>
+    </section>
+    <!--SALVATIO PUSH PROJECT-->
+    <section class="project" id="salvatio">
+        <div class="blocker" onclick="hideProject()"></div>
+        <div class="project-container">
+            <div class="close-btn" onclick="hideProject()"><img src="icons/x.svg"></div>
+            <div class="project-container-top project-container-top-salvatio">
+                <h4 class="project-solution-name">Salvatio Push app</h4>
+                <p class="project-solution-type">Mobile web application</p>
+            </div>
+            <div class="project-details">
+                <span class="project-details-item">
+                    <i class="fas fa-user"></i>
+                    <p>UX/UI designer</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-tools"></i>
+                    <p>Adobe XD, Photoshop</p>
+                </span>
+                <span class="project-details-item">
+                    <i class="fas fa-link"></i>
+                    <a href="https://xd.adobe.com/view/3c08bf60-dd34-4fbe-5798-48b2ff4913c1-4a39/screen/bd3ee32d-043e-405c-8bdf-9ceedb59b17c?hints=off" class="prototyp" target="_blank"><p>Explore the prototype</p></a>
+                </span>
+                <div class="devices">Solution prepared for: <i class="fas fa-mobile"></i></div> 
+            </div>
+            
+            <p class="problem">The Salvatio push company is a start up which helps people in danger. User, in dangerous situation, has to tap 1-3 times the salvatio push''s device which sends information by app in his phone to closest friends. The product is reserved mostly for women, elder people and atheletes. In cooperation with Magda Polakowska, we had to improve current (at this time) design and also create new stuff to mockup.</p>
+
+            <div class="project-process-content">
+                <h3>Style tiles</h3>
+                <p>Before we joined to Salvatio push team, they've had already a logo and visual identity. That's why we decided to use those color in our improved version of digital prototype. The same like in logo we used this gradient as a colors for elements like top bar, navigation and call to action buttons.</p><br>
+                <img src="img/salvatio/salvatio-style-tile.png" class="project-item-img" alt="style tile">
+            </div>
+            <div class="project-process-content">
+                <h3>Mockups</h3>
+                <p>In mockup we had to show whole process of using this app, starting from creating an account and connecting app with device, finishing on searching people in danger and changing settings. Because not only women are in target group but also elder people we tried to keep layout and main function as simple as possible.</p><br>
+
+                <p>Generally the main page contains information with types of messages and easy access to settings where user can change the text of messages. In navigation user can find options with where can manage close contact, map with people in danger, settings and also user profile. Regarding map, user can check there how many people responded, how muh time it will take him to go to this place and the address.</p><br>
+                <img src="img/salvatio/salvatio-mockups.jpg" class="project-item-img" alt="salvatio mockups">
+            </div>
+            <div class="project-process-mockups-final">
+                <h3>Final product</h3>
+                <img src="img/salvatio/salvatio-push-final1.png" class="project-item-img" alt="salvatio mockups">
+                <img src="img/salvatio/salvatio-push-final2.png" class="project-item-img" alt="salvatio mockups">
+                <img src="img/salvatio/salvatio-push-final3.png" class="project-item-img" alt="salvatio mockups">
+                <img src="img/salvatio/salvatio-push-final4.png" class="project-item-img" alt="salvatio mockups">
+            </div>
+            
+        </div>
     </section>
     <!--KUNSTE PROJECT-->
     <section class="project" id="kunste">
@@ -121,8 +252,12 @@
                     <p>Adobe XD, Github, JavaScript,</p>
                 </span>
                 <span class="project-details-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/Wojo3214/Kunste" class="prototyp" target="_blank"><p>Explore the repository</p></a>
+                </span>
+                <span class="project-details-item">
                     <i class="fas fa-link"></i>
-                    <a href="https://wojo3214.github.io/Kunste/" class="prototyp" target="_blank"><p>Explore the prototype</p></a>
+                    <a href="https://wojo3214.github.io/Kunste/" class="prototyp" target="_blank"><p>Explore the app</p></a>
                 </span>
                 <div class="devices">Solution prepared for: <i class="fas fa-mobile"></i></div> 
             </div>
@@ -140,20 +275,20 @@
             </div>
             <div class="project-process-content">
                 <h3>Wireframes</h3>
-                <p>After the first part of a design process (sketching), we created a first part of our digital solution - wireframes. Thanks to that we could place elements such as navigation and sliders in the right places and decide on how the layout of the app will look like. As you can see, we decided to use a lot of white spaces. Thanks to that, we were able to further direct the user's attention to the focal point of our application yet communicate a sense of professionalism and simplicity.</p>
+                <p>After the first part of a design process (sketching), we created a first part of our digital solution - wireframes. Thanks to that we could place elements such as navigation and sliders in the right places and decide on how the layout of the app will look like. As you can see, we decided to use a lot of white spaces. Thanks to that, we were able to further direct the user's attention to the focal point of our application yet communicate a sense of professionalism and simplicity.</p><br>
                 <img src="img/kunste/kunste-wireframes.png" class="project-item-img" alt="kunste wireframes">
             </div>
             <div class="project-process-content">
                 <h3>Style tiles</h3>
-                <p>Before we went to the mockups we had had to to prepare the design that will follow the museum’s visual identity. During demanding discussions we chose font called Futura PT for headers and Lato for block of text. Also we decided to use colors that matches to museum visual identity the most. In addition, when it comes to icons, we decided to keep them in minimalistic and thin style.</p>
+                <p>Before we went to the mockups we had had to to prepare the design that will follow the museum’s visual identity. During demanding discussions we chose font called Futura PT for headers and Lato for block of text. Also we decided to use colors that matches to museum visual identity the most. In addition, when it comes to icons, we decided to keep them in minimalistic and thin style.</p><br>
                 
                 <img src="img/kunste/kunste-style-tiles.jpg" class="project-item-img" alt="kunste style tiles">
             </div>
             <div class="project-process-content">
                 <h3>Mockups</h3>
-                <p>Based on created wireframes and style tiles we were ready to prepare mockups of our app. Our goal was to keep the design minimalistic, however, elegant and clean that is why the first conspicuous thing is a slider with current exhibitions on the bottom of the screen and a lot of white space.</p>
-                <p>Going further, when we choose „Exhibition” section in the menu we will be moved to the page where we can find information about current exhibitions. On each exhibition preview we can read its title and finish date.</p>
-                <p>Also, in the „My profile” page user can open his virtual card to scan in the entrance and get a digital coffee stamp for each visit. If you collect 10 of them, you will be able to get a free coffee in the museum’s cafe.</p>
+                <p>Based on created wireframes and style tiles we were ready to prepare mockups of our app. Our goal was to keep the design minimalistic, however, elegant and clean that is why the first conspicuous thing is a slider with current exhibitions on the bottom of the screen and a lot of white space.</p><br>
+                <p>Going further, when we choose „Exhibition” section in the menu we will be moved to the page where we can find information about current exhibitions. On each exhibition preview we can read its title and finish date.</p><br>
+                <p>Also, in the „My profile” page user can open his virtual card to scan in the entrance and get a digital coffee stamp for each visit. If you collect 10 of them, you will be able to get a free coffee in the museum’s cafe.</p><br>
                 <img src="img/kunste/kunste-mockups.png" class="project-item-img" alt="kunste mockups">
             </div>
             <div class="project-process-mockups-final">
@@ -193,14 +328,14 @@
 
             <div class="project-process-content">
                 <h3>Style tiles</h3>
-                <p>Before we joined to Salvatio push team, they've had already a logo and visual identity. That's why we decided to use those color in our improved version of digital prototype. The same like in logo we used this gradient as a colors for elements like top bar, navigation and call to action buttons.</p>
+                <p>Before we joined to Salvatio push team, they've had already a logo and visual identity. That's why we decided to use those color in our improved version of digital prototype. The same like in logo we used this gradient as a colors for elements like top bar, navigation and call to action buttons.</p><br>
                 <img src="img/salvatio/salvatio-style-tile.png" class="project-item-img" alt="style tile">
             </div>
             <div class="project-process-content">
                 <h3>Mockups</h3>
-                <p>In mockup we had to show whole process of using this app, starting from creating an account and connecting app with device, finishing on searching people in danger and changing settings. Because not only women are in target group but also elder people we tried to keep layout and main function as simple as possible.</p>
+                <p>In mockup we had to show whole process of using this app, starting from creating an account and connecting app with device, finishing on searching people in danger and changing settings. Because not only women are in target group but also elder people we tried to keep layout and main function as simple as possible.</p><br>
 
-                <p>Generally the main page contains information with types of messages and easy access to settings where user can change the text of messages. In navigation user can find options with where can manage close contact, map with people in danger, settings and also user profile. Regarding map, user can check there how many people responded, how muh time it will take him to go to this place and the address.</p>
+                <p>Generally the main page contains information with types of messages and easy access to settings where user can change the text of messages. In navigation user can find options with where can manage close contact, map with people in danger, settings and also user profile. Regarding map, user can check there how many people responded, how muh time it will take him to go to this place and the address.</p><br>
                 <img src="img/salvatio/salvatio-mockups.jpg" class="project-item-img" alt="salvatio mockups">
             </div>
             <div class="project-process-mockups-final">
@@ -246,21 +381,21 @@
             </div>
             <div class="project-process-content">
                 <h3>Wireframes</h3>
-                <p>After sketching we created a first part of our digital solution - wireframes. It enabled us to placed elements and boxes with content in rights places.</p>
+                <p>After sketching we created a first part of our digital solution - wireframes. It enabled us to placed elements and boxes with content in rights places.</p><br>
 
                 <img src="img/arla/arla-wireframes.jpg" class="project-item-img" alt="arla wireframes">
             </div>
             <div class="project-process-content">
                 <h3>Style tiles</h3>
                 <p>This first time we didn't have to create our own design becuase the purpose was to following Arla CVI. In this case, we analized whole details in document and chose elements which the most suits to our solution. 
-                </p>
+                </p><br>
 
                 <img src="img/arla/arla-style-tile.jpg" class="project-item-img" alt="arla style tile">
             </div>
             <div class="project-process-content">
                 <h3>Mockups</h3>
                 <p>We want to present our mockups of first desktop version. Our main goal was to create a solution that enables farmers to have an easy access to check their data and fast way to fill up a form. That's why our home page is a dashboard with the most important information for farmers and shortcuts to other pages.
-                </p>
+                </p><br>
 
                 <img src="img/arla/arla-mockups.jpg" class="project-item-img" alt="arla mockups">
             </div>
@@ -303,11 +438,11 @@
 
             <div class="project-process-content">
                 <h3>Code</h3>
-                <p>In the previous section I wrote that I had to create contact/sign up form. To do that I used PHP and becuase no one can see this code in the browser, I would like to show you it here.<br><br>
-                    At the beginning I wrote the script which disables default form behavior. Then, I took all values written by user from each input and put into variables. After that, I downloaded data from mail.php file and put varaibles from inputs into POST variables (from PHP).</p>
+                <p>In the previous section I wrote that I had to create contact/sign up form. To do that I used PHP and becuase no one can see this code in the browser, I would like to show you it here.</p><br>
+                <p>At the beginning I wrote the script which disables default form behavior. Then, I took all values written by user from each input and put into variables. After that, I downloaded data from mail.php file and put varaibles from inputs into POST variables (from PHP).</p><br>
                 <img src="img/korepetycje/math-js-code.jpg" class="project-item-img" alt="korepetycje code">
-                <p>Subsequently, I wrote validation in PHP and used <b>mail()</b> function to send form directly on teacher's mail. What is more, in jQuery I added visualisation of my validation in PHP. Thanks to that user will know if the form was sent or some data are invalid immidiately after click send button. 
-                </p>
+                <p>Subsequently, I wrote validation in PHP and used <code>mail()</code> function to send form directly on teacher's mail. What is more, in jQuery I added visualisation of my validation in PHP. Thanks to that user will know if the form was sent or some data are invalid immidiately after click send button. 
+                </p><br>
                 <img src="img/korepetycje/math-php-code.jpg" class="project-item-img" alt="korepetycje code">
                 <img src="img/korepetycje/math-php-code2.jpg" class="project-item-img" alt="korepetycje code">
             </div>
@@ -342,21 +477,21 @@
 
             <div class="project-process-content">
                 <h3>Design system</h3>
-                <p>In the shortest way we can say that design system is a set of deliverables such as reusable components, design rules and pattern library. This is an extremely helpful tool for the company and its design department. <br><br>
+                <p>In the shortest way we can say that design system is a set of deliverables such as reusable components, design rules and pattern library. This is an extremely helpful tool for the company and its design department. </p><br>
                 
-                    That is why we decided to create a whole prototype based on design system. Thanks to that we were able to keep the consistency and design style through all pages. Moreover, due to the fact that one of our member is a developer, we wanted to make not only our work easier but also his one.</p>
-                <p>As the fact that each design system is based on the components, there is the same with Slepfi website. The whole platform is created by components starting from buttons and inputs and so on, ending on cards. If we look at the screen with button components we can find out that they are made by putting each each element of all variants to one main component and then creating other components with various variants by hiding unnecessary elements and changing backgrounds.</p>
+                <p>That is why we decided to create a whole prototype based on design system. Thanks to that we were able to keep the consistency and design style through all pages. Moreover, due to the fact that one of our member is a developer, we wanted to make not only our work easier but also his one.</p><br>
+                <p>As the fact that each design system is based on the components, there is the same with Slepfi website. The whole platform is created by components starting from buttons and inputs and so on, ending on cards. If we look at the screen with button components we can find out that they are made by putting each each element of all variants to one main component and then creating other components with various variants by hiding unnecessary elements and changing backgrounds.</p><br>
                 <img src="img/slepfi/Slepfi-components.png" class="project-item-img" alt="slepfi components">
                 <img src="img/slepfi/slepfi-color-organization.png" class="project-item-img" alt="slepfi components">
             </div>
             <div class="project-process-content">
                 <h3>Mockups</h3>
-                <p>As it can be noticed, the whole platform is about traveling and searching perfect place to stay based on our attractions’ preferences. Because of that we are aware that this is one of the most essential part in the whole project and platform will be useless if it doesn’t work perfectly. User  needs to be able to search this place in a quick and fast way. That is why, we placed the search on the visible place on the home screen where user can’t miss it. Furthermore, user has an access to the search in any place on the platform due to the fixed navigation.</p>
+                <p>As it can be noticed, the whole platform is about traveling and searching perfect place to stay based on our attractions’ preferences. Because of that we are aware that this is one of the most essential part in the whole project and platform will be useless if it doesn’t work perfectly. User  needs to be able to search this place in a quick and fast way. That is why, we placed the search on the visible place on the home screen where user can’t miss it. Furthermore, user has an access to the search in any place on the platform due to the fixed navigation.</p><br>
                 
-                <p>With keeping this in mind we decided to focus on images that will show say more than just a block of text. That is why, user can see the huge image on the login page with short information about the place on the picture, just in case if he or she would like to visit it in the future. </p>
+                <p>With keeping this in mind we decided to focus on images that will show say more than just a block of text. That is why, user can see the huge image on the login page with short information about the place on the picture, just in case if he or she would like to visit it in the future. </p><br>
 
-                <p>Also due to a lot of information and content we wanted to balance them all. That is why we used a lot of white space. This allows us to create a readable, easy to navigate design that people will not have problem to use. </p>
-                <p>Last but not least, our target group are people, mostly young, so we made a decision to make the whole platform less official and formal. Thanks to that, the communication with user will be kind and warm and everyone can feel comfortable and welcome.</p>
+                <p>Also due to a lot of information and content we wanted to balance them all. That is why we used a lot of white space. This allows us to create a readable, easy to navigate design that people will not have problem to use. </p><br>
+                <p>Last but not least, our target group are people, mostly young, so we made a decision to make the whole platform less official and formal. Thanks to that, the communication with user will be kind and warm and everyone can feel comfortable and welcome.</p><br>
                 <img src="img/slepfi/slepfi-mockups.png" class="project-item-img" alt="slepfi mockups">
             </div>
             <div class="project-process-mockups-final">

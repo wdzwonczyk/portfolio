@@ -9,11 +9,14 @@
     --bg-grey: #C4C4C4;
     --bg-dark: #323232;
     --details: #818181;
+    --code: rgb(184, 54, 54);
+    --code-bg: rgb(245, 245, 218);
     --bg-kunste-gradient: linear-gradient(310deg, rgb(124, 126, 12) 0%, rgb(158, 160, 37) 47%, rgb(178, 180, 69) 100%);
     --bg-arla-gradient: linear-gradient(310deg, rgb(16, 110, 44) 0%, rgb(40, 143, 71) 47%, rgb(82, 184, 113) 100%);
     --bg-slepfy-gradient: linear-gradient(3100deg, rgb(189, 26, 53) 0%, rgb(204, 61, 85) 47%, rgb(216, 116, 132) 100%);
     --bg-korepetycje-gradient: linear-gradient(310deg, rgb(219, 59, 184) 0%, rgb(219, 95, 192) 47%, rgb(235, 148, 216) 100%);
     --bg-salvatio-gradient: linear-gradient(310deg, rgb(17, 94, 194) 0%, rgb(63, 125, 206) 47%,rgb(112, 158, 219) 100%);
+    --bg-rawshare-gradient: linear-gradient(310deg, rgba(128,185,24,1) 0%, rgba(160,203,81,1) 47%, rgba(200,225,153,1) 100%);
 }
 
 *{
@@ -34,6 +37,12 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: 'Work Sans', sans-serif;
     color: var(--main-heading);
+}
+
+code{
+    font-size: 16px;
+    color: var(--code);
+    background-color: var(--code-bg);
 }
 
 .main-header{
@@ -110,8 +119,7 @@ h1{
 }
 
 .nav > a{
-    flex: 1 1 50%;
-    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .nav>a>img{
@@ -124,7 +132,6 @@ h1{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    flex: 1 1 100%;
 
 }
 
@@ -255,28 +262,35 @@ h1{
 
 /***MAIN PROJECT***/
 .main-project{
-    background: var(--bg-slepfy-gradient);
+    background: var(--bg-rawshare-gradient);
     position: relative;
-    height: 400px;
-    display: flex;
-    justify-content: center;
+    height: 70vh;
     overflow: hidden;
 }
 
 .main-project-container{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto 20px auto;
 }
 
 .main-project img{
-    width: 100%;
-    align-self: flex-end;
+    width: 55%;
+    height: fit-content;
+    max-height:fit-content;
+    display: block;
+    margin: 40px auto 0 auto;
 }
 
 .main-project-container h3, 
 .main-project-container p {
-    display: none;
+    display: block;
     color: var(--white);
+}
+
+.main-project-container h3{
+    font-size: 32px;
 }
 
 /***PROJECTS***/
@@ -644,6 +658,10 @@ h1{
     background: var(--bg-slepfy-gradient);
 }
 
+.project-container-top-rawshare{
+    background: var(--bg-rawshare-gradient);
+}
+
 .project-solution-name{
     font-size: 36px;
     color: var(--white);
@@ -764,7 +782,7 @@ box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
 
     .nav > a{
         flex: none;
-        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .nav>a>img{
@@ -900,35 +918,28 @@ box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
         width: 48%;
     }
 
-    .main-project{
-        height: 500px;
-    }
-    
-
     .main-project-container{
+        max-width: 1400px;
+        display: flex;
         flex-direction: row;
     }
 
     .main-project img{
-        height: 400px;
-        width: auto;
-
+        height: fit-content;
+        width: fit-content;
     }
 
-    .main-project-container h3, 
-    .main-project-container p {
-        display: block;
-        margin-top: 10%;
+    .main-project-info{
+        margin-top: 40px;
     }
 
     .main-project-container h3{
-        flex: 1;
         font-size: 36px;
     }
 
     .main-project-container p{
-        flex: 1;
-        width: 200px;
+        width: 80%;
+        margin-top: 12px;
     }
 
     .contact-items{
