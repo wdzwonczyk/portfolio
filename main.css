@@ -13,7 +13,7 @@
     --code-bg: rgb(245, 245, 218);
     --bg-kunste-gradient: linear-gradient(310deg, rgb(124, 126, 12) 0%, rgb(158, 160, 37) 47%, rgb(178, 180, 69) 100%);
     --bg-arla-gradient: linear-gradient(310deg, rgb(16, 110, 44) 0%, rgb(40, 143, 71) 47%, rgb(82, 184, 113) 100%);
-    --bg-slepfy-gradient: linear-gradient(3100deg, rgb(189, 26, 53) 0%, rgb(204, 61, 85) 47%, rgb(216, 116, 132) 100%);
+    --bg-slepfi-gradient: linear-gradient(310deg, rgb(189, 26, 53) 0%, rgb(204, 61, 85) 47%, rgb(216, 116, 132) 100%);
     --bg-korepetycje-gradient: linear-gradient(310deg, rgb(219, 59, 184) 0%, rgb(219, 95, 192) 47%, rgb(235, 148, 216) 100%);
     --bg-salvatio-gradient: linear-gradient(310deg, rgb(17, 94, 194) 0%, rgb(63, 125, 206) 47%,rgb(112, 158, 219) 100%);
     --bg-rawshare-gradient: linear-gradient(310deg, rgba(128,185,24,1) 0%, rgba(160,203,81,1) 47%, rgba(200,225,153,1) 100%);
@@ -298,10 +298,10 @@ h1{
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
+        "slepfi"
         "kunste"
         "arla"
-        "korepetycje"
-        "salvatio";
+        "korepetycje";
     margin: 40px 0;
     padding: 20px;  
     grid-gap: 20px;
@@ -364,6 +364,11 @@ h1{
 .salvatio{
     background: var(--bg-salvatio-gradient);
     grid-area: salvatio;
+}
+
+.slepfi{
+    background: var(--bg-slepfi-gradient);
+    grid-area: slepfi;
 }
 /*=====EXPERIENCE PAGE======*/
 
@@ -655,7 +660,7 @@ h1{
 }
 
 .project-container-top-slepfi{
-    background: var(--bg-slepfy-gradient);
+    background: var(--bg-slepfi-gradient);
 }
 
 .project-container-top-rawshare{
@@ -678,7 +683,7 @@ h1{
     height: 30px;
     background-color: #fff;
     -webkit-box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3); 
-box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
+    box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
     position: absolute;
     right: 20px;
     top: 20px;
@@ -737,6 +742,11 @@ box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
     margin: 20px 0;
 }
 
+.project-item-img--small{
+    width: 70%;
+    margin: 0 auto;
+}
+
 .project-process-content{
     margin-top: 20px;
     text-align: justify;
@@ -748,7 +758,7 @@ box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
 }
 
 .project-process-content img{
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 .prototyp{
@@ -878,14 +888,14 @@ box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
         grid-template-columns: 400px 400px;
         grid-template-rows: 300px 100px 200px 100px 200px 100px 200px 100px;
         grid-template-areas:
-        "kunste ."
-        "kunste arla"
-        ". arla"
-        "korepetycje arla"
-        "korepetycje ."
-        "korepetycje salvatio"
-        ". salvatio"
-        ". salvatio";
+        "slepfi ."
+        "slepfi kunste"
+        ". kunste"
+        "arla kunste"
+        "arla ."
+        "arla korepetycje"
+        ". korepetycje"
+        ". korepetycje";
         justify-content: center;
     }
 
@@ -901,10 +911,15 @@ box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
         border-radius: 16px;
     }
 
-    .project-process-content img{
+    .project-item-img{
         width: 80%;
         margin: 20px auto;
         display: block;
+    }
+
+    .project-item-img--small{
+        width: 30%;
+        margin: 0 auto;
     }
 
     .project-details{
@@ -936,12 +951,13 @@ box-shadow: 5px 5px 23px 5px rgba(38,38,38,0.3);
     }
 
     .main-project-container h3{
-        font-size: 36px;
+        font-size: 56px;
     }
 
     .main-project-container p{
-        width: 80%;
+        width: 75%;
         margin-top: 12px;
+        font-size: 22px;
     }
 
     .contact-items{

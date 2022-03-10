@@ -79,9 +79,6 @@ function appendNav(){
     document.querySelector(".nav__list").innerHTML = htmlTemplate;
 }
 
-// const sections = document.querySelectorAll("section");
-// const navLi = document.querySelectorAll("nav nav__list nav__list-item");
-
 appendNav();
 
 //Append contact section
