@@ -16,7 +16,8 @@
     --bg-slepfi-gradient: linear-gradient(310deg, rgb(189, 26, 53) 0%, rgb(204, 61, 85) 47%, rgb(216, 116, 132) 100%);
     --bg-korepetycje-gradient: linear-gradient(310deg, rgb(219, 59, 184) 0%, rgb(219, 95, 192) 47%, rgb(235, 148, 216) 100%);
     --bg-salvatio-gradient: linear-gradient(310deg, rgb(17, 94, 194) 0%, rgb(63, 125, 206) 47%,rgb(112, 158, 219) 100%);
-    --bg-rawshare-gradient: linear-gradient(310deg, rgba(128,185,24,1) 0%, rgba(160,203,81,1) 47%, rgba(200,225,153,1) 100%);
+    --bg-studiz-gradient: linear-gradient(310deg, rgba(39, 142, 189, 1) 0%, rgb(57, 154, 199) 47%,rgb(68, 165, 211) 100%);
+    --bg-rawshare-gradient: linear-gradient(310deg, rgba(128,185,24,1) 0%, rgba(160,203,81,1) 47%, rgb(179, 212, 117) 100%);
 }
 
 *{
@@ -155,6 +156,11 @@ h1{
     border-radius: 4px;
 }
 
+.nav ul > li:active{
+    background-color: red;
+    border-radius: 4px;
+}
+
 .nav ul > li:hover a{
     color: var(--color-text);
 }
@@ -260,7 +266,7 @@ h1{
     color: var(--color-text);
 }
 
-/***MAIN PROJECT***/
+/* **MAIN PROJECT**
 .main-project{
     background: var(--bg-rawshare-gradient);
     position: relative;
@@ -283,6 +289,10 @@ h1{
     margin: 40px auto 0 auto;
 }
 
+.main-project img:last-child{
+    display: none;
+}
+
 .main-project-container h3, 
 .main-project-container p {
     display: block;
@@ -291,17 +301,17 @@ h1{
 
 .main-project-container h3{
     font-size: 32px;
-}
+} */
 
 /***PROJECTS***/
 .projects{
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
+        "studiz"
+        "rawshare"
         "slepfi"
-        "kunste"
-        "arla"
-        "korepetycje";
+        "arla";
     margin: 40px 0;
     padding: 20px;  
     grid-gap: 20px;
@@ -322,8 +332,8 @@ h1{
 .projects-item:hover{
     transform: scale(1.02);
     box-shadow: 6px 6px 12px 2px rgba(0,0,0,0.15);
--webkit-box-shadow: 6px 6px 12px 2px rgba(0,0,0,0.15);
--moz-box-shadow: 6px 6px 12px 2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 6px 6px 12px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 6px 6px 12px 2px rgba(0,0,0,0.15);
 }
 
 .projects-item img{
@@ -353,7 +363,12 @@ h1{
 
 .kunste{
     background: var(--bg-kunste-gradient);
-    grid-area: kunste
+    grid-area: kunste;
+}
+
+.studiz{
+    background: var(--bg-studiz-gradient);
+    grid-area: studiz;
 }
 
 .arla{
@@ -369,6 +384,11 @@ h1{
 .slepfi{
     background: var(--bg-slepfi-gradient);
     grid-area: slepfi;
+}
+
+.rawshare{
+    background: var(--bg-rawshare-gradient);
+    grid-area: rawshare;
 }
 /*=====EXPERIENCE PAGE======*/
 
@@ -398,7 +418,7 @@ h1{
 
 .wrapper .center-line{
     position: absolute;
-    left: 20px;
+    left: 30px;
     width: 4px;
     height: 100%;
     background-color: #fff;
@@ -406,7 +426,7 @@ h1{
 
 .wrapper .row{
     display: flex;
-    margin: 20px 30px;
+    margin: 20px 30px 20px 40px;
     position: relative;
 }
 
@@ -544,6 +564,35 @@ h1{
     }
 }
 
+@keyframes open-module{
+    0%{
+        opacity: 0.2;
+        transform: translateY(-20%); 
+    }
+    50%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%); 
+        
+    }
+}
+
+@keyframes close-module{
+    0%{
+        opacity: 1;
+        transform: translateY(0%); 
+    }
+    50%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 0.2;
+        transform: translateY(-20%);  
+    }
+}
+
 .contact{
     width: 100%;
     display: flex;
@@ -635,12 +684,17 @@ h1{
     box-sizing: border-box;
     overflow-y: scroll;
     position: relative;
+    animation: open-module 0.3s ease-in;
 }
 
 .project-container-top{
     width: 100%;
     margin: 0px -20px;
     padding: 8% 20px 20px 20px;
+}
+
+.project-container-title{
+    width: 100%;
 }
 
 .project-container-top-korepetycje{
@@ -665,6 +719,10 @@ h1{
 
 .project-container-top-rawshare{
     background: var(--bg-rawshare-gradient);
+}
+
+.project-container-top-studiz{
+    background: var(--bg-studiz-gradient);
 }
 
 .project-solution-name{
@@ -692,10 +750,11 @@ h1{
     align-items: center;
     border-radius: 200px;
     cursor: pointer;
+    transition: 0.3 ease-out;
 }
 
 .project-details{
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(243, 243, 243);
     box-sizing: border-box;
     padding: 20px;
     margin-top: 20px;
@@ -752,6 +811,10 @@ h1{
     text-align: justify;
 }
 
+.project-process-content ul{
+    margin: 16px 0 16px 20px;
+}
+
 .project-process-content h3{
     font-size: 24px;
     margin-bottom: 10px;
@@ -763,6 +826,7 @@ h1{
 
 .prototyp{
     color: rgb(65, 135, 240);
+    text-decoration: none;
 }
 
 .project-process-mockups-final{
@@ -821,6 +885,10 @@ h1{
         display: none;
     }
 
+    .close-btn:hover{
+        transform: scale(0.9);
+    }
+
     .about-me-container{
         width: 1140px;
         flex-direction: row;
@@ -846,6 +914,10 @@ h1{
     .main-header-container{
         flex-direction: row;
     }
+    
+    .wrapper .row{
+        margin: 20px 30px;
+    }
 
     .wrapper .center-line{
         left: 50%;
@@ -854,7 +926,16 @@ h1{
 
     .wrapper .row article{
         width: calc(50% - 80px);
+        transition: all 0.3s ease-in;
     }
+    
+    .wrapper .row article:hover{
+        transform: scale(1.02);
+        box-shadow: 6px 6px 12px 2px rgba(0,0,0,0.15);
+        -webkit-box-shadow: 6px 6px 12px 2px rgba(0,0,0,0.15);
+        -moz-box-shadow: 6px 6px 12px 2px rgba(0,0,0,0.15);
+    }
+
 
     .icon{
         position: absolute;
@@ -888,14 +969,14 @@ h1{
         grid-template-columns: 400px 400px;
         grid-template-rows: 300px 100px 200px 100px 200px 100px 200px 100px;
         grid-template-areas:
+        "studiz ."
+        "studiz rawshare"
+        ". rawshare"
+        "slepfi rawshare"
         "slepfi ."
-        "slepfi kunste"
-        ". kunste"
-        "arla kunste"
-        "arla ."
-        "arla korepetycje"
-        ". korepetycje"
-        ". korepetycje";
+        "slepfi arla"
+        ". arla"
+        ". arla";
         justify-content: center;
     }
 
@@ -911,8 +992,13 @@ h1{
         border-radius: 16px;
     }
 
+    .project-container-title{
+        width: 60%;
+        margin: 0 auto;
+    }
+
     .project-item-img{
-        width: 80%;
+        width: 100%;
         margin: 20px auto;
         display: block;
     }
@@ -923,7 +1009,16 @@ h1{
     }
 
     .project-details{
-        width: 40%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-process-content, .problem, .project-process-mockups-final{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
     }
 
     .project-process-mockups-final img{
@@ -932,9 +1027,13 @@ h1{
     }
 
     .project-process-mockups-final .computer{
-        width: 48%;
+        width: 75%;
     }
 
+    .main-project{
+        cursor: pointer;
+    }
+    
     .main-project-container{
         max-width: 1400px;
         display: flex;
@@ -942,8 +1041,33 @@ h1{
     }
 
     .main-project img{
-        height: fit-content;
-        width: fit-content;
+        position: absolute;
+        max-width: 240px;
+        margin-top: 0;
+        transition: 0.3s ease-out;
+    }
+    .main-project img:last-child{
+        display: block;
+    }
+
+    .main-project-mockups1{
+        top: -60%;
+        right: 30%;
+    }
+
+    .main-project-mockups2{
+        bottom: -60%;
+        right: 10%;
+    }
+
+    .main-project:hover .main-project-mockups1{
+        top: 35%;
+        transform: translateY(-35%);
+    }
+
+    .main-project:hover .main-project-mockups2{
+        bottom: 35%;
+        transform: translateY(35%);
     }
 
     .main-project-info{

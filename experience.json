@@ -1,0 +1,66 @@
+[
+    {
+        "company": "Studiz A/S",
+        "link": "https://studiz.dk/",
+        "startDate": "April 2022",
+        "startYear": 2022,
+        "finishDate": "Current",
+        "finishYear": "Current",
+        "position": "UX/UI Designer",
+        "logo": "img/studiz-logo.svg",
+        "duties": [
+            "Mobile app redesigning and developing",
+            "Web app redesigning and developing",
+            "Improving user experience",
+            "Creating and developing design system, pattern library and style guides in Figma",
+            "Creating marketing materials",
+            "Managing Design Department"
+        ]
+    },
+    {
+        "company": "Bleau A/S",
+        "link": "https://bleau.dk/",
+        "startDate": "March 2021",
+        "startYear": 2021,
+        "finishDate": "August 2021",
+        "finishYear": 2021,
+        "position": "Student worker",
+        "logo": "img/bleau-logo.svg",
+        "duties": [
+            "Platform redesigning",
+            "Improving user experience",
+            "Creating and developing design system, pattern library and style guides in Figma",
+            "Creating web components in TypeScript"
+        ]
+    },
+    {
+        "company": "Bleau A/S",
+        "link": "https://bleau.dk/",
+        "startDate": "January 2021",
+        "startYear": 2021,
+        "finishDate": "March 2021",
+        "finishYear": 2021,
+        "position": "Intern",
+        "logo": "img/bleau-logo.svg",
+        "duties": [
+            "Platform redesigning",
+            "Improving user experience",
+            "Creating a platform design system"
+        ]
+    },
+    {
+        "company": "Salvatio Push",
+        "link": "https://salvatio.dk/",
+        "startDate": "April 2020",
+        "startYear": 2020,
+        "finishDate": "July 2020",
+        "finishYear": 2020,
+        "position": "Intern",
+        "logo": "img/salvatio-logo.png",
+        "duties": [
+            "Creating the content for website, events and social media",
+            "Improving website and its performance",
+            "Improving SEO"
+        ]
+    }
+]

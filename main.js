@@ -12,6 +12,23 @@ let navigation = [
 //My work experience array
 let experience = [
     {
+        company: "Studiz A/S",
+        link: "https://studiz.dk/",
+        startDate: "April 2022",
+        startYear: 2022,
+        finishDate: "Current",
+        finishYear: "Current",
+        position: "UX/UI Designer",
+        logo: "img/studiz-logo.svg",
+        duties: [
+            "Mobile app redesigning and developing",
+            "Website redesigning and developing",
+            "Improving user experience",
+            "Creating and developing design system in Figma",
+            "Creating marketing materials"
+        ]
+    },
+    {
         company: "Bleau A/S",
         link: "https://bleau.dk/",
         startDate: "March 2021",
@@ -59,6 +76,8 @@ let experience = [
     }
 ];
 
+
+
 const tl = new TimelineMax();
 const logo = document.querySelector(".logo");
 const nav = document.querySelector(".nav__list");
@@ -66,6 +85,9 @@ const picOfMe = document.querySelector(".pic-me");
 const mainHeading = document.querySelector("#main-heading");
 const closeNavBtn = document.querySelector(".close-nav-btn");
 
+function init(){
+    //here are going to be calls for functions
+}
 
 //Append navigation items
 function appendNav(){
@@ -80,20 +102,42 @@ function appendNav(){
 }
 
 appendNav();
+const navLi = document.querySelectorAll(".nav__list-item");
+const sections = document.querySelectorAll(".section");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 5) {
+        console.log(section);
+        current = section.getAttribute("id");
+      }
+    });
+  
+    navLi.forEach((li) => {
+      li.classList.remove("active");
+      if (li.classList.contains(current)) {
+        li.classList.add("active");
+        console.log(li);
+      }
+    });
+  });
 
 //Append contact section
 function appendContact(){
     let htmlTemplate = /*html*/`
-            <h3>Don't hestitate to contact me!</h3>
-            <div class="contact-items">
-                <a href="tel:+4591718714" class="contact-icon"><i class="fas fa-phone-alt"></i><span>+45 91 71 87 14</span></a>
-                <a href="mailto: wdzwonek97@gmail.com" class="contact-icon"><i class="far fa-envelope"></i><span>wdzwonek97@gmail.com</span></a>
-            </div>
-            <div class="some-items">
-                <a href="https://m.me/wojtek.dzwonczyk.7" target="_blank" class="some-icon"><i class="fab fa-facebook-messenger"></i></a>
-                <a href="https://www.instagram.com/wojo.dz/" target="_blank" class="some-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/wojciech-dzwo%C5%84czyk-772803197/" target="_blank" class="some-icon"><i class="fab fa-linkedin"></i></a>
-            </div>
+        <h3>Don't hestitate to contact me!</h3>
+        <div class="contact-items">
+            <a href="tel:+4591718714" class="contact-icon"><i class="fas fa-phone-alt"></i><span>+45 91 71 87 14</span></a>
+            <a href="mailto: wdzwonek97@gmail.com" class="contact-icon"><i class="far fa-envelope"></i><span>wdzwonek97@gmail.com</span></a>
+        </div>
+        <div class="some-items">
+            <a href="https://m.me/wojtek.dzwonczyk.7" target="_blank" class="some-icon"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="https://www.instagram.com/wojo.dz/" target="_blank" class="some-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/wojciech-dzwo%C5%84czyk-772803197/" target="_blank" class="some-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
     `;
     document.querySelector(".contact").innerHTML = htmlTemplate;
 }
@@ -211,7 +255,7 @@ appendExperience();
 function appendCV(){
     let htmlTemplate = `
     <h2>Get my CV</h2>
-    <a href="Wojciech Dzwonczyk - CV.pdf"><button class="download-btn"><i class="fab fa-facebook-messenger"></i></button></a>
+    <a href="Wojciech Dzwonczyk - CV.pdf"><button class="download-btn"><img src="icons/download.svg" alt="download CV"/></button></a>
     `;
 
     document.querySelector(".cv-page").innerHTML = htmlTemplate;
@@ -246,12 +290,14 @@ window.onscroll = () => {
 function openProject(id){
     const project = document.getElementById(id);
     const projectId = document.getElementById(id).getAttribute("id");
+    const projectContent = document.getElementById(id).querySelector(".project-container");
     console.log("Parameter: "+id);
     console.log("Project: "+projectId);
     // console.log("Parameter: "+id);
 
     if(id == projectId){
         project.classList.add('open');
+        projectContent.classList.add('open');
     }
 }
 
