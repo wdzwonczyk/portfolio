@@ -156,11 +156,6 @@ h1{
     border-radius: 4px;
 }
 
-.nav ul > li:active{
-    background-color: red;
-    border-radius: 4px;
-}
-
 .nav ul > li:hover a{
     color: var(--color-text);
 }
