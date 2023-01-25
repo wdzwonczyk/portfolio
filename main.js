@@ -16,8 +16,8 @@ let experience = [
         link: "https://studiz.dk/",
         startDate: "April 2022",
         startYear: 2022,
-        finishDate: "Current",
-        finishYear: "Current",
+        finishDate: "January 2023",
+        finishYear: "2023",
         position: "UX/UI Designer",
         logo: "img/studiz-logo.svg",
         duties: [
