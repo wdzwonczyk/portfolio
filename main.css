@@ -212,7 +212,6 @@ h1{
     width: 40%;
 }
 
-
 /***ABOUT ME***/
 .about-me{
     height: 100vh;
@@ -748,6 +747,20 @@ h1{
     transition: 0.3 ease-out;
 }
 
+.message-box{
+    background-color: #3983bf13;
+    color: #1b61c3;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.message-box > p > a{
+    color: #1b61c3;
+    text-decoration: none;
+}
+
 .project-details{
     background-color: rgb(243, 243, 243);
     box-sizing: border-box;
@@ -1001,6 +1014,12 @@ h1{
     .project-item-img--small{
         width: 30%;
         margin: 0 auto;
+    }
+
+    .message-box{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .project-details{

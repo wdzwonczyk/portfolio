@@ -84,7 +84,7 @@
             <img src="img/slepfi/Slepfi-mockup1.png" class="parallax laptop" alt="project mockup">
         </div>
         <div class="projects-item rawshare" onclick="openProject('rawshare')">
-            <img src="img/rawshare/rs-home-page.png" class="parallax phone" alt="project mockup">
+            <img src="img/rawshare/rs-list-home-page2.png" class="parallax phone" alt="project mockup">
         </div>
     </section>
     <section class="section experience experience-page" id="Experience">
@@ -119,30 +119,32 @@
                 </span>
                 <span class="project-details-item">
                     <i class="fas fa-link"></i>
-                    <a href="https://www.figma.com/proto/X95CXJZU7cnLTiMDnbNAcy/Mockups?page-id=1%3A6&node-id=35%3A1120&viewport=241%2C48%2C0.13&scaling=scale-down&starting-point-node-id=35%3A1120&show-proto-sidebar=1" class="prototyp" target="_blank"><p>Explore the prototype</p></a>
+                    <a href="https://www.figma.com/file/BocF8eNzCFYOvj8lMDFt0I/Mockups?node-id=2003%3A14726&t=oQjitJCWdZyhCI4Y-1" class="prototyp" target="_blank"><p>Explore mockups</p></a>
                 </span>
-                <span class="project-details-item">
+                <!-- <span class="project-details-item">
                     <i class="fas fa-link"></i>
                     <a href="https://rawshare.magdalenapolakowska.com/#/start" class="prototyp" target="_blank"><p>Explore the app</p></a>
-                </span>
+                </span> -->
                 <div class="devices">Solution prepared for: <i class="fas fa-mobile"></i></div> 
             </div>
             
-            <p class="problem">RawShare is a web app created by a group of 3 people for a school project. Its purpose is to allow users to share their food with other people in their area. The app is built based on the strong research (desk and field research, focus group, surveys and interviews) that was made on the group of people interested in food waste preventing. Thanks to collected data, we found out that people would prefer to know what type of food they can get and do not really like a surprise aspects - TooGoodToGo. In addition, they are willing to share their food with others without any extra costs.</p>
+            <p class="problem">RawShare is a web app created by a group of three people for a school project. Its purpose is to allow users to share their food with other people in their area. The app is built based on strong research, including desk and field research, focus groups, surveys, and interviews with people interested in preventing food waste. Thanks to the collected information and data, we came to the conclusion that people are not fond of surprise elements (such as in TooGoodToGo) and are willing to share their food with others in their area without any extra costs.</p>
+            <div class="message-box">
+                <p>I am exicted to announce that app's design has been updated. <a href="#rawshare2"><b>Click here</b></a> to find out more about RawShare 2.0.</p>
+            </div>
             <div class="project-process-content">
                 <h3>Main idea</h3>
-                <p>The main idea of this app is to allow people to share their left overs with others. By using a map, user can without any problems locate a food item and send a request to the owner in order to book it. After that, user has to pick-up the food from the owner by scanning the QR code generated automatically for each request.</p><br>
+                <p>The main idea of this app is to allow people to share their leftovers with others. Using a map, the user can easily locate a food item and send a request to the owner to book it. After that, the user has to pick up the food from the owner by scanning the QR code generated automatically for each request.</p><br>
             </div>
             <div class="project-process-content">
                 <h3>Design system</h3>
-                <p>We all know how essential design systems are these days. First of all, it improves design process workflow and the communication between designers and developers. Secondly, it allows to keep the consistency through the whole solution. Keeping this in our mind, we also decided to create our own design system based on the components in Figma.</p><br>
+                <p>Design systems are essential these days. They improve the design process workflow and communication between designers and developers, and they allow for consistency throughout the entire solution. Keeping this in mind, we decided to create our own design system based on the components in Figma.</p><br>
 
-                <p>As you can see on the picture below, we have three connected to each other files such as: <i>Mockups</i>, <i>Components</i> and <i>Foundation</i>. What is important, in the <i>Foundation</i> file, you can find information about colors that we decided to use, fonts, and spacing.</p><br>
+                <p>As shown in the picture below, we have three interconnected files: <i>Mockups</i>, <i>Components</i> and <i>Foundation</i>. In the <i>Foundation</i> file, you can find information about the colors, fonts, and spacing we decided to use.</p><br>
 
-                <img src="img/rawshare/rs-ds-files.png" class="project-item-img" alt="Rawshare's design system files organisation">
                 <img src="img/rawshare/rs-ds-foundation.png" class="project-item-img" alt="Rawshare's design system foundation">
 
-                <p>The whole design system is too broad to present it by usign just few screens so let me present you an example based on button component</p>
+                <p>The design system is too vast to cover in just a few screens, so let's use the button component as an example.</p>
                 
                 <img src="img/rawshare/rs-ds-components.png" class="project-item-img" alt="Rawshare's design system components">
             </div>
@@ -155,28 +157,53 @@
                     <li>Add new item Page</li>
                     <li>Book item Page</li>
                 </ul>
-                <p>In the first section, users are able to check food items in their area by using a map. Besides that, there is also an option to check all products in a list view, specially prepared for those who love more organised way of searching information.</p><br>
-                <p>The <i>Booked/Shared</i> page contains a list of users’ requests about booking products they found attractive as well as requests from other users who would like to get some from an owner. Thanks to using a segment, users can switch between orders easily without putting any extra effort. Also, under each order, there is going to be a displayed button responsible for activating a picking-up process 20 mins before set pick-up time.</p><br>
-                <p>In the <i>Adding new item</i> process, users are able to set all essential information about the product including an image. At the end, they have to set information about picking-up details. Due to the fact that by default, all fields about pick-up data are going to be filled by data provided by users during the sign up process, users will not have to edit these fields if nothing has been changed.</p><br>
-                <p>During the <i>Booking</i> process, users have to choose an interesting item and click button. After that, they are going to be redirected to the kind of basket page where they can add additional items from the owner of the item they chose. Because of that, they are able to pick-up more food items at the same time. At the end, users must choose a day and time when they are able to pick-up products. If the provided data does not match to owner preferences, users are going to be information by specific message immediately.</p>
+                <p>In the first section, users can check food items in their area using a map. In addition, there is an option to check all products in a list view for those who prefer a more organized way of searching for information.</p><br>
+                <p>The <i>Booked/Shared</i> page contains a list of users' requests for booking attractive products, as well as requests from other users who would like to get some from an owner. Thanks to using a segment, users can switch between orders easily without putting in any extra effort. Also, under each order, there is a button displayed for activating the pick-up process 20 minutes before the set pick-up time.</p><br>
+                <p>In the <i>Adding new item</i> process, users have to choose an interesting item and click a button. After that, they will be redirected to the basket page where they can add additional items from the owner of the item they chose. This allows them to pick up more food items at the same time. Finally, users must choose a day and time when they can pick up the products. If the provided data does not match the owner's preferences, users will receive a specific message immediately.</p><br>
+                <p>During the <i>Booking</i> process, users select an item and click a button, which takes them to the basket page. Here, they can add more items from the same item owner, enabling them to purchase multiple food items at once. Finally, users choose a day and time to pick up the items. If the chosen date and time don't match the owner's preferences, users receive a message notifying them.</p>
                 
                 <img src="img/rawshare/rs-mockups.jpg" class="project-item-img" alt="Rawshare's mockups">
             </div>
             <div class="project-process-mockups-final">
                 <h3>Final product</h3>
+                <img src="img/rawshare/rs-start-page.png" class="project-item-img" alt="Rawshare mockups">
                 <img src="img/rawshare/rs-home-page.png" class="project-item-img" alt="Rawshare mockups">
                 <img src="img/rawshare/rs-booked.png" class="project-item-img" alt="Rawshare mockups">
                 <img src="img/rawshare/rs-product-item.png" class="project-item-img" alt="Rawshare mockups">
             </div>
             <div class="project-process-content">
                 <h3>Code</h3>
-                <p>Last but not least, I would like to say few words about the our code. Firstly, our app is created in JavaScript (front-end), PHP (back-end) and connected to database (MySQL). Thanks to that we were able to create a full stack solution with authorisation. </p><br>
-                <p>In this place, I will focus on the piece of code that gets data from the database on the Home Screen. First of all, we create a function called <code>getFoodProducts()</code> and put an authorised user’s ID from the localStorage to the variable. Then we create an object called user with this ID. After that we fetch data from the the food products.php file and send there a GET variable called action with value <code>getFoodProducts</code> by method POST and convert the user object into JSON string.</p><br>
+                <p>Lastly, I would like to say a few words about our code. Firstly, our app is created in JavaScript (front-end), PHP (back-end), and connected to a database (MySQL). Thanks to that, we were able to create a full-stack solution with authorization.</p><br>
+                <p>In this place, I will focus on the piece of code that gets data from the database on the Home Screen. First of all, we create a function called <code>getFoodProducts()</code> and put an authorized user's ID from the localStorage into the variable. Then we create an object called the user with this ID. After that, we fetch data from the food products.php file and send a GET variable called action with the value <code>getFoodProducts()</code> by the method POST and convert the user object into a JSON string.</p><br>
                 <p>Later, in a const data variable we get data sent from the database and display its content in HTML by using a for of loop.</p><br>
                 <img src="img/rawshare/rs-code-frontend.png" class="project-item-img" alt="RawShare front-end code">
-                <p>In terms of back-end, let’s check out how this code allow us to read data from database in the JavaScript. First and foremost, we need to allow to use sessions and include the database connection that is another file called <i>mysql.php</i>. After that, we check if the GET variable exists, if so, check its value. Then, we need to decode sent object as a JSON string and put it to the variable called <code>$id</code>. </p><br>
-                <p>After decoding, we are able to create a query that will display all items except authorised user’s items. Now we are ready to send the request to the database and read the result by using while loop. What’s important, each result raw is put to the array called data and then data is moved to the array called response and encode. Thanks to that, the data that we got from the database is ready to read in JavaScript.</p><br>
+                <p>Let's take a look at how this code allows us to retrieve data from the database in JavaScript. First and foremost, we need to enable sessions and include the database connection, which is located in another file called <i>mysql.php</i>. After that, we check if the GET variable exists and, if so, we check its value. We then decode the sent object as a JSON string and assign it to a variable named <code>$id</code>.</p><br>
+
+                <p>Once we have decoded the data, we can create a query that will display all items except those belonging to authorized users. We are now ready to send the request to the database and read the results using a while loop. It's important to note that each result row is added to an array called "data," which is then transferred to the "response" array and encoded. This ensures that the data we receive from the database can be easily read in JavaScript.</p><br>
                 <img src="img/rawshare/rs-code-backend.png" class="project-item-img" alt="RawShare back-end code">
+            </div>
+            <div class="project-process-content">
+                <h3 id="rawshare2">RawShare 2.0</h3>
+                <p>Since the project hand-in, the app's design and the entire design system have been updated. Thanks to these changes, the app can now provide our users with an even better experience. With a sleek and modern interface, improved navigation, and new features, the RawShare app offers a seamless and intuitive user journey.</p><br>
+
+                <img src="img/rawshare/rs-mockups2.png" class="project-item-img" alt="Rawshare's mockups">
+            </div>
+            <div class="project-process-content">
+                <h3>Design system 2.0</h3>
+                <p>The RawShare design system has been rebuilt from scratch once again. The biggest change is the way in which all foundation information is displayed. Currently, the information is shown and structured in a user-friendly manner for both designers and developers.</p><br>
+                <img src="img/rawshare/rs-ds-foundation2.png" class="project-item-img" alt="Rawshare's new design system foundation">                
+                <img src="img/rawshare/rs-ds-components2.png" class="project-item-img" alt="Rawshare's new design system components">
+            </div>
+            <div class="project-process-content">
+                <h3>Mockups 2.0</h3>
+                <p>Similar to the Design System and Components Library, the mockups have undergone an overhaul as well. All of them have been created from scratch once again, and their structure has been improved for better usability. In addition to the structural aspect, the mockups have a new look. Thanks to design changes and improvements, the app now looks cleaner, more modern, and minimalistic, while maintaining its main functionalities and flow, providing the best user experience.</p><br>
+
+                <img src="img/rawshare/rs-start-page-comparison.jpg" class="project-item-img" alt="RawShare mobile app version comparison">
+                <img src="img/rawshare/rs-home-page-comparison.jpg" class="project-item-img" alt="RawShare mobile app version comparison">
+                <img src="img/rawshare/rs-product-item-comparison.jpg" class="project-item-img" alt="RawShare mobile app version comparison">
+                <img src="img/rawshare/rs-booked-comparison.jpg" class="project-item-img" alt="RawShare mobile app version comparison">
+
+                <p>Of course, the presented images may not show every detail, flow, and aspect of the app. That's why we invite you to visit our <a href="https://www.figma.com/file/BocF8eNzCFYOvj8lMDFt0I/Mockups?node-id=2003%3A14726&t=oQjitJCWdZyhCI4Y-1" class="prototyp" target="_blank">Figma file</a> and check out the entire project there.</p>
             </div>
         </div>
     </section>
@@ -263,19 +290,19 @@
 
             <div class="project-process-content">
                 <h3>Design system, Pattern Library and Style Guide</h3>
-                <p>Main goal of my work was to redesign a mobile app as well as a desktop web app. In order to do this in a correct way, I have created a Design System that would enable company to work more efficiently. First and foremost, based on my experience from previous job and knowledge gained during my free time, I have created a completely new system from scratch that allowed me to keep all design rules like colors and typography with a description of how and when to use them. Also, system includes the whole components library and views in one place.</p><br>
-                <p>Thanks to the Design System, Studiz company and its developers gained a source of truth regarding mobile app/web app design rules and components that can be followed by them anytime. When it comes to designers, they can follow design and keeping the consistency through all Studiz solutions.</p>
+                <p>The main goal of my work was to redesign a mobile app and desktop web app. To accomplish this in the most effective way, I created a Design System that could enable the company to work more efficiently. Based on my previous job experience and knowledge gained during my free time, I created a brand new system from scratch, which allowed me to keep all design rules, such as colors and typography, with a description of when and how to use them. The system also includes the whole components library and views in one place.</p><br>
+                <p>Thanks to the Design System, Studiz company and its developers now have a source of truth regarding mobile app/web app design rules and components that can be followed by them anytime. For designers, they can now maintain design consistency throughout all Studiz solutions.</p>
             </div>
             <div class="project-process-content">
                 <h3>Before and after</h3>
-                <p>The whole mobile app got a completely new design. My main goal was not only to create a new, fresh look for the app but also improve a UX flow to make it more intuitive and straightforward.</p><br>
-                <p>Currently, the main emphasis on is a <i>Campaign</i> section which contains temporary special deals that might be the most profitable for students. Thanks to using different colors, users can easily scan them without reading a text and figure out which ones can easily help him save the biggest amount of money. Another part is a <i>Favourites</i> section (if user has any) with information about new discounts in these particular web shops. The last one is a slider with all regular discounts’ categories. Due to the fact that it is placed on the bottom of the screen, users can find the most interesting one without any problems.</p><br>
+                <p>I completely redesigned the mobile app with the main goal of not only creating a new, fresh look for the app but also improving the UX flow to make it more intuitive and straightforward..</p><br>
+                <p>Currently, the main emphasis is on the <i>Campaign</i> section, which contains temporary special deals that are most profitable for students. Thanks to the use of different colors, users can easily scan them without reading the text and figure out which ones can help them save the most money. Another part is the <i>Favourites</i> section, which shows information about new discounts in these particular web shops. The last section is a slider with all regular discounts categories, which is placed on the bottom of the screen for easy access.</p><br>
                 <img src="img/studiz/studiz-discount-page.jpg" class="project-item-img" alt="studiz wireframes">
-                <p>In terms of discounts details, it has been changed as well. My idea was to keep the “discount/voucher/ticket” look so that users would know immediately what it is.</p><br>
+                <p>Regarding discount details, I kept the “discount/voucher/ticket” look, so that users would immediately recognize what it is.</p><br>
 
-                <p>There are a lot of details as well that cannot be seen on images. For example the way how search should work, animations or specific zooming map feature. All of these elements have been presented as various prototypes so developers are able to have a look and implement it to the exact solution.</p><br>
+                <p>There are also many other details that cannot be seen in the images, such as the search function, animations, and specific zooming map features. All of these elements have been presented as various prototypes so that developers can have a look and implement them into the exact solution.</p><br>
                 <img src="img/studiz/studiz-provider.jpg" class="project-item-img" alt="studiz wireframes">
-                <p>When it comes to a discount’s provider there is a slider that contains all discounts + another item with provider’s information. To make a flow better, I have made a one page divided by segments with two sections: discounts and information. Thanks to that users can easily switch between them anytime. Now, in discounts section there are gathered all available discounts - campaigns as well as regular ones. Moreover, provider information can be checked without being forced to slide to the last item.</p><br>
+                <p>When it comes to the discount provider, there is a slider that contains all discounts and another item with the provider's information. To improve the flow, I created a one-page layout divided into segments with two sections: discounts and information. This allows users to easily switch between them at any time. All available discounts, including campaigns and regular ones, are grouped in the discounts section. Additionally, users can check provider information without having to slide to the last item.</p><br>
 
                 <p>Example of versions comparison.</p><br>
                 <img src="img/studiz/studiz-discounts-list.jpg" class="project-item-img" alt="studiz wireframes">
@@ -286,7 +313,7 @@
             </div>
             <div class="project-process-content">
                 <h3>Conclusions</h3>
-                <p>Working on Studiz cases allowed me to develop my design skills, gain new ones as well as bigger confidence in making decisions that had impact on solutions’ future. Working with other developers and designers improved my team work skills. Besides that, I learned how to organise a workflow for better communication with them and make the whole process smoother and clear.</p><br>
+                <p>Working on Studiz cases helped me develop my design skills, gain new ones, and increase my confidence in making decisions that had an impact on the solutions’ future. Working with other developers and designers improved my team working skills. I learned how to organize workflows for better communication with them and make the whole process smoother and more transparent.</p><br>
             </div>
         </div>
     </section>
@@ -436,21 +463,21 @@
                 <div class="devices">Solution prepared for: <i class="fas fa-desktop"></i></div> 
             </div>
             
-            <p class="problem">Our solution, made for Arla company, is prepared for its farmers. The solution enables farmers to fill essential information about reducing CO2 in a user friendly way. Moreover, they can find some interesting news that could help them in achieving CO2 goals set by Arla and check their progress.</p>
+            <p class="problem">Our solution, designed for Arla, is intended for their farmers. This solution enables farmers to provide essential information about reducing CO2 in a user-friendly way. Furthermore, they can find interesting news that could assist them in achieving the CO2 goals set by Arla and track their progress.</p>
 
             <div class="project-process-content">
                 <h3>Main problem</h3>
-                <p>The main problem was lack of solution for Arla’s farmers which would allow them to monitor a progress in reducing CO2. Due to the fact that farmers have to fill a long form about their progress time to time, they had to be convinced to stay on the website after submitting a form as well.</p>
+                <p>The main problem was the lack of a solution for Arla’s farmers that would allow them to monitor their progress in reducing CO2. Since farmers had to fill out a long form about their progress from time to time, they had to be convinced to stay on the website after submitting a form.</p>
             </div>
             <div class="project-process-content">
                 <h3>Style tiles</h3>
-                <p>This time we did not have to create our own design becuase the purpose was to following Arla CVI. In this case, we analized all details in the document, chose elements which suits the most to our solution and prepared a style tile that we followed during the creation process. </p><br>
+                <p>This time, we did not have to create our own design because the purpose was to follow Arla's CVI. In this case, we analyzed all the details in the document, chose elements that suit our solution the most, and prepared a style tile that we followed during the creation process.</p><br>
 
                 <img src="img/arla/arla-style-tile.jpg" class="project-item-img" alt="arla style tile">
             </div>
             <div class="project-process-content">
                 <h3>Mockups</h3>
-                <p>The whole solution created only for desktop has five essential pages:</p>
+                <p>The entire desktop-only solution has five essential pages:</p>
                 <ul>
                     <li>Home - dashboard</li>
                     <li>News</li>
@@ -458,17 +485,17 @@
                     <li>Form</li>
                     <li>Profile</li>
                 </ul>
-                <p>On the <i>Home</i> page farmers can find basic information about their progress in reducing CO2 as a chart for better visualisation, easy access to continue filling the form about their reducing progress and information how many days left to submit the form and brief weather that they can expect during their work. Furthermore, they always have a quick access to the Arla’s page with all essential information about its program Arla 2050.</p><br>
-                <p>In the following page, users are able to read news/articles provided by Arla. All of them are divided into five categories so they can choose one that is the most interesting for them.</p><br>
-                <p>Another page is used for users’ data overview. For instance, there are statistics about their work and comparison with previous months/years. Also, further down, there can be found all significant charts with data that are related to the Arla 2050 goal. Thanks to that, farmers are kept updated about their hard work progress all the time.</p><br>
-                <p>The <i>Form</i> page is one of the most essential ones in the whole solution. This is a place where farmers are able to fill the form about their work. To make it more understandable and easy to navigated, the whole form has been divided into four sections. Each section contains a specific amount of questions that users have to answer. What is the most important in this form is that farmers are able to save their answers without submitting the form any time. This feature allows them to split the work based on their preferences. In addition, implemented progress bar keeps them updated about how far they are in the form.</p><br>
-                <p>Last but not least, profile page. This page contains simple settings options like choosing language, switching on/off notifications and themes. In terms of themes, our idea was to use colors from Arla colors pallet that would represents each season and adjust the design’s colors to this particular one as well as the image on the <i>Home</i> page. Moreover, rewarding system has been added in order to keep farmers using our solution. Based on their reducing CO2 progress, they are going to be rewarded by getting a new badge and increasing the milk price for 0.25 cent.</p><br>
+                <p>On the <i>Home</i> page, farmers can find basic information about their progress in reducing CO2 as a chart for better visualization, easy access to continue filling out the form about their progress, information on how many days are left to submit the form, and a brief weather report that they can expect during their work. Furthermore, they always have quick access to Arla's page with all the essential information about its Arla 2050 program.</p><br>
+                <p>On the following page, users can read news/articles provided by Arla. They are divided into five categories so that users can choose the most interesting one.</p><br>
+                <p>Another page is used for an overview of the users' data. For instance, there are statistics about their work and comparisons with previous months/years. Further down, all significant charts with data related to the Arla 2050 goal can be found. Thanks to that, farmers are kept updated on their hard work progress all the time.</p><br>
+                <p>The <i>Form</i> page is one of the most essential ones in the whole solution. This is where farmers can fill out the form about their work. To make it more understandable and easy to navigate, the whole form has been divided into four sections. Each section contains a specific number of questions that users have to answer. The most important feature of this form is that farmers can save their answers without submitting the form at any time. This feature allows them to split the work based on their preferences. In addition, an implemented progress bar keeps them updated on how far they are in the form.</p><br>
+                <p>Last but not least, the profile page contains simple settings options such as choosing a language, turning notifications and themes on/off. In terms of themes, our idea was to use colors from Arla's color palette that would represent each season and adjust the design's colors to this particular one, as well as the image on the <i>Home</i> page. Moreover, a rewarding system has been added to keep farmers using our solution. Based on their progress in reducing CO2, they will be rewarded by getting a new badge and increasing the milk price by 0.25 cents.</p><br>
 
                 <img src="img/arla/arla-mockups.jpg" class="project-item-img" alt="arla mockups">
             </div>
             <div class="project-process-content">
                 <h3>Conclusions</h3>
-                <p>It was a great experience creating a solution for such a big company like Arla. Thanks to this project, I was able to learn how to follow already existing design rules and style and how to make a solution consistent with any other ones so users will not have a feeling pof using a completely different product provided by the same company.</p><br>
+                <p>It was a great experience creating a solution for such a big company like Arla. Thanks to this project, I was able to learn how to follow already existing design rules and style and how to make a solution consistent with any other ones so users will not have a feeling of using a completely different product provided by the same company.</p><br>
             </div>
             <div class="project-process-mockups-final">
                 <h3>Final product</h3>
@@ -548,31 +575,31 @@
                 <div class="devices">Solution prepared for: <i class="fas fa-desktop"></i></div> 
             </div>
             
-            <p class="problem">The Slepfi is a hobbyist’s project created by a passionates of good design and solutions that can make people’s life easier. The main purpose of this website is to provide a solution that will allow user to find a place to stay based on attractions around this place. The website's filters will try to search a place that matches users preferences. This prototype is just a beginning. Next step is to code the entire product.</p>
+            <p class="problem">The Slepfi is a hobbyist’s project created by enthusiasts of good design and solutions that can make people’s lives easier. The main purpose of this website is to provide a solution that will allow users to find a place to stay based on attractions around the area. The website's filters will try to search for a place that matches the user's preferences. This prototype is just the beginning; the next step is to code the entire product.</p>
 
             <div class="project-process-content">
                 <h3>Design system</h3>
-                <p>In the shortest way we can say that design system is a set of deliverables such as reusable components, design rules and pattern library. This is an extremely helpful tool for the company and its design as well as development department.</p><br>
+                <p>In short, a design system is a set of deliverables such as reusable components, design rules, and pattern libraries. This is an extremely helpful tool for the company, its design, and development departments.</p><br>
                 
-                <p>That is why we decided to create a whole prototype based on design system. Thanks to that we were able to keep the consistency and design style through all pages. Moreover, due to the fact that one of our member is a developer, we wanted to make not only our work easier but also his.</p><br>
-                <p>As the fact that each design system is based on design foundation and components library and it is the same with Slepfi . The whole platform is created based on components starting from buttons and inputs, ending on cards. The example with button component shows that it is created by putting each visible element to one main component and then creating other components in different variants by hiding unnecessary elements and changing its backgrounds. This approach allows us to quick and easy component’s managing while doing some changes.</p><br>
+                <p>That's why we decided to create a whole prototype based on a design system. Thanks to that, we were able to maintain consistency and design style throughout all pages. Moreover, since one of our members is a developer, we wanted to make not only our work easier but also his.</p><br>
+                <p>Each design system is based on design foundation and components library, and Slepfi is no exception. The entire platform is created based on components, starting from buttons and inputs and ending with cards. For example, the button component is created by putting each visible element into one main component and then creating other components in different variants by hiding unnecessary elements and changing their backgrounds. This approach allows us to manage components quickly and easily while making changes.</p><br>
                 <img src="img/slepfi/Slepfi-components.png" class="project-item-img" alt="slepfi components">
                 <img src="img/slepfi/slepfi-color-organization.png" class="project-item-img project-item-img--small" alt="slepfi components">
             </div>
             <div class="project-process-content">
                 <h3>Mockups</h3>
-                <p>The <i>Home</i> page contains a search bar with Slepfi recommendations for users and a list of available categories that users can choose from. Due to the fact that Slepfi platform is about traveling to and searching a perfect place to stay based on our attractions’ preferences, we were aware that search functionality is one of the most essential parts in the whole project and solution would be useless if it does not work perfectly. Users need to be able to search a place in a quick and friendly way. That is why, a search is placed on the visible place, on the home screen where user cannot miss it. Furthermore, users have an access to the search in any place on the platform due to the fact that a navigation is fixed to the top.</p><br>
+                <p>The <i>Home</i> page contains a search bar with Slepfi recommendations for users and a list of available categories that users can choose from. Since Slepfi is about traveling and searching for a perfect place to stay based on our attractions’ preferences, we were aware that search functionality is one of the most essential parts of the whole project, and the solution would be useless if it did not work perfectly. Users need to be able to search for a place quickly and easily. That's why we placed the search in a visible place, on the home screen where the user cannot miss it. Furthermore, users have access to the search on any page of the platform because the navigation is fixed at the top.</p><br>
                 
-                <p>Regarding <i>Login</i> page, besides the login form, has also a small feature that might be inspiring for users in their next adventure is a huge hero image that presents one of many interesting places with an information about them on the <i>Login</i> page.</p><br>
+                <p>In addition to the login form, the <i>Login</i> page has a small feature that might inspire users on their next adventure. It features a huge hero image that presents one of many interesting places with information about them.</p><br>
 
-                <p>When users wants to check information or book a specific place, they are able to find place’s description from a host and facilities. Moreover, there is a calendar where users can choose their data of stay and click <i>Book</i> button. Due to the fact that Slepfi is a solution that enables users to find a place to stay based on attractions around this place, we implemented a map that shows what kind of attractions can be find in the area. On the bottom of the page, there is a review section that makes possible for users to make a decision about booking a stay at this place based on experience of other people.</p><br>
-                <p>Also due to a lot of information and content, we wanted to balance them all. To achieve this goal we used a lot of white space. This approach allows us to create a readable, easy to navigate design that people will not have problem to use.</p><br>
-                <p>Last but not least, our target group are mostly young people so we made a decision to make the tone of voice less official and formal. Thanks to that, the communication with user will be kind and warm and everyone can feel comfortable and welcome.</p><br>
+                <p>When users want to check information or book a specific place, they can find the place's description from a host and facilities. Moreover, there is a calendar where users can choose their dates of stay and click the <i>Book</i> button. Since Slepfi is a solution that enables users to find a place to stay based on attractions around the area, we implemented a map that shows what kind of attractions can be found in the area. At the bottom of the page, there is a review section that allows users to make a decision about booking a stay at this place based on the experiences of other people.</p><br>
+                <p>Due to a lot of information and content, we wanted to balance them all. To achieve this goal, we used a lot of white space. This approach allows us to create a readable, easy-to-navigate design that people will not have any problems using.</p><br>
+                <p>Lastly, our target group is mostly young people, so we made a decision to make the tone of voice less formal and official. Thanks to that, the communication with the user will be kind, warm, and welcoming, and everyone can feel comfortable.</p><br>
                 <img src="img/slepfi/slepfi-mockups.png" class="project-item-img" alt="slepfi mockups">
             </div>
             <div class="project-process-content">
                 <h3>Conclusions</h3>
-                <p>Slepfi is another project that allowed me to practice my design and team work skills. While working on this project I learned that working with people who are mobile and web applications enthusiast could bring fruitful results like a lot of experience by learning from each other.</p><br>
+                <p>Slepfi is another project that allowed me to practice my design and teamwork skills. While working on this project, I learned that working with people who are mobile and web applications enthusiasts could bring fruitful results like a lot of experience by learning from each other.</p><br>
             </div>
             <div class="project-process-mockups-final">
                 <h3>Final product</h3>
