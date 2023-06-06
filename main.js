@@ -77,7 +77,6 @@ let experience = [
 ];
 
 
-
 const tl = new TimelineMax();
 const logo = document.querySelector(".logo");
 const nav = document.querySelector(".nav__list");
