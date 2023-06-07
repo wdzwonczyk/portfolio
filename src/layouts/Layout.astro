@@ -15,7 +15,7 @@ const { title, description } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description}>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="img/favicon.png" />
+		<link rel="icon" href="/portfolio/assets/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
 
@@ -31,12 +31,8 @@ const { title, description } = Astro.props;
 	
 	@font-face {
 		font-family: 'GlacialIndifference-Bold';
-		src: url('../portfolio/assets/fonts/GlacialIndifference-Bold.otf') format('otf');
+		src: url('/portfolio/assets/fonts/GlacialIndifference-Bold.otf') format('otf');
 		font-weight: bold;
-	}
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	}
 	html {
 		font-family: system-ui, sans-serif;
