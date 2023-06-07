@@ -1,10 +1,6 @@
 ---
-import { getCollection } from 'astro:content';
-
 import Layout from '../layouts/Layout.astro';
-import Skill from '../components/Skill.astro';
 import ContactCTA from '../components/ContactCTA.astro';
-import ProjectPreview from '../components/ProjectPreview.astro';
 import ProjectsLayout from '../layouts/ProjectsLayout.astro';
 
 //Portfolio content
@@ -34,10 +30,6 @@ const portfolio = [
 		category: "code",
 	},
 ];
-
-const projects = (await getCollection('work')).sort(
-	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
-);
 ---
 
 <Layout title="Portfolio | Wojciech Dzwonczyk." description="Discover a collection of my latest projects as a UX/UI Designer and Front-end Developer. Explore the creative solutions, user-centered designs, and seamless front-end implementations that I have crafted to solve diverse challenges.">

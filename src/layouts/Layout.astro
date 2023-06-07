@@ -31,7 +31,7 @@ const { title, description } = Astro.props;
 	
 	@font-face {
 		font-family: 'GlacialIndifference-Bold';
-		src: url('../assets/fonts/GlacialIndifference-Bold.otf') format('otf');
+		src: url('../portfolio/assets/fonts/GlacialIndifference-Bold.otf') format('otf');
 		font-weight: bold;
 	}
 	:root {
@@ -51,10 +51,6 @@ const { title, description } = Astro.props;
 		font-size: 32px;
 	}
 
-	h2{
-		font-size: 40px;
-	}
-
 	/* H2 class */
 	.h2{
 		@apply text-2xl md:text-3xl font-bold
@@ -68,11 +64,5 @@ const { title, description } = Astro.props;
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 100ch;
-	}
-
-	svg.icon path{
-		stroke: blue;
-		fill: red;
-		color: #da62c4;
 	}
 </style>
