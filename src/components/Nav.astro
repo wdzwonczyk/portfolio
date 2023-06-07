@@ -47,7 +47,7 @@ const textLinks: { label: string; href: string }[] = [
 <div id="hamburger-button" class="w-16 h-12 bg-blue-500 flex justify-start items-center fixed top-1/2 -translate-y-1/2 right-0 z-[9999999] rounded-s-full md:hidden">
 	<div class="w-10 h-10 ml-1 bg-white rounded-full flex justify-center items-center">
 		<img 
-			src="../portfolio/assets/icons/menu.svg",
+			src="/portfolio/assets/icons/menu.svg",
 			id="nav-icon"
 			alt="Navigation icon"
 			class="scale-100 duration-200"
@@ -67,7 +67,7 @@ const textLinks: { label: string; href: string }[] = [
 	}
 
 	function navIconToggle() {
-		if (navIcon.getAttribute('src') == "../portfolio/assets/icons/menu.svg") {
+		if (navIcon.getAttribute('src') == "/portfolio/assets/icons/menu.svg") {
 			navIcon.classList.replace("scale-100", "scale-0");
 			setTimeout( () => {
 				navIconProperties('../assets/icons/cancel.svg', 'Close navigation icon');
@@ -76,7 +76,7 @@ const textLinks: { label: string; href: string }[] = [
 		} else {
 			navIcon.classList.replace("scale-100", "scale-0");
 			setTimeout( () => {
-				navIconProperties('../portfolio/assets/icons/menu.svg', 'Navigation icon');
+				navIconProperties('/portfolio/assets/icons/menu.svg', 'Navigation icon');
 				navIcon.classList.replace("scale-0", "scale-100");
 			}, 200);
 		}
