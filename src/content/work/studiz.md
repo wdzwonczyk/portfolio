@@ -1,7 +1,7 @@
 ---
 title: Studiz
 publishDate: 2023-05-06 00:00:00
-img: ../assets/studiz/studiz-mockup.png
+img: /portfolio/assets/studiz/studiz-mockup.png
 img_alt: Studiz mobile app
 metaTitle: Studiz - Student Life with Discounts | App Redesign Case Study
 metaDescription: |
@@ -33,24 +33,24 @@ I completely redesigned the mobile app with the main goal of not only creating a
 
 Currently, the main emphasis is on the *Campaign* section, which contains temporary special deals that are most profitable for students. Thanks to the use of different colors, users can easily scan them without reading the text and figure out which ones can help them save the most money. Another part is the *Favourites* section, which shows information about new discounts in these particular web shops. The last section is a slider with all regular discounts categories, which is placed on the bottom of the screen for easy access.
 
-![Studiz app before and after redesigning - Home page](../assets/studiz/studiz-discount-page.jpg)
+![Studiz app before and after redesigning - Home page](/portfolio/assets/studiz/studiz-discount-page.jpg)
 
 Regarding discount details, I kept the “discount/voucher/ticket” look, so that users would immediately recognize what it is.
 
 There are also many other details that cannot be seen in the images, such as the search function, animations, and specific zooming map features. All of these elements have been presented as various prototypes so that developers can have a look and implement them into the exact solution.<br><br>
 
-![Studiz app before and after redesigning - Provider page](../assets/studiz/studiz-provider.jpg)
+![Studiz app before and after redesigning - Provider page](/portfolio/assets/studiz/studiz-provider.jpg)
                
 When it comes to the discount provider, there is a slider that contains all discounts and another item with the provider's information. To improve the flow, I created a one-page layout divided into segments with two sections: discounts and information. This allows users to easily switch between them at any time. All available discounts, including campaigns and regular ones, are grouped in the discounts section. Additionally, users can check provider information without having to slide to the last item.<br><br>
 
 Example of versions comparison.<br><br>
-![Studiz app before and after redesigning - Discounts list](../assets/studiz/studiz-discounts-list.jpg)
+![Studiz app before and after redesigning - Discounts list](/portfolio/assets/studiz/studiz-discounts-list.jpg)
 
-![Studiz app before and after redesigning - Discount view](../assets/studiz/studiz-discounts.jpg)
+![Studiz app before and after redesigning - Discount view](/portfolio/assets/studiz/studiz-discounts.jpg)
 
-![Studiz app before and after redesigning - Map view](../assets/studiz/studiz-map.jpg)
+![Studiz app before and after redesigning - Map view](/portfolio/assets/studiz/studiz-map.jpg)
 
-![Studiz app before and after redesigning - Settings page](../assets/studiz/studiz-settings.jpg)
+![Studiz app before and after redesigning - Settings page](/portfolio/assets/studiz/studiz-settings.jpg)
 
 ## Conclusions
 

@@ -1,7 +1,7 @@
 ---
 title: RawShare
 publishDate: 2023-05-05 00:00:00
-img: ../assets/rawshare/rs-list-home-page2.png
+img: /portfolio/assets/rawshare/rs-list-home-page2.png
 img_alt: RawShare mobile web application
 metaTitle: RawShare - Share Food Locally | Web App Case Study
 metaDescription: |
@@ -40,11 +40,11 @@ Design systems are essential these days. They improve the design process workflo
 
 As shown in the picture below, we have three interconnected files: *Mockups*, *Components* and *Foundation*. In the *Foundation* file, you can find information about the colors, fonts, and spacing we decided to use.
 
-![Rawshare's design system foundation example](../assets/rawshare/rs-ds-foundation.png)
+![Rawshare's design system foundation example](/portfolio/assets/rawshare/rs-ds-foundation.png)
 
 The design system is too vast to cover in just a few screens, so let's use the button component as an example.
 
-![Rawshare's design system components example](../assets/rawshare/rs-ds-components.png)
+![Rawshare's design system components example](/portfolio/assets/rawshare/rs-ds-components.png)
 
 ## Mockups
 
@@ -62,13 +62,13 @@ In the *Adding new item* process, users have to choose an interesting item and c
 
 During the *Booking* process, users select an item and click a button, which takes them to the basket page. Here, they can add more items from the same item owner, enabling them to purchase multiple food items at once. Finally, users choose a day and time to pick up the items. If the chosen date and time don't match the owner's preferences, users receive a message notifying them.
 
-![Example of mockups that represents ...](../assets/rawshare/rs-mockups.jpg)
+![Example of RawShare mockups](/portfolio/assets/rawshare/rs-mockups.jpg)
 
 ## Final product
 
-![Mockups of Start and Home page](../assets/rawshare/rs-mockups-start-home.jpg)
+![Mockups of Start and Home page](/portfolio/assets/rawshare/rs-mockups-start-home.jpg)
 
-![Mockups of Orders and Product Item page](../assets/rawshare/rs-mockups-orders-profile.jpg)
+![Mockups of Orders and Product Item page](/portfolio/assets/rawshare/rs-mockups-orders-profile.jpg)
                
 ## Code
 
@@ -78,39 +78,39 @@ In this place, I will focus on the piece of code that gets data from the databas
 
 Later, in a const data variable we get data sent from the database and display its content in HTML by using a for of loop.
 
-![Example of front-end code snippet from RawShare mobile web app](../assets/rawshare/rs-code-frontend.png)
+![Example of front-end code snippet from RawShare mobile web app](/portfolio/assets/rawshare/rs-code-frontend.png)
 
 Let's take a look at how this code allows us to retrieve data from the database in JavaScript. First and foremost, we need to enable sessions and include the database connection, which is located in another file called *mysql.php*. After that, we check if the GET variable exists and, if so, we check its value. We then decode the sent object as a JSON string and assign it to a variable named <code>$id</code>.
 
 Once we have decoded the data, we can create a query that will display all items except those belonging to authorized users. We are now ready to send the request to the database and read the results using a while loop. It's important to note that each result row is added to an array called "data," which is then transferred to the "response" array and encoded. This ensures that the data we receive from the database can be easily read in JavaScript.
 
-![Example of back-end code snippet from RawShare mobile web app](../assets/rawshare/rs-code-backend.png)
+![Example of back-end code snippet from RawShare mobile web app](/portfolio/assets/rawshare/rs-code-backend.png)
             
 ## RawShare 2.0
 
 Since the project hand-in, the app's design and the entire design system have been updated. Thanks to these changes, the app can now provide our users with an even better experience. With a sleek and modern interface, improved navigation, and new features, the RawShare app offers a seamless and intuitive user journey.
 
-![Example of mockups that represents RawShare v.2](../assets/rawshare/rs-mockups2.png)
+![Example of mockups that represents RawShare v.2](/portfolio/assets/rawshare/rs-mockups2.png)
 
 ## Design system 2.0
 
 The RawShare design system has been rebuilt from scratch once again. The biggest change is the way in which all foundation information is displayed. Currently, the information is shown and structured in a user-friendly manner for both designers and developers.
 
-![Example of new Design System that presents a Foundation section](../assets/rawshare/rs-ds-foundation2.png)
+![Example of new Design System that presents a Foundation section](/portfolio/assets/rawshare/rs-ds-foundation2.png)
 
-![Example of new Design System that presents a Components section](../assets/rawshare/rs-ds-components2.png)
+![Example of new Design System that presents a Components section](/portfolio/assets/rawshare/rs-ds-components2.png)
 
 
 ## Mockups 2.0
 
 Similar to the Design System and Components Library, the mockups have undergone an overhaul as well. All of them have been created from scratch once again, and their structure has been improved for better usability. In addition to the structural aspect, the mockups have a new look. Thanks to design changes and improvements, the app now looks cleaner, more modern, and minimalistic, while maintaining its main functionalities and flow, providing the best user experience.
 
-![RawShare app before and after redesigning - Start page](..assets/rawshare/rs-start-page-comparison.jpg)
+![RawShare app before and after redesigning - Start page](/portfolio/assets/rawshare/rs-start-page-comparison.jpg)
 
-![RawShare app before and after redesigning - Home page](../assets/rawshare/rs-home-page-comparison.jpg)
+![RawShare app before and after redesigning - Home page](/portfolio/assets/rawshare/rs-home-page-comparison.jpg)
 
-![RawShare app before and after redesigning - Product item page](../assets/rawshare/rs-product-item-comparison.jpg)
+![RawShare app before and after redesigning - Product item page](/portfolio/assets/rawshare/rs-product-item-comparison.jpg)
 
-![RawShare app before and after redesigning - Orders page](../assets/rawshare/rs-booked-comparison.jpg)
+![RawShare app before and after redesigning - Orders page](/portfolio/assets/rawshare/rs-booked-comparison.jpg)
 
 Of course, the presented images may not show every detail, flow, and aspect of the app. That's why we invite you to visit our <a href="https://www.figma.com/file/BocF8eNzCFYOvj8lMDFt0I/Mockups?node-id=2003%3A14726&t=oQjitJCWdZyhCI4Y-1" class="prototyp" target="_blank">Figma file</a> and check out the entire project there.

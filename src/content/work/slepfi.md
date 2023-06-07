@@ -1,7 +1,7 @@
 ---
 title: Slepfi
 publishDate: 2023-05-04 00:00:00
-img: ../assets/slepfi/Slepfi-mockup1.png
+img: /portfolio/assets/slepfi/Slepfi-mockup1.png
 img_alt: Digital prototype
 metaTitle: Slepfi - Find Your Perfect Stay | Web Design Case Study
 metaDescription: |
@@ -31,9 +31,9 @@ That's why we decided to create a whole prototype based on a design system. Than
 
 Each design system is based on design foundation and components library, and Slepfi is no exception. The entire platform is created based on components, starting from buttons and inputs and ending with cards. For example, the button component is created by putting each visible element into one main component and then creating other components in different variants by hiding unnecessary elements and changing their backgrounds. This approach allows us to manage components quickly and easily while making changes.
 
-![Design System - Components example](../assets/slepfi/Slepfi-components.png)
+![Design System - Components example](/portfolio/assets/slepfi/Slepfi-components.png)
 
-![Design System - Foundation (colors) example](../assets/slepfi/slepfi-color-organization2.png)
+![Design System - Foundation (colors) example](/portfolio/assets/slepfi/slepfi-color-organization2.png)
 
 ## Mockups
 
@@ -47,11 +47,11 @@ Due to a lot of information and content, we wanted to balance them all. To achie
 
 Lastly, our target group is mostly young people, so we made a decision to make the tone of voice less formal and official. Thanks to that, the communication with the user will be kind, warm, and welcoming, and everyone can feel comfortable.
 
-![Example of mockups that represents Slepfi platform](../assets/slepfi/slepfi-mockups.png)
+![Example of mockups that represents Slepfi platform](/portfolio/assets/slepfi/slepfi-mockups.png)
 
 ## Final product
 
-![Home page - example of final product](../assets/slepfi/Slepfi-mockups-home-profile.jpg)
+![Home page - example of final product](/portfolio/assets/slepfi/Slepfi-mockups-home-profile.jpg)
 
 ## Conclusions
 
