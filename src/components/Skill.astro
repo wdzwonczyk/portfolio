@@ -1,0 +1,22 @@
+---
+export interface Props {
+	title: string;
+	iconHref: string;
+	iconAlt: string;
+	text: string;
+}
+
+const { title, text, iconHref, iconAlt } = Astro.props;
+---
+
+<div class="shadow-md bg-white box-border p-4 rounded-2xl md:flex-1">
+	<div class="flex items-center mb-2">
+		<img
+			src={iconHref}
+			alt={iconAlt}
+			class="w-[48px] h-[48px] mr-2"
+		/>
+		<p class="skill-heading">{title}</p>
+	</div>
+	<p class="text-sm md:text-base text-gray-500">{text}</p>
+</div>

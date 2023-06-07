@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Skill from '../components/Skill.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import ProjectPreview from '../components/ProjectPreview.astro';
+import ExperienceItem from '../components/ExperienceItem.astro';
+import ExperienceLayout from '../layouts/ExperienceLayout.astro';
+import CVLayout from '../layouts/CVLayout.astro';
+import ProjectsLayout from '../layouts/ProjectsLayout.astro';
+
+//Skills content
+const skills = [
+	{ 
+		title: "Problem solving",
+		iconHref: "../assets/icons/problem-solution.svg",
+		iconAlt: "Problem solving icon",
+		text: "Demonstrated ability to identify and solve complex design and technical challenges, resulting in improved user experiences. A strategic and analytical thinker who approaches problems systematically and delivers innovative solutions to drive project success.",
+	},
+	{ 
+		title: "User-Centered Design",
+		iconHref: "../assets/icons/precision-tool.svg",
+		iconAlt: "User-Centered Design icon",
+		text: "Deep understanding of user needs and behaviors, driving the creation of intuitive and engaging user interfaces. User-centric approach combined with empathy and usability testing ensures seamless user experiences that exceed expectations.",
+	},
+	{ 
+		title: "Attention to details",
+		iconHref: "../assets/icons/eye.svg",
+		iconAlt: "Attention to details icon",
+		text: "Keen eye for detail and a commitment to delivering high-quality work. Meticulous in design implementation, code review, and quality assurance testing to ensure pixel-perfect and flawless user interfaces.",
+	},
+];
+---
+
+<Layout title="Wojciech Dzwonczyk | UX/UI Designer and Front-end Developer" description="Discover the world of UX/UI Design and Front-end Development through my portfolio. I specialize in creating captivating digital experiences that blend creativity and technical expertise. Explore my work and let's collaborate to bring your ideas to life.">
+	<Hero title="Hi! I’m Wojciech Dzwonczyk " subTitle="UX/UI Designer | Front-end developer based in Aarhus, Denmark."/>
+	<main>
+		<section class="flex flex-wrap gap-4 py-8 md:py-16">
+			{
+				skills.map(({title, iconHref, iconAlt, text}) => (
+					<Skill 
+						title={title} 
+						iconHref={iconHref} 
+						iconAlt={iconAlt} 
+						text={text}
+					/>
+				))
+			}
+		</section>
+		<ProjectsLayout>
+			<h2 class="h2">Portfolio</h2>
+		</ProjectsLayout>
+		<ExperienceLayout/>
+		<CVLayout/>
+		<ContactCTA title="Let's shape the future Together!"/>
+	</main>
+</Layout>

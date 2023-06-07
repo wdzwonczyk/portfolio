@@ -1,0 +1,68 @@
+---
+import ExperienceItem from "../components/ExperienceItem.astro"
+
+//Experience content
+const experience = [
+	{ 
+		date: "April 2022 - January 2023",
+		companyName: "Studiz",
+		companyLogoSrc: "../assets/logo/studiz-logo.svg",
+		jobTitle: "UX/UI Designer",
+		tasks: [
+			"Mobile app redesigning and developing",
+			"Website redesigning and developing",
+			"Improving user experience",
+			"Creating and developing design system in Figma",
+			"Creating marketing materials",
+		],
+	},
+	{ 
+		date: "March 2021 - August 2021",
+		companyName: "Bleau A/S",
+		companyLogoSrc: "../assets/logo/bleau-logo.svg",
+		jobTitle: "UX/UI Designer",
+		tasks: [
+			"Main platform redesigning",
+			"Improving user experience",
+			"Creating a platform design system",
+			"Creating web components in TypeScript",
+		],
+	},
+	{ 
+		date: "January 2021 - March 2021",
+		companyName: "Bleau A/S",
+		companyLogoSrc: "../assets/logo/bleau-logo.svg",
+		jobTitle: "UX/UI Designer - Internship",
+		tasks: [
+			"Main platform redesigning",
+			"Improving user experience",
+			"Creating a platform design system",
+		],
+	},
+	{ 
+		date: "April 2020 - July 2020",
+		companyName: "Salvatio",
+		companyLogoSrc: "../assets/logo/salvatio-logo.png",
+		jobTitle: "Media creator - Internship",
+		tasks: [
+			"Creating the content for website, events and social media",
+			"Improving website and its performance",
+			"Improving SEO",
+		],
+	},
+];
+---
+
+<section class="flex flex-col justify-center min-h-screen py-8 md:py-16">
+	<h2 class="h2 sm:text-center mb-8">Experience</h2>
+	<div class="relative w-full">
+		<!-- Timeline line -->
+		<div class="absolute top-0 bottom-0 left-6 sm:left-1/2 transform sm:-translate-x-1/2 bg-gray-200 w-1"></div>
+		{
+			experience.map(({date, companyName, companyLogoSrc, jobTitle, tasks}) => (
+				<ExperienceItem companyLogoSrc={companyLogoSrc} companyName={companyName} date={date} jobTitle={jobTitle} tasks={tasks}/>
+			))
+		}
+	</div>
+</section>
+	

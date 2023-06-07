@@ -1,0 +1,9 @@
+---
+export interface Props {
+	name: string;
+}
+
+const { name } = Astro.props;
+---
+
+<span class="px-3 py-2 text-base font-semibold bg-white absolute left-4 top-4 rounded-lg z-[999]">{name}</span>

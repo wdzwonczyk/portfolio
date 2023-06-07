@@ -1,0 +1,78 @@
+---
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro"
+export interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description}>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="img/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
+		<title>{title}</title>
+	</head>
+	<body>
+		<Nav/>
+		<slot />
+	</body>
+	<Footer/>
+</html>
+<style is:global>
+	
+	@font-face {
+		font-family: 'GlacialIndifference-Bold';
+		src: url('../assets/fonts/GlacialIndifference-Bold.otf') format('otf');
+		font-weight: bold;
+	}
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #FFFFFF;
+	}
+
+	h1,h2,h3,h4,h5,h6{
+		font-family: "GlacialIndifference-Bold", sans-serif;
+	}
+
+	h1{
+		font-size: 32px;
+	}
+
+	h2{
+		font-size: 40px;
+	}
+
+	/* H2 class */
+	.h2{
+		@apply text-2xl md:text-3xl font-bold
+	}
+
+	.skill-heading{
+		@apply text-lg md:text-2xl font-glacialIndifference
+	}
+
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 100ch;
+	}
+
+	svg.icon path{
+		stroke: blue;
+		fill: red;
+		color: #da62c4;
+	}
+</style>

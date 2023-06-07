@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Skill from '../components/Skill.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import ExperienceLayout from '../layouts/ExperienceLayout.astro';
+import CVLayout from '../layouts/CVLayout.astro';
+import Badge from '../components/Badge.astro';
+
+const designSkills = [
+	"Design systems",
+	"Style guides",
+	"Mockups",
+	"Wireframes",
+	"Prototypes",
+	"Accessibility",
+]
+
+const codingSkills = [
+	"HTML",
+	"CSS",
+	"Tailwind",
+	"JavaScript",
+	"React",
+	"Ionic React",
+]
+---
+
+<Layout title="About Me | UX/UI Designer and Front-end Developer." description=" Discover the unique blend of creativity and technical expertise I bring as a UX/UI Designer and Front-end Developer. With a user-centered approach, attention to detail, and a love for creating seamless experiences, I strive to craft visually compelling interfaces that delight users. From wireframing to responsive front-end development, I bring designs to life with clean code. Let's collaborate and create remarkable digital solutions that leave a lasting impact">
+	<main>
+		<div id="imageContainer" class="h-[75vh] flex justify-center items-center gap-x-8">
+			<h1 class="mb-4 sm:mb-0 sm:mt-4 md:text-center">
+				<p class="text-6xl md:text-8xl font-bold">
+					Hi!👋 <br> I'm 
+					<span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600">Wojciech</span>
+				</p>
+			</h1>
+		</div>
+		<div class="w-full">
+			<h2 class="text-2xl md:text-3xl font-bold mb-8">Who I am</h2>
+			<div class="flex flex-col md:flex-row gap-x-16">
+				<div class="w-full md:w-3/4">
+					<p>As a UX/UI Designer and Front-end Developer, I bring a unique blend of creativity and technical expertise to every project. With a keen eye for detail and a user-centered approach, I strive to create seamless and intuitive experiences that delight users.</p><br>
+					<p>In the realm of UX/UI design, I excel at understanding user needs and crafting visually compelling interfaces. From wireframing to prototyping, I meticulously shape every element to ensure optimal usability and aesthetic appeal. I believe that design is not just about how it looks, but how it feels and functions for the end user.
+					</p><br>
+					<p>Additionally, my proficiency in front-end development allows me to bring those designs to life with clean and efficient code. I take pride in translating design concepts into interactive websites that are responsive, performant, and accessible across devices.
+					</p><br>
+					<p>Collaboration is at the heart of my work. I actively engage with cross-functional teams and clients to gather insights and ensure that the final product meets their goals and objectives. I embrace feedback and iterate on designs to achieve the best possible outcomes.</p><br>
+					<p>Apart from my professional skills, I bring a great sense of humor and a love for memes to the table. I believe that injecting personality and a touch of fun into design can create memorable experiences that resonate with users.</p><br>
+					<p>If you're looking for a passionate UX/UI Designer and Front-end Developer who can transform your ideas into visually appealing and user-friendly digital solutions, let's connect. Together, we can create remarkable experiences that leave a lasting impact.</p>
+				</div>
+				<div class="w-full my-8 md:my-0 md:w-1/4">
+					<h3 class="text-lg font-bold mb-2">Design</h3>
+					<div class="gap-x-2 gap-y-2 flex flex-row flex-wrap">
+						{designSkills.map((skill) =>(
+							<Badge title={skill}/>
+						))}
+					</div>
+					<h3 class="text-lg font-bold mt-4 mb-2">Front-end</h3>
+					<div class="gap-x-2 gap-y-2 flex flex-row flex-wrap">
+						{codingSkills.map((skill) =>(
+							<Badge title={skill}/>
+						))}
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<ExperienceLayout/>
+		<CVLayout/>
+		<ContactCTA title="Interested in working together?"/>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 100ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>

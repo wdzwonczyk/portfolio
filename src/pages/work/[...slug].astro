@@ -1,0 +1,138 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+
+import Layout from '../../layouts/Layout.astro';
+import ContactCTA from '../../components/ContactCTA.astro';
+
+interface Props {
+	entry: CollectionEntry<'work'>;
+}
+
+export async function getStaticPaths() {
+	const work = await getCollection('work');
+	return work.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+---
+
+<Layout title={entry.data.metaTitle} description={entry.data.metaDescription}>
+	<main class="">
+		<div class="mb-16 mt-16 md:mt-[134px] md:mx-auto scroll-smooth">
+			<header>
+				<div class="gap-2">
+					<a class="group text-blue-500 flex items-center gap-x-2 mb-4" href="/work/">
+                        <i class="iconoir-arrow-left text-[16px] group-hover:text-blue-500 group-hover:translate-x-1 duration-200"></i>
+                        Work
+                    </a>
+                    <h1 class="text-3xl md:text-4xl font-bold">{entry.data.title}</h1>
+                    <span class="text-lg text-gray-400">Mobile app</span>
+                    <div class="flex flex-col gap-y-2 bg-gray-200 px-4 py-4 my-8 rounded-lg">
+                        <span class="flex items-center gap-x-2">
+                            <i class="iconoir-profile-circle text-[24px]"></i>
+                            {entry.data.roles.map((role:string, index:number) => {
+                                const isLastItem = index === entry.data.roles.length - 1;
+                                return isLastItem ? role : role + ', ';
+                            })}
+                        </span>
+                        <span class="flex items-center gap-x-2">
+                            <i class="iconoir-tools text-[24px]"></i>
+                            {entry.data.tools.map((tool:string, index:number) => {
+                                const isLastItem = index === entry.data.tools.length - 1;
+                                return isLastItem ? tool : tool + ', ';
+                            })}
+                        </span>
+                        <span class="flex items-center gap-x-2">
+                            <i class="iconoir-link text-[24px]"></i>
+                            <a href={entry.data.exploreLink} target="_blank" class="text-blue-500 hover:underline">
+                                {entry.data.exploreText}
+                            </a>
+                        </span>
+                        {entry.data.githubRepoLink && 
+                            <span class="flex items-center gap-x-2">
+                                <i class="iconoir-github-circle text-[24px]"></i>
+                                <a href={entry.data.githubRepoLink} target="_blank" class="text-blue-500 hover:underline">
+                                    Github repository
+                                </a>
+                        </span>}
+                        <span class="flex items-center gap-x-2">
+                            Solution prepared for:
+                            {entry.data.devices.map((device:string, index:number) => {
+                                const isLastItem = index === entry.data.devices.length - 1;
+                                return isLastItem ? device : device + ', ';
+                            })}
+                        </span>
+                    </div>
+				</div>
+			</header>
+			<div class="wrapper">
+                <div class="content">
+                    <Content />
+                </div>
+			</div>
+		</div>
+		<ContactCTA title="Do you like the work I did?"/>
+	</main>
+</Layout>
+<style>
+    .content{
+        scroll-behavior: smooth;
+    }
+
+    .content :global(h1),
+	.content :global(h2),
+	.content :global(h3),
+	.content :global(h4),
+	.content :global(h5) {
+		margin: 1.5rem 0;
+	}
+
+    .content :global(h2){
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .content :global(ul) {
+		list-style-type: disc;
+        margin: 8px 0;
+	}
+
+    .content :global(p) {
+        margin-top: 16px;
+        line-height: 24px;
+        text-align: justify;
+	}
+
+    .content :global(p:first-child) {
+        margin-top: 0px;
+	}
+
+    .content :global(a) {
+        color: #3B82F6;
+	}
+
+    .content :global(a:hover) {
+        text-decoration: underline;
+	}
+
+    .content :global(code) {
+        color: #4f46e5;
+	}
+
+    .content :global(img) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+	}
+
+    @media (min-width: 768px){
+        .content :global(h2){
+            font-size: 32px;
+        }
+    }
+</style>
