@@ -1,7 +1,7 @@
 ---
 title: Arla
 publishDate: 2023-05-03 00:00:00
-img: ../portfolio/assets/arla/arla-homepage.png
+img: ../assets/arla/arla-homepage.png
 img_alt: Digital prototype
 metaTitle: Arla CO2 Reduction Solution | Farmer's Dashboard Design Case Study
 metaDescription: |
@@ -28,7 +28,7 @@ The main problem was the lack of a solution for Arla’s farmers that would allo
 
 This time, we did not have to create our own design because the purpose was to follow Arla's CVI. In this case, we analyzed all the details in the document, chose elements that suit our solution the most, and prepared a style tile that we followed during the creation process.
 
-![Arla's style tile that had to be followed during the project.](../portfolio/assets/arla/arla-style-tile.jpg)
+![Arla's style tile that had to be followed during the project.](../assets/arla/arla-style-tile.jpg)
 
 ## Mockups
 The entire desktop-only solution has five essential pages:
@@ -48,13 +48,13 @@ The *Form* page is one of the most essential ones in the whole solution. This is
 
 Last but not least, the profile page contains simple settings options such as choosing a language, turning notifications and themes on/off. In terms of themes, our idea was to use colors from Arla's color palette that would represent each season and adjust the design's colors to this particular one, as well as the image on the *Home* page. Moreover, a rewarding system has been added to keep farmers using our solution. Based on their progress in reducing CO2, they will be rewarded by getting a new badge and increasing the milk price by 0.25 cents.
 
-![Example of mockups that represents Arla CO2 platform](../portfolio/assets/arla/arla-mockups.jpg)
+![Example of mockups that represents Arla CO2 platform](../assets/arla/arla-mockups.jpg)
 
 ## Final product
 
-![Home page and Data page- example of final product](../portfolio/assets/arla/arla-mockups-home-data.jpg)
+![Home page and Data page- example of final product](../assets/arla/arla-mockups-home-data.jpg)
 
-![CO2 Form page (start section and questions section) - example of final product](../portfolio/assets/arla/arla-mockups-forms.jpg)
+![CO2 Form page (start section and questions section) - example of final product](../assets/arla/arla-mockups-forms.jpg)
 
 ## Conclusions
 

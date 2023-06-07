@@ -3,32 +3,6 @@ import { getCollection } from 'astro:content';
 import ProjectPreview from "../components/ProjectPreview.astro"
 
 //Portfolio content
-const portfolio = [
-	{ 
-		title: "Studiz",
-		imgSrc: "https://images.pexels.com/photos/16118368/pexels-photo-16118368/free-photo-of-jasny-ludzie-festiwal-muzyka.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load",
-		imgAlt: "Portfolio - Studiz mobile app preview",
-		category: "design",
-	},
-	{ 
-		title: "RawShare",
-		imgSrc: "https://images.pexels.com/photos/16118368/pexels-photo-16118368/free-photo-of-jasny-ludzie-festiwal-muzyka.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load",
-		imgAlt: "Portfolio - Studiz mobile app preview",
-		category: "design",
-	},
-	{ 
-		title: "Slepfi",
-		imgSrc: "https://images.pexels.com/photos/16118368/pexels-photo-16118368/free-photo-of-jasny-ludzie-festiwal-muzyka.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load",
-		imgAlt: "Portfolio - Studiz mobile app preview",
-		category: "design",
-	},
-	{ 
-		title: "Arla",
-		imgSrc: "https://images.pexels.com/photos/16118368/pexels-photo-16118368/free-photo-of-jasny-ludzie-festiwal-muzyka.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load",
-		imgAlt: "Portfolio - Studiz mobile app preview",
-		category: "code",
-	},
-];
 const projects = (await getCollection('work')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
