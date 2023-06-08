@@ -18,7 +18,7 @@ const textLinks: { label: string; href: string }[] = [
 		</a>
 	</div>
 	<div id="menu-content">
-		<ul id="nav-items" class="flex flex-col items-center justify-center gap-4 fixed bottom-0 right-0 transform transition-all ease-in-out duration-300 -translate-x-full h-[calc(100vh-56px)] w-full my-auto bg-white/90 backdrop-blur-lg md:backdrop-blur-none md:flex-row md:relative  md:bg-white md:h-auto md:justify-end md:transform-none md:px-3 md:py-4 md:gap-x-4 md:rounded-2xl md:shadow-md">
+		<ul id="nav-items" class="flex flex-col items-center justify-center gap-6 md:gap-4 fixed bottom-0 right-0 transform transition-all ease-in-out duration-300 -translate-x-full h-[calc(100vh-56px)] w-full my-auto bg-white/90 backdrop-blur-lg md:backdrop-blur-none md:flex-row md:relative  md:bg-white md:h-auto md:justify-end md:transform-none md:px-3 md:py-4 md:gap-x-4 md:rounded-2xl md:shadow-md">
 		{
 			textLinks.map(({ label, href }) => (
 				<li>
@@ -70,7 +70,7 @@ const textLinks: { label: string; href: string }[] = [
 		if (navIcon.getAttribute('src') == "/portfolio/assets/icons/menu.svg") {
 			navIcon.classList.replace("scale-100", "scale-0");
 			setTimeout( () => {
-				navIconProperties('../assets/icons/cancel.svg', 'Close navigation icon');
+				navIconProperties('/portfolio/assets/icons/cancel.svg', 'Close navigation icon');
 				navIcon.classList.replace("scale-0", "scale-100");
 			}, 200);	
 		} else {
