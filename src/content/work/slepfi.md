@@ -3,6 +3,8 @@ title: Slepfi
 publishDate: 2023-05-04 00:00:00
 img: /portfolio/assets/slepfi/Slepfi-mockup1.png
 img_alt: Digital prototype
+imgLogo: /portfolio/assets/logo/slepfi-logo.png
+imgLogoAlt: Slepfi logo
 metaTitle: Slepfi - Find Your Perfect Stay | Web Design Case Study
 metaDescription: |
   Discover Slepfi, a website designed to help users find the ideal place to stay based on nearby attractions. Explore the design system, mockups, and the focus on user-friendly search functionality. Dive into the details of this hobbyist's project and its impact on design and teamwork skills.

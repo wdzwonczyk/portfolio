@@ -3,6 +3,8 @@ title: RawShare
 publishDate: 2023-05-05 00:00:00
 img: /portfolio/assets/rawshare/rs-list-home-page2.png
 img_alt: RawShare mobile web application
+imgLogo: /portfolio/assets/logo/rs-logo.png
+imgLogoAlt: RawShare logo
 metaTitle: RawShare - Share Food Locally | Web App Case Study
 metaDescription: |
   Explore RawShare, a web app designed to help users share their food locally. Discover how strong research and a well-defined design system led to an intuitive user experience. See the mockups, code snippets, and the evolution of the RawShare app in this comprehensive case study.

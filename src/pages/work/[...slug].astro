@@ -22,7 +22,7 @@ const { Content } = await entry.render();
 ---
 
 <Layout title={entry.data.metaTitle} description={entry.data.metaDescription}>
-	<main class="">
+	<main id="beginning">
 		<div class="mb-16 mt-16 md:mt-[134px] md:mx-auto scroll-smooth">
 			<header>
 				<div class="gap-2">
@@ -30,8 +30,17 @@ const { Content } = await entry.render();
                         <i class="iconoir-arrow-left text-[16px] group-hover:text-blue-500 group-hover:translate-x-1 duration-200"></i>
                         Work
                     </a>
-                    <h1 class="text-3xl md:text-4xl font-bold">{entry.data.title}</h1>
-                    <span class="text-lg text-gray-400">Mobile app</span>
+                    <div class="flex gap-4 items-center">
+                        <img 
+                            src={entry.data.imgLogo} 
+                            alt={entry.data.imgLogoAlt}
+                            class="w-20 h-20"
+                        />
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold">{entry.data.title}</h1>
+                            <span class="text-lg text-gray-400">Mobile app</span>
+                        </div>
+                    </div>
                     <div class="flex flex-col gap-y-2 bg-gray-200 px-4 py-4 my-8 rounded-lg">
                         <span class="flex items-center gap-x-2">
                             <i class="iconoir-profile-circle text-[24px]"></i>
@@ -76,6 +85,10 @@ const { Content } = await entry.render();
                 </div>
 			</div>
 		</div>
+        <a class="group text-blue-500 flex items-center justify-center gap-x-2 mb-16 mx-auto" href="#beginning">
+            <i class="iconoir-arrow-up text-[16px] group-hover:text-blue-500 group-hover:-translate-y-1 duration-200"></i>
+            Go to the top
+        </a>
 		<ContactCTA title="Do you like the work I did?"/>
 	</main>
 </Layout>

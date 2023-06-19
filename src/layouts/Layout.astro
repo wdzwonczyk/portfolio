@@ -24,11 +24,10 @@ const { title, description } = Astro.props;
 	<body>
 		<Nav/>
 		<slot />
-	</body>
+	</body class="text">
 	<Footer/>
 </html>
 <style is:global>
-	
 	@font-face {
 		font-family: 'GlacialIndifference-Bold';
 		src: url('/portfolio/assets/fonts/GlacialIndifference-Bold.otf') format('otf');
@@ -37,6 +36,7 @@ const { title, description } = Astro.props;
 	html {
 		font-family: system-ui, sans-serif;
 		background-color: #FFFFFF;
+		scroll-behavior: smooth;
 	}
 
 	h1,h2,h3,h4,h5,h6{
@@ -44,7 +44,7 @@ const { title, description } = Astro.props;
 	}
 
 	h1{
-		font-size: 32px;
+		@apply text-[32px]
 	}
 
 	/* H2 class */
