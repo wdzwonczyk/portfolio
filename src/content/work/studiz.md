@@ -33,6 +33,10 @@ Thanks to the Design System, Studiz company and its developers now have a source
 
 I completely redesigned the mobile app with the main goal of not only creating a new, fresh look for the app but also improving the UX flow to make it more intuitive and straightforward.
 
+<div class="py-2 px-4 mt-4 rounded-md bg-blue-100">
+  <p>All images feature real products, not mockups, giving you a genuine look into the transformation process and how it improved the user experience.</p>
+</div>
+
 Currently, the main emphasis is on the *Campaign* section, which contains temporary special deals that are most profitable for students. Thanks to the use of different colors, users can easily scan them without reading the text and figure out which ones can help them save the most money. Another part is the *Favourites* section, which shows information about new discounts in these particular web shops. The last section is a slider with all regular discounts categories, which is placed on the bottom of the screen for easy access.
 
 ![Studiz app before and after redesigning - Home page](/portfolio/assets/studiz/studiz-discount-page.jpg)
