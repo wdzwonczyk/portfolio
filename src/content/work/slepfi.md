@@ -1,6 +1,7 @@
 ---
 title: Slepfi
 publishDate: 2023-05-04 00:00:00
+draft: true
 img: /portfolio/assets/slepfi/Slepfi-mockup1.png
 img_alt: Digital prototype
 imgLogo: /portfolio/assets/logo/slepfi-logo.png

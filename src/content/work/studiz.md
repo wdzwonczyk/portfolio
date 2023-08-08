@@ -16,7 +16,7 @@ tools:
   - Notion
   - Design System
 devices:
-  - mobile
+  - mobile (iOS & Android)
 exploreLink: https://apps.apple.com/pl/app/studiz/id665031046?l=pl
 exploreText: Check the mobile app in App Store
 ---
