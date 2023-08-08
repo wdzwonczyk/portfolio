@@ -7,7 +7,7 @@ imgLogo: /portfolio/assets/logo/ad-logo.png
 imgLogoAlt: Apartament Diamond logo
 metaTitle: Apartament Diamond | Website Case Study
 metaDescription: |
-  Explore the redesign of the Studiz mobile app case study. Discover how I enhanced the user experience, created a design system, and improved the flow for students. Gain insights into the development process and design decisions for a smarter and more rewarding student experience.
+  Explore the Apartament Diamond project, a website design for a stylish Baltic Sea rental apartment. Learn how the elegant design and user-centric approach enhance the experience for potential renters. Discover the thoughtfully crafted UI/UX elements that showcase the property's features, stunning visuals, and seamless navigation.
 roles:
   - UX/UI Designer
 tools:
