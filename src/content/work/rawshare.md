@@ -36,6 +36,33 @@ RawShare is a web app created by a group of three people for a school project. I
 
 The main idea of this app is to allow people to share their leftovers with others. Using a map, the user can easily locate a food item and send a request to the owner to book it. After that, the user has to pick up the food from the owner by scanning the QR code generated automatically for each request.
 
+## Methodology
+
+![Rawshare's research](/portfolio/assets/rawshare/rs-research.jpg)
+
+For this project, we employed a comprehensive user research methodology to gather valuable insights from a diverse range of sources, including:
+
+- **User Interviews:** We conducted in-depth interviews with a wide spectrum of participants, including regular individuals, administrators of food-wasting groups on social media, and representatives from local restaurants and cafes. These interviews provided us with a holistic view of user behaviors and pain points.
+- **Focus Groups:** Organized focus group sessions allowed us to facilitate open discussions and brainstorming, uncovering collective insights and uncovering valuable perspectives from various regular individuals.
+- **Surveys:** A structured survey was distributed to a broader audience, collecting quantitative data to identify trends, preferences, and behaviors related to food waste.
+- **Competitor Research:** In-depth analysis of competitors and similar platforms allowed us to identify industry best practices, differentiate our solution, and adapt strategies based on market trends.
+- **Mind-Mapping:** Utilizing mind-mapping techniques, we visually organized and synthesized research findings, enabling us to identify patterns, connections, and potential design opportunities.
+- **Personas:** We developed detailed user personas to humanize our target audience, helping us make design decisions that align with their needs and motivations.
+
+## Key insights
+From our extensive research, we derived the following key insights, which informed our design process:
+
+- **Diverse User Perspectives:** Interviews with regular individuals, group administrators, and industry representatives provided a multifaceted understanding of the food-waste landscape, highlighting varying motivations, challenges, and behaviors.
+- **User Pain Points:** Through surveys and focus groups, we identified common pain points, such as confusion about food disposal guidelines and the need for a centralized platform to combat food waste effectively.
+- **Behavioral Trends:** Our research illuminated behavioral trends, including the willingness of users to engage with a food-sharing platform and their preferences regarding user interface design and functionality.
+- **Persona Alignment:** User personas helped us align design decisions with specific user needs and motivations, ensuring a user-centric approach throughout the project.
+- **Competitive Insights:** Competitor research guided our strategic approach, allowing us to capitalize on industry best practices while introducing innovative features to differentiate our platform.
+
+<div class="py-2 px-4 mt-4 rounded-md bg-blue-100">
+  <p>This comprehensive research approach and resulting insights were instrumental in shaping our design solutions for this project. While I can't disclose specific data or sensitive details, I am more than willing to discuss the research process and insights in greater detail during an interview or meeting.</p>
+</div>
+
+
 ## Design system
 
 Design systems are essential these days. They improve the design process workflow and communication between designers and developers, and they allow for consistency throughout the entire solution. Keeping this in mind, we decided to create our own design system based on the components in Figma.
