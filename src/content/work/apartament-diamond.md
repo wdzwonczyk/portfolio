@@ -8,6 +8,7 @@ imgLogoAlt: Apartament Diamond logo
 metaTitle: Apartament Diamond | Website Case Study
 metaDescription: |
   Explore the Apartament Diamond project, a website design for a stylish Baltic Sea rental apartment. Learn how the elegant design and user-centric approach enhance the experience for potential renters. Discover the thoughtfully crafted UI/UX elements that showcase the property's features, stunning visuals, and seamless navigation.
+productType: Website
 roles:
   - UX/UI Designer
 tools:

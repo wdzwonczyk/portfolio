@@ -8,18 +8,20 @@ imgLogoAlt: RawShare logo
 metaTitle: RawShare - Share Food Locally | Web App Case Study
 metaDescription: |
   Explore RawShare, a web app designed to help users share their food locally. Discover how strong research and a well-defined design system led to an intuitive user experience. See the mockups, code snippets, and the evolution of the RawShare app in this comprehensive case study.
+productType: Mobile App
 roles:
   - UX/UI designer
   - Front-end developer
   - Back-end developer
 tools:
   - Figma
+  - FigJam
   - JavaScript
   - PHP
   - MySQL
   - Notion
 devices:
-  - mobile
+  - mobile (iOS)
 
 exploreLink: https://www.figma.com/file/BocF8eNzCFYOvj8lMDFt0I/Mockups?node-id=2003%3A14726&t=oQjitJCWdZyhCI4Y-1
 exploreText: Explore the RawShare app mockups in Figma

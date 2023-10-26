@@ -1,6 +1,6 @@
 ---
 title: WatchBuddy
-publishDate: 2023-05-06 00:00:00
+publishDate: 2023-05-03 00:00:00
 img: /portfolio/assets/watchbuddy/wb-mockups-preview.png
 img_alt: WatchBuddy mobile app
 imgLogo: /portfolio/assets/logo/wb-logo.png
@@ -8,6 +8,7 @@ imgLogoAlt: WatchBuddy logo
 metaTitle: WatchBuddy | Mobile App Case Study
 metaDescription: |
   Discover the WatchBuddy app case study, unveiling how Figma variables transformed Design System management. Explore the user-friendly design, personalized movie recommendations, and streamlined navigation. Dive into the development process and design choices for a seamless and enjoyable movie discovery experience.
+productType: Mobile App
 roles:
   - UX/UI Designer
 tools:
