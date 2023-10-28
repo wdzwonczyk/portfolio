@@ -121,20 +121,21 @@ Once we have decoded the data, we can create a query that will display all items
 
 Since the project hand-in, the app's design and the entire design system have been updated. Thanks to these changes, the app can now provide our users with an even better experience. With a sleek and modern interface, improved navigation, and new features, the RawShare app offers a seamless and intuitive user journey.
 
-![Example of mockups that represents RawShare v.2](/portfolio/assets/rawshare/rs-mockups2.png)
+![Example of mockups that represents RawShare v.2](/portfolio/assets/rawshare/rs-mockups-2.jpg)
 
 ## Design system 2.0
 
 The RawShare design system has been rebuilt from scratch once again. The biggest change is the way in which all foundation information is displayed. Currently, the information is shown and structured in a user-friendly manner for both designers and developers.
 
-![Example of new Design System that presents a Foundation section](/portfolio/assets/rawshare/rs-ds-foundation2.png)
+![Example of new Design System that presents a Foundation section](/portfolio/assets/rawshare/rs-ds-2-foundation.jpg)
 
-![Example of new Design System that presents a Components section](/portfolio/assets/rawshare/rs-ds-components2.png)
+Our commitment to perfection extends to each component, as we have meticulously crafted them from the very beginning. By closely adhering to native iOS components and embracing the established style, our app exudes a distinct personality, staying true to iOS design principles while carving out its unique identity.
 
+![Example of new Design System that presents a Component section](/portfolio/assets/rawshare/rs-ds-2-components.jpg)
 
-## Mockups 2.0
+## Before and after
 
-Similar to the Design System and Components Library, the mockups have undergone an overhaul as well. All of them have been created from scratch once again, and their structure has been improved for better usability. In addition to the structural aspect, the mockups have a new look. Thanks to design changes and improvements, the app now looks cleaner, more modern, and minimalistic, while maintaining its main functionalities and flow, providing the best user experience.
+This section presents of the transformations we have implemented to enhance the app's flow and design. These changes reflect our dedication to creating a superior user experience and a more visually appealing design. As you explore the following sections, you will see the steps we have taken to exceed user expectations. These updates underscore our commitment to user-friendly design and seamless functionality.
 
 ![RawShare app before and after redesigning - Start page](/portfolio/assets/rawshare/rs-start-page-comparison.jpg)
 
