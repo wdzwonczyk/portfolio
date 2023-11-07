@@ -110,6 +110,10 @@ const { Content } = await entry.render();
         font-weight: 600;
     }
 
+    .content :global(h3){
+        @apply text-lg font-bold 
+    }
+
     .content :global(ul) {
 		list-style-type: disc;
         margin: 8px 0;

@@ -24,7 +24,7 @@ exploreText: Check the project in Figma
   <p>The Figma link has been published with the customer's consent.</p>
 </div>
 
-The Apartament Diamond website showcases a stylish rental apartment located by the Baltic Sea in Poland. My task was to create an elegant and modern representation of the space while ensuring easy communication with the owner. The apartment's key features include its prime location, a spacious balcony, and a tastefully modern interior. The website includes essential pages like Home, About, Gallery, Prices, Blog, and Contact, offering a seamless user experience for potential renters to explore and connect.
+The Apartament Diamond website showcases a stylish rental apartment located by the Baltic Sea in Poland. My task was to create an elegant and modern representation of the space while ensuring easy communication with the owner. This project was informed by valuable desk research, which guided us in crafting a user-friendly and highly functional solution. The apartment's key features encompass its prime location, a spacious balcony, and a tastefully modern interior. The website hosts essential pages like Home, About, Gallery, Prices, Blog, and Contact, offering a seamless user experience for potential renters to explore and connect.
 
 ## Main Idea
 
