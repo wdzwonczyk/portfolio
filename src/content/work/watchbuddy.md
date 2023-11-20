@@ -1,6 +1,6 @@
 ---
 title: WatchBuddy
-publishDate: 2023-05-03 00:00:00
+publishDate: 2023-05-02 00:00:00
 img: /portfolio/assets/watchbuddy/wb-mockups-preview.png
 img_alt: WatchBuddy mobile app
 imgLogo: /portfolio/assets/logo/wb-logo.png

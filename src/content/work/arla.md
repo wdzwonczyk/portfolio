@@ -1,6 +1,6 @@
 ---
 title: Arla
-publishDate: 2023-05-01 00:00:00
+publishDate: 2023-05-03 00:00:00
 img: /portfolio/assets/arla/arla-homepage.png
 img_alt: Digital prototype
 imgLogo: /portfolio/assets/logo/arla-logo.png
