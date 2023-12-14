@@ -8,7 +8,8 @@ imgLogoAlt: RawShare logo
 metaTitle: RawShare - Share Food Locally | Web App Case Study
 metaDescription: |
   Explore RawShare, a web app designed to help users share their food locally. Discover how strong research and a well-defined design system led to an intuitive user experience. See the mockups, code snippets, and the evolution of the RawShare app in this comprehensive case study.
-productType: Mobile App
+productType: Mobile App | School project
+tagName: UX/UI | Design System | Front-end
 roles:
   - UX/UI designer
   - Front-end developer
@@ -23,12 +24,14 @@ tools:
 devices:
   - mobile (iOS)
 
-exploreLink: https://www.figma.com/file/BocF8eNzCFYOvj8lMDFt0I/Mockups?node-id=2003%3A14726&t=oQjitJCWdZyhCI4Y-1
+exploreLink: https://www.figma.com/file/X95CXJZU7cnLTiMDnbNAcy/Mockups?type=design&node-id=1981%3A21405&mode=design&t=10ezg6XTqPIexWP2-1
 exploreText: Explore the RawShare app mockups in Figma
 githubRepoLink: https://github.com/Wojo3214/foodwaste-app
 ---
 
-RawShare is a web app created by a group of three people for a school project. Its purpose is to allow users to share their food with other people in their area. The app is built based on strong research, including desk and field research, focus groups, surveys, and interviews with people interested in preventing food waste. Thanks to the collected information and data, we came to the conclusion that people are not fond of surprise elements (such as in TooGoodToGo) and are willing to share their food with others in their area without any extra costs.
+RawShare is a web app created by a group of three people for a school project. Its purpose is to enable users to share their food surplus within their local communities as food waste at the household level in Denmark totals 507,000 tonnes per year. The app is built based on strong research, including desk and field research, focus groups, surveys, and interviews with people interested in preventing food waste. Through this research, we discovered that users prefer a transparent sharing process without surprise elements, unlike some existing platforms.
+
+This case study will delve into our methodology throughout the creation process, including the research part, key insights, details about the design system created for this solution, and the presentation of mockups along with some pieces of code.
 
 <div class="py-2 px-4 mt-4 rounded-md bg-blue-100">
   <p>I am exicted to announce that app's design has been updated. <a href="#rawshare-20">Click here</a> to find out more about RawShare 2.0.</p>
@@ -135,14 +138,22 @@ Our commitment to perfection extends to each component, as we have meticulously 
 
 ## Before and after
 
-This section presents of the transformations we have implemented to enhance the app's flow and design. These changes reflect our dedication to creating a superior user experience and a more visually appealing design. As you explore the following sections, you will see the steps we have taken to exceed user expectations. These updates underscore our commitment to user-friendly design and seamless functionality.
+This section presents the transformations we have implemented to enhance the app's flow and design. These updates underscore our commitment to user-friendly design and seamless functionality. As you explore the following sections, you will see steps that we have taken to exceed user expectations.
 
 ![RawShare app before and after redesigning - Start page](/portfolio/assets/rawshare/rs-start-page-comparison.jpg)
 
+The app's design has undergone a rebranding, resulting in changes to the Start page. Following these updates, it has become cleaner and even more minimalistic.
+
 ![RawShare app before and after redesigning - Home page](/portfolio/assets/rawshare/rs-home-page-comparison.jpg)
+
+The Home page features minor cosmetic adjustments aligned with the new design. The most notable change includes the addition of a badge on item cards, providing information about the available product quantity. This enhancement allows users to anticipate product availability before clicking on the card. 
 
 ![RawShare app before and after redesigning - Product item page](/portfolio/assets/rawshare/rs-product-item-comparison.jpg)
 
+Our research highlights the significance of trustworthiness for our users when dealing with sellers. Consequently, the section containing seller information has been further emphasized, standing out prominently on the page. Additionally, clicking on the seller information box now opens a card modal displaying the seller's profile along with reviews. Lastly, the 'Book item' button is now position fixed, allowing users to book an item from any point on the page without the need to scroll to the bottom.
+
 ![RawShare app before and after redesigning - Orders page](/portfolio/assets/rawshare/rs-booked-comparison.jpg)
 
-Of course, the presented images may not show every detail, flow, and aspect of the app. That's why we invite you to visit our <a href="https://www.figma.com/file/BocF8eNzCFYOvj8lMDFt0I/Mockups?node-id=2003%3A14726&t=oQjitJCWdZyhCI4Y-1" class="prototyp" target="_blank">Figma file</a> and check out the entire project there.
+Based on the feedback received, we acknowledge that the initial version of the Orders page was somewhat crowded and confusing. Consequently, order cards have been redesigned to showcase only essential information on the order preview, such as the pick-up address (now visible to everyone to improve accessibility and emphasize the importance of this information) and action buttons relevant to the specific order state. Users can access more details by clicking on the card, revealing a modal with additional information like the products list or an edit button. Furthermore, we've categorized orders into sections like 'All,' 'Accepted,' and 'Pending' for easier sorting. These changes underwent user testing, and the feedback received surpassed our expectations.
+
+Of course, the presented images may not show every detail, flow, and aspect of the app. That's why I invite you to visit our <a href="https://www.figma.com/file/BocF8eNzCFYOvj8lMDFt0I/Mockups?node-id=2003%3A14726&t=oQjitJCWdZyhCI4Y-1" class="prototyp" target="_blank">Figma file</a> and check out the entire project there.

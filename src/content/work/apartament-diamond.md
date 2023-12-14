@@ -8,7 +8,8 @@ imgLogoAlt: Apartament Diamond logo
 metaTitle: Apartament Diamond | Website Case Study
 metaDescription: |
   Explore the Apartament Diamond project, a website design for a stylish Baltic Sea rental apartment. Learn how the elegant design and user-centric approach enhance the experience for potential renters. Discover the thoughtfully crafted UI/UX elements that showcase the property's features, stunning visuals, and seamless navigation.
-productType: Website
+productType: Website | Freelance project
+tagName: UI | Design System
 roles:
   - UX/UI Designer
 tools:
@@ -17,14 +18,16 @@ tools:
 devices:
   - desktop
   - mobile
-exploreLink: https://www.figma.com/files/project/90620437/Apartament-Diamond?fuid=905089920007374278
-exploreText: Check the project in Figma
+exploreLink: https://www.figma.com/file/zoNUoWP3fIgZD0NC1P0N4C/Mockups?type=design&node-id=207%3A10825&mode=design&t=ybQ6iI06gjmlPMMU-1
+exploreText: Explore the Apartament Diamond website mockups in Figma
 ---
 <div class="py-2 px-4 mt-4 rounded-md bg-blue-100">
   <p>The Figma link has been published with the customer's consent.</p>
 </div>
 
-The Apartament Diamond website showcases a stylish rental apartment located by the Baltic Sea in Poland. My task was to create an elegant and modern representation of the space while ensuring easy communication with the owner. This project was informed by valuable desk research, which guided us in crafting a user-friendly and highly functional solution. The apartment's key features encompass its prime location, a spacious balcony, and a tastefully modern interior. The website hosts essential pages like Home, About, Gallery, Prices, Blog, and Contact, offering a seamless user experience for potential renters to explore and connect.
+The Apartament Diamond website showcases a stylish rental apartment located by the Baltic Sea in Poland. My task was to create an elegant and modern representation of the space while ensuring easy communication with the owner. The apartment's key features encompass its prime location, a spacious balcony, and a tastefully modern interior. The website hosts essential pages like Home, About, Gallery, Prices, Blog, and Contact, offering a seamless user experience for potential renters to explore and connect.
+
+In this case study, I'll explore the details of my design decisions, like colors and typography. I'll also share information about creating a solid design system for developers, making sure it's scalable for future development.
 
 ## Main Idea
 
@@ -68,11 +71,19 @@ The *Home Page* serves as a captivating preview, offering users a glimpse of eac
 
 Additionally, the *Home page* features a dedicated section displaying prices and testimonials from previous renters, establishing credibility and trustworthiness. The page culminates with a compelling Call-to-Action (CTA) container, encouraging visitors to reach out and connect with the owner should they find the apartment appealing.
 
+![Apartament Diamond website - About page mockups](/portfolio/assets/apartament-diamond/ad-mockups-about.jpg)
+
 On the *About page*, users are offered a deeper understanding of the destination they are considering for their stay. Building upon the information presented on the *Home Page*, this section provides comprehensive details about the area's attractions, amenities, and the apartment's equipment. This ensures that users have a comprehensive overview before making any decisions, enhancing their confidence in the rental choice.
+
+![Apartament Diamond website - Gallery page mockups](/portfolio/assets/apartament-diamond/ad-mockups-gallery.jpg)
 
 Moving on to the *Gallery page*, it serves as an engaging visual showcase of the apartment's interior. To enhance user-friendliness, I implemented room type filters, enabling users to view specific areas of interest without the need to scroll through an extensive image collection. This thoughtful approach streamlines the browsing experience, allowing users to focus solely on what intrigues them the most.
 
+![Apartament Diamond website - Blog page mockups](/portfolio/assets/apartament-diamond/ad-mockups-blog.jpg)
+
 The *Blog page* presents a treasure trove of articles and news about the apartment, the city, nearby attractions, and more. Not only does this enrich users' experience with valuable insights, but it also contributes to elevating the website's search engine visibility. By optimizing content for search engines, the website gains an advantage in Google Search Results, ultimately attracting more potential renters and fostering engagement.
+
+![Apartament Diamond website - Contact page mockups](/portfolio/assets/apartament-diamond/ad-mockups-contact.jpg)
 
 Lastly, the *Contact page* accommodates users who wish to get in touch with the owner. Since a booking system was not implemented at this stage, I devised a user-friendly form that provides essential information for the owner. Submissions via this form generate a direct email to the potential customer, facilitating seamless communication. Alternatively, users have the option to contact the owner via a phone call, ensuring multiple channels for easy access and efficient interactions.
 

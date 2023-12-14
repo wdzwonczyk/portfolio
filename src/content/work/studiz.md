@@ -8,7 +8,8 @@ imgLogoAlt: Studiz logo
 metaTitle: Studiz - Student Life with Discounts | Mobile App Redesign Case Study
 metaDescription: |
   Explore the redesign of the Studiz mobile app case study. Discover how I enhanced the user experience, created a design system, and improved the flow for students. Gain insights into the development process and design decisions for a smarter and more rewarding student experience.
-productType: Mobile App
+productType: Mobile App | Work project
+tagName: UX/UI | Design System
 roles:
   - UX/UI Designer
 tools:
@@ -23,6 +24,8 @@ exploreText: Check the mobile app in App Store
 ---
 
 The Studiz is not only a company name but also its flagship solution, a mobile app prepared for students to make their life easier and cheaper. The development of this app was informed by comprehensive desk research, helping me understand the unique challenges students face and create a user-friendly and highly functional solution. In the app, users can find hundreds of attractive discounts that will allow them to save money. Additionally, the app offers features such as a digital Student ID used for identification, a Canteen system, Library system, and more, all designed with insights from our research to cater to the specific needs of students.
+
+In this study case, I'll specifically focus on the rationale behind deciding to create a design system and will compare solutions before and after the redesign process. 
 
 ## Design system, Pattern Library and Style Guide
 
