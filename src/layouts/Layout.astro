@@ -13,10 +13,15 @@ const { title, description } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description}>
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="../portfolio/assets/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+
+		<meta property="og:title" content="Wojciech Dzwonczyk | UX/UI Designer and Front-end Developer" />
+		<meta property="og:url" content="https://wdzwonczyk.github.io/portfolio/" />
+		<meta property=”og:image” content="https://wdzwonczyk.github.io/portfolio/assets/avatar.png" />
+
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
 
 		<title>{title}</title>
