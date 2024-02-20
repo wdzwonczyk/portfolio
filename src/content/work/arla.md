@@ -17,9 +17,9 @@ tools:
   - Arla's CVI
 devices:
   - desktop
-
-exploreLink: https://xd.adobe.com/view/4252eb91-ca5a-4c6b-9767-f0d8b09da18c-1701/?fullscreen
-exploreText: Explore the Arla solution prototype in Adobe XD
+linkSource: "Adobe XD"
+exploreProductLink: https://xd.adobe.com/view/4252eb91-ca5a-4c6b-9767-f0d8b09da18c-1701/?fullscreen
+exploreText: Explore the Arla solution prototype
 ---
 
 The Arla project was a team effort, created for Arla farmers. This solution provides an easy way for farmers to share crucial information on reducing CO2 emissions. The project aimed to aid Arla's digitalization, offering farmers a tool to track CO2 reduction progress aligning with 2050 sustainability goals. Farmers, accustomed to periodic progress forms, posed a challenge in transitioning to a digital platform. Success hinged on persuading them to not just submit forms but engage extensively with the website. The project began with thorough research, including both desk research to understand the challenges farmers face in reducing emissions and field research, which featured a presentation by Arla representatives followed by a Q&A session. We also conducted usability testing to ensure the platform was effective and user-friendly. This helped us develop a practical and user-centered solution.

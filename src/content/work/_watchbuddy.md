@@ -18,7 +18,7 @@ tools:
 devices:
   - mobile (iOS)
 exploreLink: https://www.figma.com/files/project/90620437/Apartament-Diamond?fuid=905089920007374278
-exploreText: Check the project in Figma
+exploreText: Check the Watchbuddy project in Figma
 ---
 
 WatchBuddy is a passion project, a mobile app designed to serve as your personal movie and TV-show recommendation companion. We've all been there, struggling to decide what to watch when we're in the mood for entertainment. This app is here to be the solution you've been seeking, making those indecisive moments a thing of the past.

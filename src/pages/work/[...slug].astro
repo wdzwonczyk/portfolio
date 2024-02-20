@@ -58,9 +58,28 @@ const { Content } = await entry.render();
                         </span>
                         <span class="flex items-center gap-x-2">
                             <i class="iconoir-link text-[24px]"></i>
-                            <a href={entry.data.exploreLink} target="_blank" class="text-blue-500 hover:underline">
-                                {entry.data.exploreText}
-                            </a>
+                            {entry.data.exploreFigmaLinks ?
+                                <>
+                                    {entry.data.exploreText}
+                                    {entry.data.exploreFigmaLinks.map((link: { url: string; type: string }, index: number) => {
+                                        const isLastItem = index === entry.data.exploreFigmaLinks.length - 1;
+                                        return (
+                                            <>
+                                                <a href={link.url} target="_blank" class="text-blue-500 hover:underline">
+                                                    {link.type}
+                                                </a>
+                                                {isLastItem ? '' : ' | '}
+                                            </>
+                                        );
+                                    })}
+                                    in {entry.data.linkSource}
+                                </>
+                                : entry.data.exploreProductLink ?
+                                    <a href={entry.data.exploreProductLink} target="_blank" class="text-blue-500 hover:underline">
+                                        {entry.data.exploreText} in {entry.data.linkSource}
+                                    </a>
+                                : null
+                            }
                         </span>
                         {entry.data.githubRepoLink && 
                             <span class="flex items-center gap-x-2">
@@ -68,7 +87,8 @@ const { Content } = await entry.render();
                                 <a href={entry.data.githubRepoLink} target="_blank" class="text-blue-500 hover:underline">
                                     Github repository
                                 </a>
-                        </span>}
+                            </span>
+                        }
                         <span class="flex items-center gap-x-2">
                             Solution prepared for:
                             {entry.data.devices.map((device:string, index:number) => {

@@ -18,8 +18,15 @@ tools:
 devices:
   - desktop
   - mobile
-exploreLink: https://www.figma.com/file/zoNUoWP3fIgZD0NC1P0N4C/Mockups?type=design&node-id=207%3A10825&mode=design&t=ybQ6iI06gjmlPMMU-1
-exploreText: Explore the Apartament Diamond website mockups in Figma
+linkSource: "Figma"
+exploreFigmaLinks: 
+- url: "https://www.figma.com/file/zoNUoWP3fIgZD0NC1P0N4C/Mockups?type=design&node-id=207%3A10825&mode=design&t=ybQ6iI06gjmlPMMU-1"
+  type: "Mockups"
+- url: "https://www.figma.com/file/goAm407e19q176tkNTd7Gi/Components?type=design&node-id=3%3A29&mode=design&t=F7tUiSeosJ7KfWXX-1"
+  type: "Component library"
+- url: "https://www.figma.com/file/ZqUlY2a8D4gGDJ1ssuLw8U/Diamond-Foundation?type=design&node-id=0%3A1&mode=design&t=kZhecVkA5lLAS5o8-1"
+  type: "Foundation"
+exploreText: Explore the Apartament Diamond website
 ---
 <div class="py-2 px-4 mt-4 rounded-md bg-blue-100">
   <p>The Figma link has been published with the customer's consent.</p>

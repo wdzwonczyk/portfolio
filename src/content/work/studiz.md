@@ -19,8 +19,9 @@ tools:
   - Design System
 devices:
   - mobile (iOS & Android)
-exploreLink: https://apps.apple.com/pl/app/studiz/id665031046?l=pl
-exploreText: Check the mobile app in App Store
+linkSource: "App Store"
+exploreProductLink: https://apps.apple.com/pl/app/studiz/id665031046?l=pl
+exploreText: Check the mobile app
 ---
 
 The Studiz is not only a company name but also its flagship solution, a mobile app prepared for students to make their life easier and cheaper. The development of this app was informed by comprehensive desk research, helping me understand the unique challenges students face and create a user-friendly and highly functional solution. In the app, users can find hundreds of attractive discounts that will allow them to save money. Additionally, the app offers features such as a digital Student ID used for identification, a Canteen system, Library system, and more, all designed with insights from our research to cater to the specific needs of students.

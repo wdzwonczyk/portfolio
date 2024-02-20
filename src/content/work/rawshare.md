@@ -24,8 +24,12 @@ tools:
 devices:
   - mobile (iOS)
 
-exploreLink: https://www.figma.com/file/X95CXJZU7cnLTiMDnbNAcy/Mockups?type=design&node-id=1981%3A21405&mode=design&t=10ezg6XTqPIexWP2-1
-exploreText: Explore the RawShare app mockups in Figma
+linkSource: "Figma"
+exploreFigmaLinks: 
+- url: "https://www.figma.com/file/X95CXJZU7cnLTiMDnbNAcy/Mockups?type=design&node-id=1981%3A21405&mode=design&t=10ezg6XTqPIexWP2-1"
+  type: "Mockups"
+exploreText: Explore the RawShare app
+
 githubRepoLink: https://github.com/Wojo3214/foodwaste-app
 ---
 
