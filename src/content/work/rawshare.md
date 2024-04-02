@@ -8,7 +8,7 @@ imgLogoAlt: RawShare logo
 metaTitle: RawShare - Share Food Locally | Web App Case Study
 metaDescription: |
   Explore RawShare, a web app designed to help users share their food locally. Discover how strong research and a well-defined design system led to an intuitive user experience. See the mockups, code snippets, and the evolution of the RawShare app in this comprehensive case study.
-productType: Mobile App | School project
+productType: Mobile App | School project turned into passion project
 tagName: UX/UI | Design System | Front-end
 roles:
   - UX/UI designer

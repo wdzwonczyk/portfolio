@@ -44,42 +44,50 @@ const { Content } = await entry.render();
                     <div class="flex flex-col gap-y-2 bg-gray-200 px-4 py-4 my-8 rounded-lg">
                         <span class="flex items-center gap-x-2">
                             <i class="iconoir-profile-circle text-[24px]"></i>
-                            {entry.data.roles.map((role:string, index:number) => {
-                                const isLastItem = index === entry.data.roles.length - 1;
-                                return isLastItem ? role : role + ', ';
-                            })}
+                            <p>
+                                {entry.data.roles.map((role:string, index:number) => {
+                                    const isLastItem = index === entry.data.roles.length - 1;
+                                    return isLastItem ? role : role + ', ';
+                                })}
+                            </p>
                         </span>
                         <span class="flex items-center gap-x-2">
                             <i class="iconoir-tools text-[24px]"></i>
-                            {entry.data.tools.map((tool:string, index:number) => {
-                                const isLastItem = index === entry.data.tools.length - 1;
-                                return isLastItem ? tool : tool + ', ';
-                            })}
+                            <p>
+                                {entry.data.tools.map((tool:string, index:number) => {
+                                    const isLastItem = index === entry.data.tools.length - 1;
+                                    return isLastItem ? tool : tool + ', ';
+                                })}
+                            </p>
                         </span>
                         <span class="flex items-center gap-x-2">
                             <i class="iconoir-link text-[24px]"></i>
-                            {entry.data.exploreFigmaLinks ?
-                                <>
-                                    {entry.data.exploreText}
-                                    {entry.data.exploreFigmaLinks.map((link: { url: string; type: string }, index: number) => {
-                                        const isLastItem = index === entry.data.exploreFigmaLinks.length - 1;
-                                        return (
-                                            <>
-                                                <a href={link.url} target="_blank" class="text-blue-500 hover:underline">
-                                                    {link.type}
-                                                </a>
-                                                {isLastItem ? '' : ' | '}
-                                            </>
-                                        );
-                                    })}
-                                    in {entry.data.linkSource}
-                                </>
-                                : entry.data.exploreProductLink ?
-                                    <a href={entry.data.exploreProductLink} target="_blank" class="text-blue-500 hover:underline">
-                                        {entry.data.exploreText} in {entry.data.linkSource}
-                                    </a>
-                                : null
-                            }
+                            <p>
+                                {entry.data.exploreFigmaLinks ?
+                                    <>
+                                        {entry.data.exploreText}
+                                        {entry.data.exploreFigmaLinks.map((link: { url: string; type: string }, index: number) => {
+                                            const isLastItem = index === entry.data.exploreFigmaLinks.length - 1;
+                                            return (
+                                                <>
+                                                    <a href={link.url} target="_blank" class="text-blue-500 hover:underline">
+                                                        {link.type}
+                                                    </a>
+                                                    {isLastItem ? '' : ' | '}
+                                                </>
+                                            );
+                                        })}
+                                        in {entry.data.linkSource}
+                                    </>
+                                    : entry.data.exploreProductLink ?
+                                        <a href={entry.data.exploreProductLink} target="_blank" class="text-blue-500 hover:underline">
+                                            <span>
+                                                {entry.data.exploreText} in {entry.data.linkSource}
+                                            </span>
+                                        </a>
+                                    : null
+                                }
+                            </p>
                         </span>
                         {entry.data.githubRepoLink && 
                             <span class="flex items-center gap-x-2">
