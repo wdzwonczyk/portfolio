@@ -33,7 +33,7 @@ exploreText: Explore the RawShare app
 githubRepoLink: https://github.com/Wojo3214/foodwaste-app
 ---
 
-RawShare is a web app created by a group of three people for a school project. Its purpose is to enable users to share their food surplus within their local communities as food waste at the household level in Denmark totals 507,000 tonnes per year. The app is built based on strong research, including desk and field research, focus groups, surveys, and interviews with people interested in preventing food waste. Through this research, we discovered that users prefer a transparent sharing process without surprise elements, unlike some existing platforms.
+RawShare is a mobile app created by a group of three people for a school project. Its purpose is to enable users to share their food surplus within their local communities as food waste at the household level in Denmark totals 507,000 tonnes per year. The app is built based on strong research, including desk and field research, focus groups, surveys, and interviews with people interested in preventing food waste. Through this research, we discovered that users prefer a transparent sharing process without surprise elements, unlike some existing platforms.
 
 This case study will delve into our methodology throughout the creation process, including the research part, key insights, details about the design system created for this solution, and the presentation of mockups along with some pieces of code.
 
