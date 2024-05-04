@@ -1,10 +1,13 @@
 ---
 title: Arla
+titleLong: Arla Farmers - a web app for farmers to monitor reducing CO2 emissions
 publishDate: 2023-05-03 00:00:00
 img: /portfolio/assets/arla/arla-homepage.png
 img_alt: Digital prototype
 imgLogo: /portfolio/assets/logo/arla-logo.png
 imgLogoAlt: Arla logo
+projectOverviewImg: /portfolio/assets/arla/arla-mockups-overview.jpg
+projectOverviewImgAlt: Arla Farmers project overview
 metaTitle: Arla CO2 Reduction Solution | Farmer's Dashboard Design Case Study
 metaDescription: |
   Explore our solution designed for Arla farmers, empowering them to track their CO2 reduction progress. Discover the style tiles, mockups, and user-friendly features like data visualization, news updates, and a comprehensive form. Learn how we created a consistent and rewarding experience aligned with Arla's branding.

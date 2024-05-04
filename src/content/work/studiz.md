@@ -1,10 +1,13 @@
 ---
 title: Studiz
+titleLong: Studiz - a redesigned mobile app with student discounts
 publishDate: 2023-05-04 00:00:00
 img: /portfolio/assets/studiz/studiz-mockup.png
 img_alt: Studiz mobile app
 imgLogo: /portfolio/assets/logo/studiz-logo.png
 imgLogoAlt: Studiz logo
+projectOverviewImg: /portfolio/assets/studiz/studiz-mockups-overview.jpg
+projectOverviewImgAlt: Studiz project overview
 metaTitle: Studiz - Student Life with Discounts | Mobile App Redesign Case Study
 metaDescription: |
   Explore the redesign of the Studiz mobile app case study. Discover how I enhanced the user experience, created a design system, and improved the flow for students. Gain insights into the development process and design decisions for a smarter and more rewarding student experience.

@@ -1,10 +1,13 @@
 ---
 title: Apartament Diamond
+titleLong: Apartament Diamond - a website for renting the apartment
 publishDate: 2023-05-06 00:00:00
 img: /portfolio/assets/apartament-diamond/ad-mockups-preview.png
 img_alt: Apartament Diamond website
 imgLogo: /portfolio/assets/logo/ad-logo.png
 imgLogoAlt: Apartament Diamond logo
+projectOverviewImg: /portfolio/assets/apartament-diamond/ad-mockups-overview.jpg
+projectOverviewImgAlt: Apartament Diamond project overview
 metaTitle: Apartament Diamond | Website Case Study
 metaDescription: |
   Explore the Apartament Diamond project, a website design for a stylish Baltic Sea rental apartment. Learn how the elegant design and user-centric approach enhance the experience for potential renters. Discover the thoughtfully crafted UI/UX elements that showcase the property's features, stunning visuals, and seamless navigation.
