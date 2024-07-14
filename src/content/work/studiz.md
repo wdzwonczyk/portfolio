@@ -27,15 +27,36 @@ exploreProductLink: https://apps.apple.com/pl/app/studiz/id665031046?l=pl
 exploreText: Check the mobile app
 ---
 
-The Studiz is not only a company name but also its flagship solution, a mobile app prepared for students to make their life easier and cheaper. The development of this app was informed by comprehensive desk research, helping me understand the unique challenges students face and create a user-friendly and highly functional solution. In the app, users can find hundreds of attractive discounts that will allow them to save money. Additionally, the app offers features such as a digital Student ID used for identification, a Canteen system, Library system, and more, all designed with insights from our research to cater to the specific needs of students.
+Studiz is both the name of the company and its flagship product—a mobile app designed to simplify and economize student life. The app offers hundreds of discounts, a digital Student ID, a canteen system, a library system, and more, all tailored to the specific needs of students.
 
-In this study case, I'll specifically focus on the rationale behind deciding to create a design system and will compare solutions before and after the redesign process. 
+In this case study, I’ll dive into the rationale behind creating a comprehensive design system and the significant improvements achieved through the redesign process.
 
-## Design system, Pattern Library and Style Guide
+## The challenge
 
-The main goal of my work was to redesign a mobile app and desktop web app. To accomplish this in the most effective way, I created a Design System that could enable the company to work more efficiently. Based on my previous job experience and knowledge gained during my free time, I created a brand new system from scratch, which allowed me to keep all design rules, such as colors and typography, with a description of when and how to use them. The system also includes the whole components library and views in one place.
+The primary challenge was to create a design that met the latest design standards, stood out from competitors, and provided a clean, easy-to-navigate flow that met users’ expectations while aligning with the company’s business goals.
 
-Thanks to the Design System, Studiz company and its developers now have a source of truth regarding mobile app/web app design rules and components that can be followed by them anytime. For designers, they can now maintain design consistency throughout all Studiz solutions.
+## Research
+
+To address these issues, we conducted extensive research:
+
+- **User Interviews**: We interviewed students to understand their pain points and expectations.
+- **Surveys**: Distributed surveys to gather quantitative data on user preferences and behaviors.
+- **Usability Testing**: Observed users interacting with the app to identify problem areas and gather direct feedback.
+
+Based on this research, we discovered that users often felt lost and confused. The navigation was not intuitive, and the information architecture needed significant improvements to enhance the user experience.
+
+## Design System
+
+To address these challenges effectively, I developed a comprehensive design system from scratch. The design system included:
+
+- **Colors**: A well-defined color palette with usage guidelines.
+- **Typography**: Font styles and sizes for consistency.
+- **Spacing & Grids**: Guidelines for layout and spacing.
+- **Icon Library**: A collection of icons with usage instructions.
+- **Components Library**: Reusable UI components and design patterns.
+- **Documentation**: Detailed descriptions of when and how to use each element.
+
+This design system became the single source of truth for both designers and developers at Studiz. It ensured consistency across all platforms and streamlined the design and development process, making it more efficient and scalable.
 
 ## Before and after
 
@@ -49,22 +70,40 @@ Currently, the main emphasis is on the *Campaign* section, which contains tempor
 
 ![Studiz app before and after redesigning - Home page](/portfolio/assets/studiz/studiz-discount-page.jpg)
 
-Regarding discount details, I kept the “discount/voucher/ticket” look, so that users would immediately recognize what it is.
-
-There are also many other details that cannot be seen in the images, such as the search function, animations, and specific zooming map features. All of these elements have been presented as various prototypes so that developers can have a look and implement them into the exact solution.<br><br>
+**Home Page**:
+- Redesigned for a fresh, intuitive look
+- Emphasized Campaign section for temporary special deals
+- Used different colors to highlight the most profitable deals
+- Favourites section to feature new discounts in particular web shops
+- Slider at the bottom for easy access to all regular discount categories
 
 ![Studiz app before and after redesigning - Provider page](/portfolio/assets/studiz/studiz-provider.jpg)
                
-When it comes to the discount provider, there is a slider that contains all discounts and another item with the provider's information. To improve the flow, I created a one-page layout divided into segments with two sections: discounts and information. This allows users to easily switch between them at any time. All available discounts, including campaigns and regular ones, are grouped in the discounts section. Additionally, users can check provider information without having to slide to the last item.<br><br>
+**Provider Page**:
 
-Example of versions comparison.<br><br>
-![Studiz app before and after redesigning - Discounts list](/portfolio/assets/studiz/studiz-discounts-list.jpg)
+- New one-page layout with segments for discounts and provider information
+- Seamless switch between discounts and information
+- Included slider with all discounts and provider details, eliminating navigation to multiple pages
+
 
 ![Studiz app before and after redesigning - Discount view](/portfolio/assets/studiz/studiz-discounts.jpg)
 
+**Discount View**:
+  - Enhanced layout for clearer presentation of discount details
+
 ![Studiz app before and after redesigning - Map view](/portfolio/assets/studiz/studiz-map.jpg)
 
+**Map Page**:
+  - Flow adjusted to fit the screen touch zone
+  - Easy switch between list and map view
+  - Convenient access to filters and search options
+
 ![Studiz app before and after redesigning - Settings page](/portfolio/assets/studiz/studiz-settings.jpg)
+
+**Other Page**:
+  - Organized and appealing information architecture
+  - Added icons for better section recognition
+  - Improved layout for easier navigation and user experience
 
 ## Conclusions
 
