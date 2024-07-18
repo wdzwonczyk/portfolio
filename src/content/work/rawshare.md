@@ -2,7 +2,7 @@
 title: RawShare
 titleLong: RawShare - a mobile app for people to share their leftovers to prevent food waste
 publishDate: 2023-05-05 00:00:00
-img: /portfolio/assets/rawshare/rs-list-home-page2.png
+img: /portfolio/assets/rawshare/rs-mockups-device.jpg
 img_alt: RawShare mobile web application
 imgLogo: /portfolio/assets/logo/rs-logo.png
 imgLogoAlt: RawShare logo
@@ -16,7 +16,6 @@ tagName: UX/UI | Design System | Front-end
 roles:
   - UX/UI designer
   - Front-end developer
-  - Back-end developer
 tools:
   - Figma
   - FigJam
@@ -37,7 +36,7 @@ RawShare is a mobile app created by a team of three for a school project and dev
 This case study will delve into our methodology throughout the creation process, including the research part, key insights, details about the design system created for this solution, and the presentation of mockups.
 
 <!-- <div class="py-2 px-4 mt-4 rounded-md bg-blue-100">
-  <p>I am exicted to announce that app's design has been updated. <a href="#rawshare-20">Click here</a> to find out more about RawShare 2.0.</p>
+  <p>I am exicted to present a refreshed app design. <a href="#rawshare-20">Click here</a> to find out more about RawShare 2.0.</p>
 </div> -->
 
 ## The challenge
@@ -112,7 +111,7 @@ The app has been divided into four main sections:
   - Choose a day and time for pick-up.
   - Receive a notification if the chosen time doesn’t match the owner’s preferences.
 
-## Final product
+## RawShare 1.0 - final product
 
 ![Mockups of Start and Home page](/portfolio/assets/rawshare/rs-mockups-start-home.jpg)
 

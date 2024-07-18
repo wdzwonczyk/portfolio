@@ -2,7 +2,7 @@
 title: Apartament Diamond
 titleLong: Apartament Diamond - a website for renting the apartment
 publishDate: 2023-05-06 00:00:00
-img: /portfolio/assets/apartament-diamond/ad-mockups-preview.png
+img: /portfolio/assets/apartament-diamond/ad-mockups-device.jpg
 img_alt: Apartament Diamond website
 imgLogo: /portfolio/assets/logo/ad-logo.png
 imgLogoAlt: Apartament Diamond logo

@@ -2,7 +2,7 @@
 title: Arla
 titleLong: Arla Farmers - a web app for farmers to monitor reducing CO2 emissions
 publishDate: 2023-05-03 00:00:00
-img: /portfolio/assets/arla/arla-homepage.png
+img: /portfolio/assets/arla/arla-mockups-device.jpg
 img_alt: Digital prototype
 imgLogo: /portfolio/assets/logo/arla-logo.png
 imgLogoAlt: Arla logo

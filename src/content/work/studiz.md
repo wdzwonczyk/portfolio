@@ -2,7 +2,7 @@
 title: Studiz
 titleLong: Studiz - a redesigned mobile app with student discounts
 publishDate: 2023-05-04 00:00:00
-img: /portfolio/assets/studiz/studiz-mockup.png
+img: /portfolio/assets/studiz/studiz-mockups-device.jpg
 img_alt: Studiz mobile app
 imgLogo: /portfolio/assets/logo/studiz-logo.png
 imgLogoAlt: Studiz logo
@@ -18,7 +18,6 @@ roles:
 tools:
   - Figma
   - FigJam
-  - Notion
   - Design System
 devices:
   - mobile (iOS & Android)
