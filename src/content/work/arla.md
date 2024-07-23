@@ -6,6 +6,10 @@ img: /portfolio/assets/arla/arla-mockups-device.jpg
 img_alt: Digital prototype
 imgLogo: /portfolio/assets/logo/arla-logo.png
 imgLogoAlt: Arla logo
+projectOverviewList:
+  - /portfolio/assets/arla/arla-overview-device-1.jpg
+  - /portfolio/assets/arla/arla-mockups-device.jpg
+  - /portfolio/assets/arla/arla-overview-device-2.jpg
 projectOverviewImg: /portfolio/assets/arla/arla-mockups-overview.jpg
 projectOverviewImgAlt: Arla Farmers project overview
 metaTitle: Arla CO2 Reduction Solution | Farmer's Dashboard Design Case Study

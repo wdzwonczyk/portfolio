@@ -6,6 +6,10 @@ img: /portfolio/assets/rawshare/rs-mockups-device.jpg
 img_alt: RawShare mobile web application
 imgLogo: /portfolio/assets/logo/rs-logo.png
 imgLogoAlt: RawShare logo
+projectOverviewList:
+  - /portfolio/assets/rawshare/rs-overview-device-1.jpg
+  - /portfolio/assets/rawshare/rs-overview-device-2.jpg
+  - /portfolio/assets/rawshare/rs-overview-device-3.jpg
 projectOverviewImg: /portfolio/assets/rawshare/rs-mockups-overview.jpg
 projectOverviewImgAlt: RawShare project overview
 metaTitle: RawShare - Share Food Locally | Web App Case Study

@@ -6,6 +6,10 @@ img: /portfolio/assets/apartament-diamond/ad-mockups-device.jpg
 img_alt: Apartament Diamond website
 imgLogo: /portfolio/assets/logo/ad-logo.png
 imgLogoAlt: Apartament Diamond logo
+projectOverviewList:
+  - /portfolio/assets/apartament-diamond/ad-mockups-device.jpg
+  - /portfolio/assets/apartament-diamond/ad-mockups-device-2.jpg
+  - /portfolio/assets/apartament-diamond/ad-mockups-device-3.jpg
 projectOverviewImg: /portfolio/assets/apartament-diamond/ad-mockups-overview.jpg
 projectOverviewImgAlt: Apartament Diamond project overview
 metaTitle: Apartament Diamond | Website Case Study

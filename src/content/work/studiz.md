@@ -6,6 +6,10 @@ img: /portfolio/assets/studiz/studiz-mockups-device.jpg
 img_alt: Studiz mobile app
 imgLogo: /portfolio/assets/logo/studiz-logo.png
 imgLogoAlt: Studiz logo
+projectOverviewList:
+  - /portfolio/assets/studiz/studiz-overview-device-1.jpg
+  - /portfolio/assets/studiz/studiz-overview-device-2.jpg
+  - /portfolio/assets/studiz/studiz-overview-device-3.jpg
 projectOverviewImg: /portfolio/assets/studiz/studiz-mockups-overview.jpg
 projectOverviewImgAlt: Studiz project overview
 metaTitle: Studiz - Student Life with Discounts | Mobile App Redesign Case Study
