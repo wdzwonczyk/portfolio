@@ -26,8 +26,8 @@ const { Content } = await entry.render();
 		<div class="mb-16 mt-16 md:mt-[134px] md:mx-auto scroll-smooth">
 			<header>
 				<div class="gap-2">
-					<a class="group text-blue-500 flex items-center gap-x-2 mb-4 cursor-pointer" href="/portfolio/work/">
-                        <i class="iconoir-arrow-left text-[16px] group-hover:text-blue-500 group-hover:translate-x-1 duration-200"></i>
+					<a class="group text-indigo-600 flex items-center gap-x-2 mb-4 cursor-pointer" href="/portfolio/work/">
+                        <i class="iconoir-arrow-left text-[16px] group-hover:text-indigo-600 group-hover:translate-x-1 duration-200"></i>
                         Portfolio
                     </a>
                     <div class="flex flex-col mb-8 md:flex-row md:flex-wrap md:justify-between space-y-4 md:space-y-0 md:space-x-4">
@@ -56,7 +56,7 @@ const { Content } = await entry.render();
                                 <span class="text-lg text-gray-400">{entry.data.productType}</span>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-y-2 bg-gray-200 px-4 py-4 my-8 rounded-lg">
+                        <div class="flex flex-col gap-y-2 bg-gray-100 px-4 py-4 my-8 rounded-lg">
                             <span class="flex items-center gap-x-2">
                                 <i class="iconoir-profile-circle text-[24px]"></i>
                                 <p>
@@ -85,7 +85,7 @@ const { Content } = await entry.render();
                                                 const isLastItem = index === entry.data.exploreFigmaLinks.length - 1;
                                                 return (
                                                     <>
-                                                        <a href={link.url} target="_blank" class="text-blue-500 hover:underline">
+                                                        <a href={link.url} target="_blank" class="text-indigo-600 hover:underline">
                                                             {link.type}
                                                         </a>
                                                         {isLastItem ? '' : ' | '}
@@ -95,7 +95,7 @@ const { Content } = await entry.render();
                                             in {entry.data.linkSource}
                                         </>
                                         : entry.data.exploreProductLink ?
-                                            <a href={entry.data.exploreProductLink} target="_blank" class="text-blue-500 hover:underline">
+                                            <a href={entry.data.exploreProductLink} target="_blank" class="text-indigo-600 hover:underline">
                                                 <span>
                                                     {entry.data.exploreText} in {entry.data.linkSource}
                                                 </span>
@@ -107,7 +107,7 @@ const { Content } = await entry.render();
                             {entry.data.githubRepoLink && 
                                 <span class="flex items-center gap-x-2">
                                     <i class="iconoir-github-circle text-[24px]"></i>
-                                    <a href={entry.data.githubRepoLink} target="_blank" class="text-blue-500 hover:underline">
+                                    <a href={entry.data.githubRepoLink} target="_blank" class="text-indigo-600 hover:underline">
                                         Github repository
                                     </a>
                                 </span>
@@ -129,8 +129,8 @@ const { Content } = await entry.render();
                 </div>
 			</div>
 		</div>
-        <a class="group text-blue-500 flex items-center justify-center gap-x-2 mb-16 mx-auto cursor-pointer" href="#beginning">
-            <i class="iconoir-arrow-up text-[16px] group-hover:text-blue-500 group-hover:-translate-y-1 duration-200"></i>
+        <a class="group text-indigo-600 flex items-center justify-center gap-x-2 mb-16 mx-auto cursor-pointer" href="#beginning">
+            <i class="iconoir-arrow-up text-[16px] group-hover:text-indigo-600 group-hover:-translate-y-1 duration-200"></i>
             Go to the top
         </a>
 		<ContactCTA title="Do you like the work I did?"/>

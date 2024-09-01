@@ -27,6 +27,7 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<!-- <img class="absolute top-0 left-0 right-0 w-full" src="../assets/bg-main.png"/> -->
 		<Nav/>
 		<slot />
 	</body class="text">
@@ -41,6 +42,10 @@ const { title, description } = Astro.props;
 	html {
 		font-family: system-ui, sans-serif;
 		background-color: #FFFFFF;
+		background-image: url("../assets/bg-main.png");
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: contain;
 		scroll-behavior: smooth;
 	}
 
@@ -66,4 +71,9 @@ const { title, description } = Astro.props;
 		padding: 1.5rem;
 		max-width: 100ch;
 	}
+	@media (max-width: 768px){
+        html {
+			background-image: url("../assets/bg-main-sm.png");
+	}
+    }
 </style>

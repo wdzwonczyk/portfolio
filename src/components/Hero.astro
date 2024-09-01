@@ -7,22 +7,22 @@ export interface Props {
 const { title, subTitle } = Astro.props;
 ---
 
-<div id="imageContainer" class="h-screen flex justify-center items-center flex-col w-[90%] mx-auto">
-	<h1 class="mb-4 sm:mb-0 sm:mt-4 text-center sm:order-2">
-		<p class="text-3xl md:text-4xl font-bold">{title}</p>
-		<p class="text-lg text-gray-400 font-sans">{subTitle}</p>
+<div id="imageContainer" class="h-screen flex justify-center items-center flex-col md:flex-row gap-8 w-[95%] mx-auto">
+	<h1 class="mb-4 sm:mb-0 sm:mt-4 text-center md:text-left md:w-[40%]">
+		<p class="text-3xl md:text-6xl font-bold leading-relaxed">{title}</p>
+		<p class="text-xl text-gray-400 font-sans mt-2">{subTitle}</p>
 	</h1>
 	<img 
 		src="../portfolio/assets/avatar.png" 
-		class="w-[90%] md: max-w-[400px]" 
+		class="w-[80%] max-w-[300px] sm:w-[60%] md:max-w-[400px] order-1 md:order-2" 
 		alt="Wojciech Dzwonczyk - profile image"
 	/>
 	<div class="flex md:flex-col gap-x-2 md:gap-x-0 gap-y-2 absolute bottom-4 right-16">
-		<a href="https://www.linkedin.com/in/wojciech-dzwonczyk" target="_blank" aria-label="Link to Linkedin profile" class="border-[1.5px] border-gray-900 hover:border-blue-500 group px-1 py-1 rounded-full w-9 h-9 p-1 flex justify-center items-center">
-			<i class="iconoir-linkedin text-[24px] text-gray-900 group-hover:text-blue-500"></i>
+		<a href="https://www.linkedin.com/in/wojciech-dzwonczyk" target="_blank" aria-label="Link to Linkedin profile" class="border-[1.5px] border-gray-900 hover:text-indigo-600 group px-1 py-1 rounded-full w-9 h-9 p-1 flex justify-center items-center">
+			<i class="iconoir-linkedin text-[24px] text-gray-900 group-hover:text-indigo-600"></i>
 		</a>
-		<a href="https://www.instagram.com/wojo.dz/" target="_blank" aria-label="Link to Instagram profile" class="border-[1.5px] border-gray-900 hover:border-blue-500 group px-1 py-1 rounded-full w-9 h-9 p-1 flex justify-center items-center">
-			<i class="iconoir-instagram text-[24px] text-gray-900 group-hover:text-blue-500"></i>
+		<a href="https://www.instagram.com/wojo.dz/" target="_blank" aria-label="Link to Instagram profile" class="border-[1.5px] border-gray-900 hover:text-indigo-600 group px-1 py-1 rounded-full w-9 h-9 p-1 flex justify-center items-center">
+			<i class="iconoir-instagram text-[24px] text-gray-900 group-hover:text-indigo-600"></i>
 		</a>
 	</div>
 </div>
