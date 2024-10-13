@@ -30,6 +30,14 @@ linkSource: "Figma"
 exploreFigmaLinks: 
 - url: "https://www.figma.com/file/X95CXJZU7cnLTiMDnbNAcy/Mockups?type=design&node-id=1981%3A21405&mode=design&t=10ezg6XTqPIexWP2-1"
   type: "Mockups"
+
+exploreFigmaLinks: 
+- url: "https://www.figma.com/design/7AaigZpBYBNSrOLAzGG18O/RS-2.0-Mockups?node-id=0-1&t=Fi22yeA6KKv6GnjD-1"
+  type: "Mockups"
+- url: "https://www.figma.com/design/bJDclReMa35kQShcAiRAhs/RS-2.0-Components?node-id=545-180&t=hiqb3EFGUnYTRTGx-1"
+  type: "Component library"
+- url: "https://www.figma.com/design/VzfUx8eRkV0gBzne5v9Fxh/RS-2.0-Foundation?node-id=0-1&t=jgAKD9zcNFDThCpA-1"
+  type: "Foundation"
 exploreText: Explore the RawShare app
 
 githubRepoLink: https://github.com/Wojo3214/foodwaste-app
@@ -124,13 +132,13 @@ The app has been divided into four main sections:
             
 ## RawShare 2.0
 
-Since the project hand-in, the app’s design and the entire design system have been updated. The app now provides users with an even better experience through a sleek and modern interface, improved navigation, and new features.
+Since the project hand-in, the app’s design and the entire design system have been updated. The app now provides users with an even better experience through a sleek and modern interface, improved navigation, new features, and enhanced accessibility. Key improvements include better color contrast, larger touch targets, and labeled navigation elements, making the app more user-friendly for everyone, including those with disabilities.
 
 ![Example of mockups that represents RawShare v.2](/portfolio/assets/rawshare/rs-mockups-2.jpg)
 
 ## Design system 2.0
 
-The RawShare design system has been rebuilt from scratch once again. The biggest change is the way in which all foundation information is displayed. Currently, the information is shown and structured in a user-friendly manner for both designers and developers.
+The RawShare design system has been rebuilt from scratch once again. The biggest change is that the entire foundation is now based on Figma variables such as colors, spacing, typography, and styles like shadows and effects. This update streamlines the design process, ensuring consistency and making collaboration between designers and developers more efficient.
 
 ![Example of new Design System that presents a Foundation section](/portfolio/assets/rawshare/rs-ds-2-foundation.jpg)
 
@@ -144,21 +152,32 @@ The RawShare design system has been rebuilt from scratch once again. The biggest
 
 This section presents the transformations we have implemented to enhance the app's flow and design. These updates underscore our commitment to user-friendly design and seamless functionality. As you explore the following sections, you will see steps that we have taken to exceed user expectations based on the gathered feedback.
 
-![RawShare app before and after redesigning - Start page](/portfolio/assets/rawshare/rs-start-page-comparison.jpg)
+![RawShare app before and after redesigning - Start page](/portfolio/assets/rawshare/rs-start-page-comparison-2.jpg)
 
-**Start Page**: Rebranded for a cleaner, more minimalistic look.
+**Start Page**: 
 
-![RawShare app before and after redesigning - Home page](/portfolio/assets/rawshare/rs-home-page-comparison.jpg)
+- Rebranded for a cleaner, more minimalistic look.
+- Added social media sign-in options for smoother, more convenient login experience.
 
-**Home Page**: Cosmetic adjustments and new badges for product availability.
+![RawShare app before and after redesigning - Home page](/portfolio/assets/rawshare/rs-home-page-comparison-2.jpg)
 
-![RawShare app before and after redesigning - Product item page](/portfolio/assets/rawshare/rs-product-item-comparison.jpg)
+**Home Page**:
+- Revamped flow with combined list and map views for a smoother experience and easier navigation
+- Switch between views by dragging the list up or down.
+- Navigation labels added for better accessibility.
 
-**Product Item Page**: Emphasized seller information and fixed ‘Book item’ button.
+![RawShare app before and after redesigning - Product item page](/portfolio/assets/rawshare/rs-product-item-comparison-2.jpg)
 
-![RawShare app before and after redesigning - Orders page](/portfolio/assets/rawshare/rs-booked-comparison.jpg)
+**Product Page**:
+- Emphasized seller information for better recognition, helping users decide if the seller is trustworthy enough to get food from them.
+- Highlighted seller’s pickup preferences, making it easier for users to adjust and coordinate when picking up food.
+- Fixed "Add to basket" button to the navigation for easier access.
 
-**Orders Page**: Redesigned for clarity, categorized orders, and a modal for additional details.
+![RawShare app before and after redesigning - Orders page](/portfolio/assets/rawshare/rs-booked-comparison-2.jpg)
+
+**Orders Page**: 
+- Orders categorized by colors for easier recognition of their status (e.g., pending, accepted, or rejected).
+- Status track preview added for a quick look at the current step in the order process.
 
 Of course, the presented images may not show every detail, flow, and aspect of the app. That's why I invite you to visit our <a href="https://www.figma.com/file/BocF8eNzCFYOvj8lMDFt0I/Mockups?node-id=2003%3A14726&t=oQjitJCWdZyhCI4Y-1" class="prototyp" target="_blank">Figma file</a> and check out the entire project there.
 
