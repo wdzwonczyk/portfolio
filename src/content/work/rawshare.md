@@ -28,10 +28,6 @@ devices:
 
 linkSource: "Figma"
 exploreFigmaLinks: 
-- url: "https://www.figma.com/file/X95CXJZU7cnLTiMDnbNAcy/Mockups?type=design&node-id=1981%3A21405&mode=design&t=10ezg6XTqPIexWP2-1"
-  type: "Mockups"
-
-exploreFigmaLinks: 
 - url: "https://www.figma.com/design/7AaigZpBYBNSrOLAzGG18O/RS-2.0-Mockups?node-id=0-1&t=Fi22yeA6KKv6GnjD-1"
   type: "Mockups"
 - url: "https://www.figma.com/design/bJDclReMa35kQShcAiRAhs/RS-2.0-Components?node-id=545-180&t=hiqb3EFGUnYTRTGx-1"
