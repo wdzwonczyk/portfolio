@@ -175,7 +175,7 @@ This section presents the transformations we have implemented to enhance the app
 - Orders categorized by colors for easier recognition of their status (e.g., pending, accepted, or rejected).
 - Status track preview added for a quick look at the current step in the order process.
 
-Of course, the presented images may not show every detail, flow, and aspect of the app. That's why I invite you to visit our <a href="https://www.figma.com/file/BocF8eNzCFYOvj8lMDFt0I/Mockups?node-id=2003%3A14726&t=oQjitJCWdZyhCI4Y-1" class="prototyp" target="_blank">Figma file</a> and check out the entire project there.
+Of course, the presented images may not show every detail, flow, and aspect of the app. That's why I invite you to visit our <a href="https://www.figma.com/design/7AaigZpBYBNSrOLAzGG18O/RS-2.0-Mockups?node-id=0-1&t=Fi22yeA6KKv6GnjD-1" class="prototyp" target="_blank">Figma file</a> and check out the entire project there.
 
 ## Conclusions
 
