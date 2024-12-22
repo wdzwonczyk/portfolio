@@ -9,7 +9,7 @@ const { title, subTitle } = Astro.props;
 
 <div id="imageContainer" class="h-screen flex justify-center items-center flex-col md:flex-row gap-8 w-[95%] mx-auto">
 	<h1 class="mb-4 sm:mb-0 sm:mt-4 text-center md:text-left md:w-[40%]">
-		<p class="text-3xl md:text-6xl font-bold leading-relaxed">{title}</p>
+		<p class="text-3xl md:text-6xl font-bold leading-none">{title}</p>
 		<p class="text-xl text-gray-400 font-sans mt-2 max-w-[500px]">{subTitle}</p>
 	</h1>
 	<img 
@@ -17,7 +17,7 @@ const { title, subTitle } = Astro.props;
 		class="w-[80%] max-w-[300px] sm:w-[60%] md:max-w-[400px] order-1 md:order-2" 
 		alt="Wojciech Dzwonczyk - profile image"
 	/>
-	<div class="flex gap-x-2 absolute bottom-4 right-16">
+	<div class="flex gap-x-2 absolute bottom-4 right-4 md:right-16">
 		<a href="https://www.linkedin.com/in/wojciech-dzwonczyk" target="_blank" aria-label="Link to Linkedin profile" class="border-[1.5px] border-gray-900 hover:text-indigo-600 group px-1 py-1 rounded-full w-9 h-9 p-1 flex justify-center items-center">
 			<i class="iconoir-linkedin text-[24px] text-gray-900 group-hover:text-indigo-600"></i>
 		</a>
@@ -25,7 +25,7 @@ const { title, subTitle } = Astro.props;
 			<i class="iconoir-instagram text-[24px] text-gray-900 group-hover:text-indigo-600"></i>
 		</a>
 	</div>
-	<div class="flex gap-x-2 absolute bottom-5 left-16">
+	<div class="flex gap-x-2 absolute bottom-5 left-4 md:left-16">
 		<i class="iconoir-map-pin text-[24px] text-gray-900"></i>
 		<p class="text-base text-gray-900 font-sans">Lubin, Poland</p>
 	</div>
