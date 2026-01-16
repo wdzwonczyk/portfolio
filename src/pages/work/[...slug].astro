@@ -142,11 +142,14 @@ const { Content } = await entry.render();
     }
 
     .content :global(h1),
-	.content :global(h2),
+	.content :global(h2){
+		margin: 1.5rem 0;
+	}
+
 	.content :global(h3),
 	.content :global(h4),
 	.content :global(h5) {
-		margin: 1.5rem 0;
+		margin: 1.5rem 0 1rem 0;
 	}
 
     .content :global(h2){
@@ -155,12 +158,17 @@ const { Content } = await entry.render();
     }
 
     .content :global(h3){
-        @apply text-lg font-bold 
+        @apply text-xl font-semibold 
+    }
+
+    .content :global(h4){
+        @apply text-lg font-semibold 
     }
 
     .content :global(ul) {
 		list-style-type: disc;
         margin: 8px 0;
+        padding-left: 18px;
 	}
 
     .content :global(p) {
@@ -185,6 +193,10 @@ const { Content } = await entry.render();
         color: #4f46e5;
 	}
 
+    .content :global(strong) {
+        font-weight: 600;
+	}
+
     .content :global(img) {
         margin-left: auto;
         margin-right: auto;
@@ -194,6 +206,13 @@ const { Content } = await entry.render();
     @media (min-width: 768px){
         .content :global(h2){
             font-size: 32px;
+        }
+        .content :global(h3){
+            font-size: 24px;
+        }
+
+        .content :global(h4){
+            font-size: 20px;
         }
     }
 </style>
