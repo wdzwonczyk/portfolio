@@ -91,8 +91,6 @@ Users preferred direct contact instead of digital tools because the platform did
 - Low conversion and scattered communication channels
 - Legal content and processes had to remain accurate and compliant
 
-![47software website - design system foundation](/portfolio/assets/47software/47-ds-foundation.jpg)
-
 ## My role
 
 I was responsible for the full design process:
