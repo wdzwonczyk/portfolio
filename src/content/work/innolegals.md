@@ -14,7 +14,7 @@ projectOverviewImg: /portfolio/assets/apartament-diamond/ad-mockups-overview.jpg
 projectOverviewImgAlt: innolegals project overview
 metaTitle: Innolegals | Website/Dashboard Case Study
 metaDescription: |
-  Explore the 47software project — a modern website design for a Polish software house specializing in digital solutions. Discover how clean visuals, subtle animations, and a strategic UI/UX approach highlight the company’s services, tech expertise, and development process while engaging users through a seamless and dynamic experience.
+  Explore the Innolegals project — UX/UI case study of a full website and dashboard redesign for an immigration service, featuring a Free Assessment flow, improved conversions, and user adoption.
 productType: Website | Freelance project
 tagName: Product | UX | UI
 roles:
