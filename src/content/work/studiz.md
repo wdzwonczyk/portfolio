@@ -27,7 +27,7 @@ devices:
   - mobile (iOS & Android)
 linkSource: "App Store"
 exploreProductLink: https://apps.apple.com/pl/app/studiz/id665031046?l=pl
-exploreText: Check the mobile app
+exploreText: Check the mobile app in 
 ---
 
 Studiz is both the name of the company and its flagship product—a mobile app designed to simplify and economize student life. The app offers hundreds of discounts, a digital Student ID, a canteen system, a library system, and more, all tailored to the specific needs of students.

@@ -2,40 +2,34 @@
 title: Innolegals
 titleLong: InnoLegals – Immigration services in Spain
 publishDate: 2025-05-06 00:00:00
-img: /portfolio/assets/47software/47-mockups-preview.jpg
+img: /portfolio/assets/innolegals/innolegals-mockup-preview.png
 img_alt: Innolegals website
-imgLogo: /portfolio/assets/logo/47software-logo.png
+imgLogo: /portfolio/assets/logo/innolegals-logo.png
 imgLogoAlt: Innolegals logo
 projectOverviewList:
-  - /portfolio/assets/47software/47-mockups-device.jpg
-  - /portfolio/assets/47software/47-mockups-device-2.jpg
-  - /portfolio/assets/47software/47-mockups-device-3.jpg
+  - /portfolio/assets/innolegals/innolegal-hero1-mockup.png
+  - /portfolio/assets/innolegals/innolegal-hero2-mockup.png
+  - /portfolio/assets/innolegals/innolegal-hero3-mockup.png
 projectOverviewImg: /portfolio/assets/apartament-diamond/ad-mockups-overview.jpg
-projectOverviewImgAlt: 47software project overview
+projectOverviewImgAlt: innolegals project overview
 metaTitle: Innolegals | Website/Dashboard Case Study
 metaDescription: |
   Explore the 47software project — a modern website design for a Polish software house specializing in digital solutions. Discover how clean visuals, subtle animations, and a strategic UI/UX approach highlight the company’s services, tech expertise, and development process while engaging users through a seamless and dynamic experience.
 productType: Website | Freelance project
-tagName: UX | UI | Product
+tagName: Product | UX | UI
 roles:
   - Product Designer
 tools:
   - Figma
-  - Figma Variables
   - Design System
 devices:
   - desktop
   - tablet
   - mobile
-linkSource: "Figma"
-exploreFigmaLinks: 
-- url: "https://www.figma.com/design/Nv3XjEJsgaR2CRMcY1UYCl/47software---mockups?node-id=714-2921&t=WLcr1EPdYe8qWQjH-1"
-  type: "Mockups"
-- url: "https://www.figma.com/design/rMnEckPe4RTxyNTKA0WkeS/47software---components?node-id=81-39&t=MkzzkgZOJMi7dRRS-1"
-  type: "Component library"
-- url: "https://www.figma.com/design/cb6TUCX5s0UWdCKHUL5UUQ/47software---foundation?node-id=0-1&t=INBPyzMnGk10CX48-1"
-  type: "Foundation"
-exploreText: Explore the Innolegals website
+
+linkSource: "Innolegals website"
+exploreProductLink: https://www.innolegals.com/
+exploreText: Explore the
 ---
 
 InnoLegals helps non-EU immigrants, expats, entrepreneurs, and students apply for different types of visas in Spain. The company supports users through complex legal processes that often feel overwhelming and stressful.
@@ -128,6 +122,9 @@ I was responsible for the full design process:
 ## Strategy
 
 ### Website
+
+![innolegals website - mockups](/portfolio/assets/innolegals/innolegal-mockups.jpg)
+
 The main purpose of the website became one clear action: **request a call with an advisor and start the Free Assessment before that**.
 
 Instead of presenting only a list of services, I also redesigned the experience to guide users step by step. The goal was to help them:
@@ -139,6 +136,8 @@ Instead of presenting only a list of services, I also redesigned the experience 
 All CTAs, page layouts, and content hierarchy supported this primary goal.
 
 ### Free Assessment
+
+![innolegals website - free assessment](/portfolio/assets/innolegals/innolegal-free-assessment.jpg)
 
 #### What is the Free Assessment?
 The Free Assessment is an interactive eligibility tool that helps users understand:
@@ -164,6 +163,8 @@ Users could start the assessment from:
 - Footer
 
 #### Logic design
+![innolegals website - free assessment flow](/portfolio/assets/innolegals/innolegal-free-assessment-flow.jpg)
+
 I designed the entire logic system behind the assessment.
 
 **Branching logic**
@@ -200,6 +201,8 @@ The biggest challenge was:
 - Keeping everything understandable for non-expert users
 
 ## Dashboard redesign
+
+![innolegals website - dashboard](/portfolio/assets/innolegals/innolegal-dashboard.jpg)
 
 ### What is the Dashboard
 
