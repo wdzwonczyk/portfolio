@@ -1,0 +1,47 @@
+---
+export interface Props {
+	/** Main CTA heading (replaces separate ContactCTA title). */
+	title: string;
+	/** CV file URL; when set, shows the bordered “Download my CV” pill. */
+	href?: string;
+}
+
+const { title, href } = Astro.props;
+const connectMail = "mailto:wdzwonek97@gmail.com?subject=Let%27s%20connect";
+const messageMail = "mailto:wdzwonek97@gmail.com";
+const phoneHref = "tel:+4591718714";
+
+const pill =
+	"inline-flex items-center justify-center rounded-full border border-neutral-500 px-6 py-3 text-sm font-medium text-white transition hover:border-neutral-300 hover:bg-white/5 md:px-7 md:text-base";
+---
+
+<section
+	class="section-block-y w-full border-t border-slate-800/80 bg-slate-950 text-white"
+>
+	<div class="page-section flex flex-col items-center justify-center gap-8 text-center md:gap-10">
+		<h2
+			class="font-heading max-w-3xl px-1 text-[1.375rem] font-bold leading-snug tracking-tight text-white md:text-[1.65rem]"
+		>
+			{title}
+		</h2>
+
+		<div
+			class="flex w-full max-w-lg flex-col flex-wrap items-center justify-center gap-4 sm:flex-row sm:gap-6 md:max-w-none md:gap-8"
+		>
+			{
+				href && (
+					<a href={href} download="Wojciech-Dzwonczyk-cv.pdf" class={pill}>
+						Download my CV
+					</a>
+				)
+			}
+			<a
+				href={connectMail}
+				class="inline-flex items-center gap-2 text-sm font-medium text-neutral-200 transition hover:text-white md:text-base"
+			>
+				<span>Let's connect</span>
+				<i class="iconoir-arrow-up-right text-[1.125rem]" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+</section>

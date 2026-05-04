@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro"
+import "../styles/global.css";
 export interface Props {
 	title: string;
 	description: string;
@@ -22,6 +23,13 @@ const { title, description } = Astro.props;
 		<meta property="og:url" content="https://wdzwonczyk.github.io/portfolio/" />
 		<meta property=”og:image” content="https://wdzwonczyk.github.io/portfolio/assets/avatar.png" />
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
 
 		<title>{title}</title>
@@ -29,51 +37,59 @@ const { title, description } = Astro.props;
 	<body>
 		<!-- <img class="absolute top-0 left-0 right-0 w-full" src="../assets/bg-main.png"/> -->
 		<Nav/>
-		<slot />
-	</body class="text">
-	<Footer/>
+		<div>
+			<slot />
+		</div>
+		<Footer/>
+	</body>
 </html>
 <style is:global>
-	@font-face {
-		font-family: 'GlacialIndifference-Bold';
-		src: url('/portfolio/assets/fonts/GlacialIndifference-Bold.otf') format('otf');
-		font-weight: bold;
-	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: "Ubuntu", ui-sans-serif, system-ui, sans-serif;
 		background-color: #FFFFFF;
-		background-image: url("../assets/bg-main.png");
-		background-position: top;
-		background-repeat: no-repeat;
-		background-size: contain;
+		/*background-image: url("../assets/bg-main.png");*/
+		/*background-position: top;*/
+		/*background-repeat: no-repeat;*/
+		/*background-size: contain;*/
 		scroll-behavior: smooth;
 	}
 
-	h1,h2,h3,h4,h5,h6{
-		font-family: "GlacialIndifference-Bold", sans-serif;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Ubuntu", ui-sans-serif, system-ui, sans-serif;
 	}
 
-	h1{
-		@apply text-[32px]
+	.h-display{
+		font-size: 14dvh;
+	}
+
+	.h1{
+		font-size: 32px;
 	}
 
 	/* H2 class */
 	.h2{
-		@apply text-2xl md:text-3xl font-bold
+		font-size: 1.5rem;
+		font-weight: 700;
 	}
 
-	.skill-heading{
-		@apply text-lg font-glacialIndifference
+	.skill-heading {
+		font-size: 1.125rem;
+		font-family: "Ubuntu", ui-sans-serif, system-ui, sans-serif;
 	}
 
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 100ch;
-	}
 	@media (max-width: 768px){
         html {
 			background-image: url("../assets/bg-main-sm.png");
 	}
     }
+	@media (min-width: 768px){
+		.h2{
+			font-size: 1.875rem;
+		}
+	}
 </style>

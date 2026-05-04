@@ -5,14 +5,21 @@ export interface Props {
 }
 
 const { title, subTitle } = Astro.props;
----
 
-<div id="imageContainer" class="h-screen flex justify-center items-center flex-col md:flex-row gap-8 w-[95%] mx-auto">
-	<h1 class="mb-4 sm:mb-0 sm:mt-4 text-center md:text-left md:w-[40%]">
-		<p class="text-3xl md:text-6xl font-bold leading-none">{title}</p>
-		<p class="text-xl text-gray-400 font-sans mt-2 max-w-[500px]">{subTitle}</p>
-	</h1>
-	<img 
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+---
+<BackgroundBeamsWithCollision client:load className="min-h-screen">
+	<div class="flex flex-col gap-4 mx-auto mb-16 sm:mb-12 sm:mt-4 w-[90%]">
+
+		<div class="px-4 py-2 border-1 border-gray-900 rounded-full w-fit">
+			Hi! I'm Wojciech 👋
+		</div>	
+		<h1>
+			<p class="text-[6dvh] md:text-[10dvh] font-bold md:leading-36 lg:text-[14dvh] lg:leading-40">{title}</p>
+			<p class="text-xl text-gray-400 font-sans mt-2 max-w-[500px]">{subTitle}</p>
+		</h1>
+	</div>
+	<!-- <img 
 		src="../portfolio/assets/avatar.png" 
 		class="w-[80%] max-w-[300px] sm:w-[60%] md:max-w-[400px] order-1 md:order-2" 
 		alt="Wojciech Dzwonczyk - profile image"
@@ -28,5 +35,8 @@ const { title, subTitle } = Astro.props;
 	<div class="flex gap-x-2 absolute bottom-5 left-4 md:left-16">
 		<i class="iconoir-map-pin text-[24px] text-gray-900"></i>
 		<p class="text-base text-gray-900 font-sans">Lubin, Poland</p>
-	</div>
-</div>
+	</div>-->
+</BackgroundBeamsWithCollision>
+<!-- <div id="imageContainer" class="h-screen flex justify-center items-center flex-col md:flex-row gap-8 w-[95%] mx-auto">
+	
+</div> -->

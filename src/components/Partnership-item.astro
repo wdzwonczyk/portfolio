@@ -1,0 +1,22 @@
+---
+export interface Props {
+	imgSrc: string;
+	imgAlt: string;
+}
+
+const { imgSrc, imgAlt } = Astro.props;
+---
+
+<div class="flex h-[160px] w-[160px] min-w-0 items-center justify-center">
+	<div
+		class="flex aspect-square h-full max-h-full w-auto max-w-full shrink-0 items-center justify-center rounded-full bg-slate-900"
+	>
+		<img
+			src={imgSrc}
+			alt={imgAlt}
+			class="max-h-[52%] max-w-[68%] object-contain sm:max-h-[48%] sm:max-w-[62%]"
+			loading="lazy"
+			decoding="async"
+		/>
+	</div>
+</div>

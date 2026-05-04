@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'glacialIndifference': ['GlacialIndifference-Bold', 'sans-serif'],
+				glacialIndifference: ['Ubuntu', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 			},
 		},
 	},

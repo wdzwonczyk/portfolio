@@ -1,0 +1,66 @@
+---
+import PartnershipItem from "../components/Partnership-item.astro";
+
+const partners = [
+	{
+		imgSrc: "/portfolio/assets/logo/innolegals-logo.png",
+		imgAlt: "Innolegals logo",
+	},
+	{
+		imgSrc: "/portfolio/assets/logo/ng-logo.svg",
+		imgAlt: "NoGapps logo",
+	},
+	{
+		imgSrc: "/portfolio/assets/logo/studiz-logo.svg",
+		imgAlt: "Studiz logo",
+	},
+	{
+		imgSrc: "/portfolio/assets/logo/bleau-logo.svg",
+		imgAlt: "Bleau logo",
+	},
+	{
+		imgSrc: "/portfolio/assets/logo/wd-logo.svg",
+		imgAlt: "Freelance / WD logo",
+	},
+] as const;
+---
+
+<section class="w-full bg-[#0a0a0a] text-white section-block-y">
+	<div class="page-section flex w-full min-w-0 flex-col justify-center text-center">
+		<h2 class="h2">Products I’ve helped shape</h2>
+		<p class="text-xl text-gray-400">Working with teams that build with intention, not assumptions.</p>
+
+		<div
+			class="mt-10 grid w-full min-w-0 grid-cols-6 grid-rows-[minmax(0,1fr)_minmax(0,1fr)] items-stretch gap-x-2 gap-y-6 min-h-[clamp(12rem,28vw,22rem)] sm:gap-x-3 sm:gap-y-8 md:gap-x-4 md:gap-y-10 md:mt-16"
+		>
+			<!-- Row 1: three equal cells (o o o) -->
+			<div
+				class="col-span-2 col-start-1 row-start-1 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+			>
+				<PartnershipItem imgSrc={partners[0].imgSrc} imgAlt={partners[0].imgAlt} />
+			</div>
+			<div
+				class="col-span-2 col-start-3 row-start-1 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+			>
+				<PartnershipItem imgSrc={partners[1].imgSrc} imgAlt={partners[1].imgAlt} />
+			</div>
+			<div
+				class="col-span-2 col-start-5 row-start-1 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+			>
+				<PartnershipItem imgSrc={partners[2].imgSrc} imgAlt={partners[2].imgAlt} />
+			</div>
+
+			<!-- Row 2: two cells centered ( o o ) -->
+			<div
+				class="col-span-2 col-start-2 row-start-2 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+			>
+				<PartnershipItem imgSrc={partners[3].imgSrc} imgAlt={partners[3].imgAlt} />
+			</div>
+			<div
+				class="col-span-2 col-start-4 row-start-2 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+			>
+				<PartnershipItem imgSrc={partners[4].imgSrc} imgAlt={partners[4].imgAlt} />
+			</div>
+		</div>
+	</div>
+</section>

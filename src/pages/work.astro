@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ContactCTA from '../components/ContactCTA.astro';
-import ProjectsLayout from '../layouts/ProjectsLayout.astro';
+import ProjectsLayout from '../sections/ProjectsLayout.astro';
+import CVLayout from '../sections/CVLayout.astro';
 
 //Portfolio content
 const portfolio = [
@@ -33,11 +33,14 @@ const portfolio = [
 ---
 
 <Layout title="Portfolio | Wojciech Dzwonczyk." description="Discover a collection of my latest projects as a UX/UI Designer and Front-end Developer. Explore the creative solutions, user-centered designs, and seamless front-end implementations that I have crafted to solve diverse challenges.">
-	<main>
-		<ProjectsLayout>
+	<main class="pt-[var(--nav-h)]">
+		<ProjectsLayout underFixedNav>
 			<h1 class="text-3xl md:text-4xl font-bold">Portfolio</h1>
 			<p class="text-lg text-gray-400">Explore my creative work and see my projects in action.</p>
 		</ProjectsLayout>
-		<ContactCTA title="Interested in working together?"/>
+		<CVLayout
+			title="Interested in working together?"
+			href="/portfolio/assets/cv/Wojciech-Dzwonczyk-cv.pdf"
+		/>
 	</main>
 </Layout>

@@ -1,10 +1,42 @@
 ---
-const date = new Date();
-const currectYear = date.getFullYear();
+const year = new Date().getFullYear();
+const email = "wojciech.dzwonczyk@gmail.com";
+const phoneDisplay = "+48 884 516 874";
+const phoneHref = "tel:+48884516874";
 ---
 
-<footer>
-	<div class="text-center mb-5 ">
-		<span>Wojciech Dzwonczyk {currectYear}</span>
+<footer class="w-full bg-slate-950 text-white">
+	<div class="border-t border-slate-800/80">
+		<div
+			class="px-6 flex flex-col gap-10 py-10 md:flex-row md:items-start md:justify-between md:gap-16"
+		>
+			<div class="font-heading text-lg leading-tight md:text-xl">
+				<span class="block font-bold">Wojciech</span>
+				<span class="block font-regular">Dzwonczyk</span>
+			</div>
+			<div
+				class="flex flex-col gap-4 text-sm md:items-end md:text-right md:text-base"
+			>
+				<a
+					href={`mailto:${email}`}
+					class="inline-flex items-center gap-2.5 text-neutral-300 transition hover:text-white"
+				>
+					<i class="iconoir-mail shrink-0 text-lg" aria-hidden="true"></i>
+					<span>{email}</span>
+				</a>
+				<a
+					href={phoneHref}
+					class="inline-flex items-center gap-2.5 text-neutral-300 transition hover:text-white"
+				>
+					<i class="iconoir-phone shrink-0 text-lg" aria-hidden="true"></i>
+					<span>{phoneDisplay}</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="border-t border-slate-800/80">
+		<div class="px-6 py-4 text-sm text-neutral-500">
+			© {year} Wojciech Dzwonczyk
+		</div>
 	</div>
 </footer>

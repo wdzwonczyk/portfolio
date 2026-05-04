@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import { ParallaxScroll } from "@/components/ui/parallax-scroll";
+
+const work = (
+	await getCollection("work", ({ id, data }) => data.draft !== true && !id.startsWith("_"))
+).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+const urls = new Set<string>();
+for (const project of work) {
+	const img = project.data.img;
+	if (typeof img === "string" && img.length > 0) urls.add(img);
+	const list = project.data.projectOverviewList;
+	if (Array.isArray(list)) {
+		for (const u of list) {
+			if (typeof u === "string" && u.length > 0) urls.add(u);
+		}
+	}
+}
+
+let images = [...urls];
+if (images.length === 0) {
+	images = ["/portfolio/assets/wojciech-dzwonczyk.jpg"];
+}
+const base = [...images];
+while (images.length < 4) {
+	images.push(base[images.length % base.length]!);
+}
+const targetCount = 16;
+for (let i = images.length; i < targetCount; i += 1) {
+	images.push(base[i % base.length]!);
+}
+---
+
+<section
+	class="relative isolate h-[90dvh] min-h-[280px] w-full bg-[#0a0a0a] text-foreground"
+	aria-label="Work previews"
+>
+	<div class="relative h-full min-h-0 w-full">
+		<ParallaxScroll client:visible images={images} className="h-full" />
+	</div>
+	<div
+		class="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[42%] bg-gradient-to-t from-[#0a0a0a] from-25% via-[#0a0a0a]/55 to-transparent"
+		aria-hidden="true"
+	/>
+</section>

@@ -1,29 +1,39 @@
 ---
-import { CollectionEntry, getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
 import Layout from '../../layouts/Layout.astro';
-import ContactCTA from '../../components/ContactCTA.astro';
+import CVLayout from '../../sections/CVLayout.astro';
 
 interface Props {
 	entry: CollectionEntry<'work'>;
 }
 
 export async function getStaticPaths() {
-	const work = await getCollection('work');
-	return work.map((entry) => ({
-		params: { slug: entry.slug },
-		props: { entry },
-	}));
+	const work = await getCollection('work', ({ id, data }) => {
+		// Exclude draft entries and underscore-prefixed content files.
+		return data.draft !== true && !id.startsWith('_');
+	});
+	return work
+		.filter((entry) => {
+			const id = `${entry.id}`.trim();
+			// Catch-all route must not emit root-like segments, which collide with /work.
+			return id !== "" && id !== "/";
+		})
+		.map((entry) => ({
+			params: { slug: entry.id },
+			props: { entry },
+		}));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 ---
 
 <Layout title={entry.data.metaTitle} description={entry.data.metaDescription}>
-	<main id="beginning">
-		<div class="mb-16 mt-16 md:mt-[134px] md:mx-auto scroll-smooth">
+	<main id="beginning" class="pt-[var(--nav-h)]">
+		<div class="mb-16 mt-6 scroll-smooth md:mx-auto md:mt-10">
 			<header>
 				<div class="gap-2">
 					<a class="group text-indigo-600 flex items-center gap-x-2 mb-4 cursor-pointer" href="/portfolio/work/">
@@ -133,7 +143,10 @@ const { Content } = await entry.render();
             <i class="iconoir-arrow-up text-[16px] group-hover:text-indigo-600 group-hover:-translate-y-1 duration-200"></i>
             Go to the top
         </a>
-		<ContactCTA title="Do you like the work I did?"/>
+		<CVLayout
+			title="Do you like the work I did?"
+			href="/portfolio/assets/cv/Wojciech-Dzwonczyk-cv.pdf"
+		/>
 	</main>
 </Layout>
 <style>
@@ -158,11 +171,13 @@ const { Content } = await entry.render();
     }
 
     .content :global(h3){
-        @apply text-xl font-semibold 
+        font-size: 1.25rem;
+        font-weight: 600;
     }
 
     .content :global(h4){
-        @apply text-lg font-semibold 
+        font-size: 1.125rem;
+        font-weight: 600;
     }
 
     .content :global(ul) {
