@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { ArrowRight } from "iconoir-react";
 
 export interface Props {
 	project: CollectionEntry<"work">;
@@ -72,9 +73,11 @@ const descriptionEllipsis =
 			class="inline-flex w-fit shrink-0 items-center gap-2 px-4 py-2.5 text-sm font-medium text-neutral-900 md:text-base"
 		>
 			View project details
-			<i
-				class="iconoir-arrow-right text-base leading-none transition-transform duration-200 ease-out group-hover:translate-x-1 md:text-lg"
+			<ArrowRight
 				aria-hidden="true"
+				width={20}
+				height={20}
+				className="shrink-0 transition-transform duration-200 ease-out stroke-2 group-hover:translate-x-1"
 			/>
 		</span>
 	</div>

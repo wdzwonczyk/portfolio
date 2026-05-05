@@ -1,6 +1,14 @@
 ---
 import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import {
+	ArrowLeft,
+	ArrowUp,
+	GithubCircle,
+	Link,
+	ProfileCircle,
+	Tools,
+} from 'iconoir-react';
 
 import Layout from '../../layouts/Layout.astro';
 import CVLayout from '../../sections/CVLayout.astro';
@@ -28,16 +36,18 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const pageTitle = entry.data.metaTitle ?? entry.data.title;
+const pageDescription = entry.data.metaDescription ?? '';
 
 ---
 
-<Layout title={entry.data.metaTitle} description={entry.data.metaDescription}>
-	<main id="beginning" class="pt-[var(--nav-h)]">
-		<div class="mb-16 mt-6 scroll-smooth md:mx-auto md:mt-10">
+<Layout title={pageTitle} description={pageDescription}>
+	<main id="beginning">
+		<div class="mb-16 mt-16 md:mt-[134px] md:mx-auto scroll-smooth">
 			<header>
-				<div class="gap-2">
+				<div class="gap-2 max-w-[1240px] mx-auto">
 					<a class="group text-indigo-600 flex items-center gap-x-2 mb-4 cursor-pointer" href="/portfolio/work/">
-                        <i class="iconoir-arrow-left text-[16px] group-hover:text-indigo-600 group-hover:translate-x-1 duration-200"></i>
+                        <ArrowLeft aria-hidden="true" width={16} height={16} className="group-hover:text-indigo-600 group-hover:translate-x-1 duration-200" />
                         Portfolio
                     </a>
                     <div class="flex flex-col mb-8 md:flex-row md:flex-wrap md:justify-between space-y-4 md:space-y-0 md:space-x-4">
@@ -68,7 +78,7 @@ const { Content } = await render(entry);
                         </div>
                         <div class="flex flex-col gap-y-2 bg-gray-100 px-4 py-4 my-8 rounded-lg">
                             <span class="flex items-center gap-x-2">
-                                <i class="iconoir-profile-circle text-[24px]"></i>
+                                <ProfileCircle aria-hidden="true" width={24} height={24} />
                                 <p>
                                     {entry.data.roles.map((role:string, index:number) => {
                                         const isLastItem = index === entry.data.roles.length - 1;
@@ -77,7 +87,7 @@ const { Content } = await render(entry);
                                 </p>
                             </span>
                             <span class="flex items-center gap-x-2">
-                                <i class="iconoir-tools text-[24px]"></i>
+                                <Tools aria-hidden="true" width={24} height={24} />
                                 <p>
                                     {entry.data.tools.map((tool:string, index:number) => {
                                         const isLastItem = index === entry.data.tools.length - 1;
@@ -86,13 +96,14 @@ const { Content } = await render(entry);
                                 </p>
                             </span>
                             <span class="flex items-center gap-x-2">
-                                <i class="iconoir-link text-[24px]"></i>
+                                <Link aria-hidden="true" width={24} height={24} />
                                 <p>
                                     {entry.data.exploreFigmaLinks ?
                                         <>
                                             {entry.data.exploreText}
                                             {entry.data.exploreFigmaLinks.map((link: { url: string; type: string }, index: number) => {
-                                                const isLastItem = index === entry.data.exploreFigmaLinks.length - 1;
+                                                const links = entry.data.exploreFigmaLinks!;
+                                                const isLastItem = index === links.length - 1;
                                                 return (
                                                     <>
                                                         <a href={link.url} target="_blank" class="text-indigo-600 hover:underline">
@@ -116,7 +127,7 @@ const { Content } = await render(entry);
                             </span>
                             {entry.data.githubRepoLink && 
                                 <span class="flex items-center gap-x-2">
-                                    <i class="iconoir-github-circle text-[24px]"></i>
+                                    <GithubCircle aria-hidden="true" width={24} height={24} />
                                     <a href={entry.data.githubRepoLink} target="_blank" class="text-indigo-600 hover:underline">
                                         Github repository
                                     </a>
@@ -133,14 +144,14 @@ const { Content } = await render(entry);
                     </div>
 				</div>
 			</header>
-			<div class="wrapper">
+			<div class="wrapper max-w-[1240px] mx-auto">
                 <div class="content w-full md:w-3/4 mx-auto">
                     <Content />
                 </div>
 			</div>
 		</div>
         <a class="group text-indigo-600 flex items-center justify-center gap-x-2 mb-16 mx-auto cursor-pointer" href="#beginning">
-            <i class="iconoir-arrow-up text-[16px] group-hover:text-indigo-600 group-hover:-translate-y-1 duration-200"></i>
+            <ArrowUp aria-hidden="true" width={16} height={16} className="group-hover:text-indigo-600 group-hover:-translate-y-1 duration-200" />
             Go to the top
         </a>
 		<CVLayout

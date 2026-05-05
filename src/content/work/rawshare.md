@@ -27,22 +27,27 @@ devices:
   - mobile (iOS)
 
 linkSource: "Figma"
-exploreFigmaLinks: 
-- url: "https://www.figma.com/design/7AaigZpBYBNSrOLAzGG18O/RS-2.0-Mockups?node-id=0-1&t=Fi22yeA6KKv6GnjD-1"
-  type: "Mockups"
-- url: "https://www.figma.com/design/bJDclReMa35kQShcAiRAhs/RS-2.0-Components?node-id=545-180&t=hiqb3EFGUnYTRTGx-1"
-  type: "Component library"
-- url: "https://www.figma.com/design/VzfUx8eRkV0gBzne5v9Fxh/RS-2.0-Foundation?node-id=0-1&t=jgAKD9zcNFDThCpA-1"
-  type: "Foundation"
+exploreFigmaLinks:
+  - url: "https://www.figma.com/design/7AaigZpBYBNSrOLAzGG18O/RS-2.0-Mockups?node-id=0-1&t=Fi22yeA6KKv6GnjD-1"
+    type: "Mockups"
+  - url: "https://www.figma.com/design/bJDclReMa35kQShcAiRAhs/RS-2.0-Components?node-id=545-180&t=hiqb3EFGUnYTRTGx-1"
+    type: "Component library"
+  - url: "https://www.figma.com/design/VzfUx8eRkV0gBzne5v9Fxh/RS-2.0-Foundation?node-id=0-1&t=jgAKD9zcNFDThCpA-1"
+    type: "Foundation"
 exploreText: Explore the RawShare app
 
 githubRepoLink: https://github.com/Wojo3214/foodwaste-app
+ctaHref: "https://www.figma.com/design/7AaigZpBYBNSrOLAzGG18O/RS-2.0-Mockups?node-id=0-1&t=Fi22yeA6KKv6GnjD-1"
+ctaLabel: "Explore the RawShare app"
+leadParagraphs:
+  - "RawShare is a mobile app created by a team of three for a school project and developed into passion one afterwards. Its purpose is to enable users to share their food surplus within their local communities, addressing the issue of household food waste in Denmark, which totals 507,000 tonnes per year. The app was built on strong research foundations, including desk and field research, focus groups, surveys, and interviews with individuals passionate about preventing food waste. Our research revealed a user preference for a transparent sharing process without surprise elements, unlike some existing platforms."
+  - "This case study will delve into our methodology throughout the creation process, including the research part, key insights, details about the design system created for this solution, and the presentation of mockups."
+lead: |
+  RawShare is a mobile app created by a team of three for a school project and developed into passion one afterwards. Its purpose is to enable users to share their food surplus within their local communities, addressing the issue of household food waste in Denmark, which totals 507,000 tonnes per year. The app was built on strong research foundations, including desk and field research, focus groups, surveys, and interviews with individuals passionate about preventing food waste. Our research revealed a user preference for a transparent sharing process without surprise elements, unlike some existing platforms.
+
+  This case study will delve into our methodology throughout the creation process, including the research part, key insights, details about the design system created for this solution, and the presentation of mockups.
+
 ---
-
-RawShare is a mobile app created by a team of three for a school project and developed into passion one afterwards. Its purpose is to enable users to share their food surplus within their local communities, addressing the issue of household food waste in Denmark, which totals 507,000 tonnes per year. The app was built on strong research foundations, including desk and field research, focus groups, surveys, and interviews with individuals passionate about preventing food waste. Our research revealed a user preference for a transparent sharing process without surprise elements, unlike some existing platforms.
-
-This case study will delve into our methodology throughout the creation process, including the research part, key insights, details about the design system created for this solution, and the presentation of mockups.
-
 <!-- <div class="py-2 px-4 mt-4 rounded-md bg-blue-100">
   <p>I am exicted to present a refreshed app design. <a href="#rawshare-20">Click here</a> to find out more about RawShare 2.0.</p>
 </div> -->

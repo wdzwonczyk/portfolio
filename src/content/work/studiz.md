@@ -28,11 +28,16 @@ devices:
 linkSource: "App Store"
 exploreProductLink: https://apps.apple.com/pl/app/studiz/id665031046?l=pl
 exploreText: Check the mobile app in 
+ctaHref: "https://apps.apple.com/pl/app/studiz/id665031046?l=pl"
+ctaLabel: "Check the mobile app in App Store"
+leadParagraphs:
+  - "Studiz is both the name of the company and its flagship product—a mobile app designed to simplify and economize student life. The app offers hundreds of discounts, a digital Student ID, a canteen system, a library system, and more, all tailored to the specific needs of students."
+  - "In this case study, I’ll dive into the rationale behind creating a comprehensive design system and the significant improvements achieved through the redesign process."
+lead: |
+  Studiz is both the name of the company and its flagship product—a mobile app designed to simplify and economize student life. The app offers hundreds of discounts, a digital Student ID, a canteen system, a library system, and more, all tailored to the specific needs of students.
+
+  In this case study, I’ll dive into the rationale behind creating a comprehensive design system and the significant improvements achieved through the redesign process.
 ---
-
-Studiz is both the name of the company and its flagship product—a mobile app designed to simplify and economize student life. The app offers hundreds of discounts, a digital Student ID, a canteen system, a library system, and more, all tailored to the specific needs of students.
-
-In this case study, I’ll dive into the rationale behind creating a comprehensive design system and the significant improvements achieved through the redesign process.
 
 ## The challenge
 

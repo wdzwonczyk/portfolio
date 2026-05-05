@@ -27,22 +27,27 @@ devices:
   - tablet
   - mobile
 linkSource: "Figma"
-exploreFigmaLinks: 
-- url: "https://www.figma.com/design/Nv3XjEJsgaR2CRMcY1UYCl/47software---mockups?node-id=714-2921&t=WLcr1EPdYe8qWQjH-1"
-  type: "Mockups"
-- url: "https://www.figma.com/design/rMnEckPe4RTxyNTKA0WkeS/47software---components?node-id=81-39&t=MkzzkgZOJMi7dRRS-1"
-  type: "Component library"
-- url: "https://www.figma.com/design/cb6TUCX5s0UWdCKHUL5UUQ/47software---foundation?node-id=0-1&t=INBPyzMnGk10CX48-1"
-  type: "Foundation"
+exploreFigmaLinks:
+  - url: "https://www.figma.com/design/Nv3XjEJsgaR2CRMcY1UYCl/47software---mockups?node-id=714-2921&t=WLcr1EPdYe8qWQjH-1"
+    type: "Mockups"
+  - url: "https://www.figma.com/design/rMnEckPe4RTxyNTKA0WkeS/47software---components?node-id=81-39&t=MkzzkgZOJMi7dRRS-1"
+    type: "Component library"
+  - url: "https://www.figma.com/design/cb6TUCX5s0UWdCKHUL5UUQ/47software---foundation?node-id=0-1&t=INBPyzMnGk10CX48-1"
+    type: "Foundation"
 exploreText: Explore the 47software website
+ctaHref: "https://www.figma.com/design/Nv3XjEJsgaR2CRMcY1UYCl/47software---mockups?node-id=714-2921&t=WLcr1EPdYe8qWQjH-1"
+ctaLabel: "Explore the 47software website"
+leadParagraphs:
+  - "The 47software website presents a modern software house based in Poland that specializes in delivering full-stack digital solutions, including mobile and web applications, API development, and systems integration. My task was to design a website that not only highlights the team’s technical skills but also reflects their identity as a reliable and innovative partner in the digital space."
+  - "In this case study, I’ll walk you through my design decisions—starting from the research phase to building a custom UI kit and creating engaging mockups that emphasize the company’s capabilities and personality. Special attention was given to crafting a visually appealing experience enriched with thoughtful details and subtle animations."
+lead: |
+  The 47software website presents a modern software house based in Poland that specializes in delivering full-stack digital solutions, including mobile and web applications, API development, and systems integration. My task was to design a website that not only highlights the team’s technical skills but also reflects their identity as a reliable and innovative partner in the digital space.
+
+  In this case study, I’ll walk you through my design decisions—starting from the research phase to building a custom UI kit and creating engaging mockups that emphasize the company’s capabilities and personality. Special attention was given to crafting a visually appealing experience enriched with thoughtful details and subtle animations.
 ---
 <div class="py-2 px-4 mt-4 rounded-md bg-blue-100">
   <p>The Figma link has been published with the customer's consent.</p>
 </div>
-
-The 47software website presents a modern software house based in Poland that specializes in delivering full-stack digital solutions, including mobile and web applications, API development, and systems integration. My task was to design a website that not only highlights the team’s technical skills but also reflects their identity as a reliable and innovative partner in the digital space.
-
-In this case study, I’ll walk you through my design decisions—starting from the research phase to building a custom UI kit and creating engaging mockups that emphasize the company’s capabilities and personality. Special attention was given to crafting a visually appealing experience enriched with thoughtful details and subtle animations.
 
 ## The challenge
 

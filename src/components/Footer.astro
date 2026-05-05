@@ -1,14 +1,16 @@
 ---
+import { Mail, Phone } from "iconoir-react";
+
 const year = new Date().getFullYear();
 const email = "wojciech.dzwonczyk@gmail.com";
 const phoneDisplay = "+48 884 516 874";
 const phoneHref = "tel:+48884516874";
 ---
 
-<footer class="w-full bg-slate-950 text-white">
-	<div class="border-t border-slate-800/80">
+<footer class="w-full bg-gray-950 text-white">
+	<div class="border-t border-gray-800/80">
 		<div
-			class="px-6 flex flex-col gap-10 py-10 md:flex-row md:items-start md:justify-between md:gap-16"
+			class="px-4 flex flex-col gap-10 py-10 md:flex-row md:items-start md:justify-between md:gap-16 md:px-8 lg:px-16"
 		>
 			<div class="font-heading text-lg leading-tight md:text-xl">
 				<span class="block font-bold">Wojciech</span>
@@ -21,21 +23,21 @@ const phoneHref = "tel:+48884516874";
 					href={`mailto:${email}`}
 					class="inline-flex items-center gap-2.5 text-neutral-300 transition hover:text-white"
 				>
-					<i class="iconoir-mail shrink-0 text-lg" aria-hidden="true"></i>
+					<Mail aria-hidden="true" width={18} height={18} className="shrink-0" />
 					<span>{email}</span>
 				</a>
 				<a
 					href={phoneHref}
 					class="inline-flex items-center gap-2.5 text-neutral-300 transition hover:text-white"
 				>
-					<i class="iconoir-phone shrink-0 text-lg" aria-hidden="true"></i>
+					<Phone aria-hidden="true" width={18} height={18} className="shrink-0" />
 					<span>{phoneDisplay}</span>
 				</a>
 			</div>
 		</div>
 	</div>
 	<div class="border-t border-slate-800/80">
-		<div class="px-6 py-4 text-sm text-neutral-500">
+		<div class="px-4 py-4 text-sm text-neutral-500 md:px-8 lg:px-16">
 			© {year} Wojciech Dzwonczyk
 		</div>
 	</div>

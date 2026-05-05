@@ -1,4 +1,6 @@
 ---
+import { ArrowUpRight } from "iconoir-react";
+
 export interface Props {
 	/** Main CTA heading (replaces separate ContactCTA title). */
 	title: string;
@@ -16,7 +18,7 @@ const pill =
 ---
 
 <section
-	class="section-block-y w-full border-t border-slate-800/80 bg-slate-950 text-white"
+	class="section-block-y w-full border-t border-gray-800/80 bg-gray-950 text-white"
 >
 	<div class="page-section flex flex-col items-center justify-center gap-8 text-center md:gap-10">
 		<h2
@@ -40,7 +42,7 @@ const pill =
 				class="inline-flex items-center gap-2 text-sm font-medium text-neutral-200 transition hover:text-white md:text-base"
 			>
 				<span>Let's connect</span>
-				<i class="iconoir-arrow-up-right text-[1.125rem]" aria-hidden="true"></i>
+				<ArrowUpRight aria-hidden="true" width={20} height={20} className="shrink-0 stroke-2" />
 			</a>
 		</div>
 	</div>

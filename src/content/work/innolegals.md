@@ -26,15 +26,17 @@ devices:
   - desktop
   - tablet
   - mobile
-
 linkSource: "Innolegals website"
 exploreProductLink: https://www.innolegals.com/
 exploreText: Explore the
+ctaHref: "https://www.innolegals.com/"
+ctaLabel: Explore the Innolegals website
+leadParagraphs:
+  - "InnoLegals helps non-EU immigrants, expats, entrepreneurs, and students apply for different types of visas in Spain. The company supports users through complex legal processes that often feel overwhelming and stressful."
+  - "This case study covers the complete website redesign, the strategy behind guiding users to key actions, the logic and UX behind the Free Assessment, and how I redesigned the dashboard to increase adoption and improve communication between users and advisors."
+aaa:
+  InnoLegals helps non-EU immigrants, expats, entrepreneurs, and students apply for different types of visas in Spain. The company supports users through complex legal processes that often feel overwhelming and stressful. This case study covers the complete website redesign, the strategy behind guiding users to key actions, the logic and UX behind the Free Assessment, and how I redesigned the dashboard to increase adoption and improve communication between users and advisors.
 ---
-
-InnoLegals helps non-EU immigrants, expats, entrepreneurs, and students apply for different types of visas in Spain. The company supports users through complex legal processes that often feel overwhelming and stressful.
-
-This case study covers the complete website redesign, the strategy behind guiding users to key actions, the logic and UX behind the Free Assessment, and how I redesigned the dashboard to increase adoption and improve communication between users and advisors.
 
 ## Problem
 
