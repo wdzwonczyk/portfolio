@@ -1,5 +1,6 @@
 ---
 import { ArrowUpRight } from "iconoir-react";
+import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
 
 export interface Props {
 	/** Main CTA heading (replaces separate ContactCTA title). */
@@ -32,9 +33,28 @@ const pill =
 		>
 			{
 				href && (
-					<a href={href} download="Wojciech-Dzwonczyk-cv.pdf" class={pill}>
-						Download my CV
-					</a>
+					
+				<a class="group relative inline-flex items-center justify-center rounded-full px-6 py-3 ...">
+  <span
+    class="animate-gradient pointer-events-none absolute inset-0 rounded-[inherit] bg-gradient-to-r from-[#14b8a6]/60 via-[#6366f1]/60 to-[#14b8a6]/60 bg-[length:300%_100%] p-[1px]"
+    style={{
+      WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+      WebkitMaskComposite: "destination-out",
+      mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+      maskComposite: "subtract",
+      WebkitClipPath: "padding-box",
+    }}
+  />
+  <AnimatedGradientText
+    speed={1.3}
+    colorFrom="#14b8a6"
+    colorTo="#6366f1"
+    className="relative z-10 font-semibold tracking-tight"
+  >
+    Download my CV
+  </AnimatedGradientText>
+</a>
+					
 				)
 			}
 			<a
