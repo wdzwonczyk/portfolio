@@ -15,7 +15,7 @@ const { companyName, jobTitle, date, tasks, companyLogoSrc } = Astro.props;
 		<div class="flex justify-start sm:justify-end sm:w-1/2">
 			<!-- Date info on the left -->
 			<div class="bg-indigo-500 py-1 px-4 rounded-lg sm:mt-2 sm:mr-10">
-				<p class="text-white">{date}</p>
+				<p class="text-white">{jobTitle}</p>
 			</div>
 		</div>
 		<!-- Dot on the left -->
@@ -30,7 +30,7 @@ const { companyName, jobTitle, date, tasks, companyLogoSrc } = Astro.props;
 		<div class="w-full sm:w-1/2 mt-2 sm:mt-0">
 			<div class="shadow-md bg-white box-border p-4 rounded-2xl sm:ml-10 md:w-3/4">
 				<h3 class="text-xl font-semibold">{companyName}</h3>
-				<p class="text-gray-500">{jobTitle}</p>
+				<p class="text-gray-500">{date}</p>
 				<ul class="list-disc ml-4 mt-2">
 					{tasks.map((task) => (
 						<li>{task}</li>
