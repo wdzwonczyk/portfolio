@@ -30,36 +30,46 @@ const partners = [
 		<h2 class="h2 text-neutral-900">Products I’ve helped shape</h2>
 		<p class="text-xl text-gray-400">Working with teams that build with intention, not assumptions.</p>
 
-		<div
-			class="mt-10 grid w-full min-w-0 grid-cols-6 grid-rows-[minmax(0,1fr)_minmax(0,1fr)] items-stretch gap-x-2 gap-y-6 min-h-[clamp(12rem,28vw,22rem)] sm:gap-x-3 sm:gap-y-8 md:gap-x-4 md:gap-y-10 md:mt-16"
-		>
-			<!-- Row 1: three equal cells (o o o) -->
-			<div
-				class="col-span-2 col-start-1 row-start-1 flex min-h-0 min-w-0 items-center justify-center self-stretch"
-			>
-				<PartnershipItem imgSrc={partners[0].imgSrc} imgAlt={partners[0].imgAlt} />
-			</div>
-			<div
-				class="col-span-2 col-start-3 row-start-1 flex min-h-0 min-w-0 items-center justify-center self-stretch"
-			>
-				<PartnershipItem imgSrc={partners[1].imgSrc} imgAlt={partners[1].imgAlt} />
-			</div>
-			<div
-				class="col-span-2 col-start-5 row-start-1 flex min-h-0 min-w-0 items-center justify-center self-stretch"
-			>
-				<PartnershipItem imgSrc={partners[2].imgSrc} imgAlt={partners[2].imgAlt} />
+		<div class="mt-10 w-full min-w-0 md:mt-16">
+			<div class="flex flex-wrap justify-center gap-x-3 gap-y-6 sm:gap-x-3 sm:gap-y-8 md:hidden">
+				{
+					partners.map((partner) => (
+						<PartnershipItem imgSrc={partner.imgSrc} imgAlt={partner.imgAlt} />
+					))
+				}
 			</div>
 
-			<!-- Row 2: two cells centered ( o o ) -->
 			<div
-				class="col-span-2 col-start-2 row-start-2 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+				class="hidden min-h-[clamp(12rem,28vw,22rem)] w-full min-w-0 grid-cols-6 grid-rows-[minmax(0,1fr)_minmax(0,1fr)] items-stretch gap-x-4 gap-y-10 md:grid"
 			>
-				<PartnershipItem imgSrc={partners[3].imgSrc} imgAlt={partners[3].imgAlt} />
-			</div>
-			<div
-				class="col-span-2 col-start-4 row-start-2 flex min-h-0 min-w-0 items-center justify-center self-stretch"
-			>
-				<PartnershipItem imgSrc={partners[4].imgSrc} imgAlt={partners[4].imgAlt} />
+				<!-- Row 1: three equal cells (o o o) -->
+				<div
+					class="col-span-2 col-start-1 row-start-1 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+				>
+					<PartnershipItem imgSrc={partners[0].imgSrc} imgAlt={partners[0].imgAlt} />
+				</div>
+				<div
+					class="col-span-2 col-start-3 row-start-1 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+				>
+					<PartnershipItem imgSrc={partners[1].imgSrc} imgAlt={partners[1].imgAlt} />
+				</div>
+				<div
+					class="col-span-2 col-start-5 row-start-1 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+				>
+					<PartnershipItem imgSrc={partners[2].imgSrc} imgAlt={partners[2].imgAlt} />
+				</div>
+
+				<!-- Row 2: two cells centered ( o o ) -->
+				<div
+					class="col-span-2 col-start-2 row-start-2 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+				>
+					<PartnershipItem imgSrc={partners[3].imgSrc} imgAlt={partners[3].imgAlt} />
+				</div>
+				<div
+					class="col-span-2 col-start-4 row-start-2 flex min-h-0 min-w-0 items-center justify-center self-stretch"
+				>
+					<PartnershipItem imgSrc={partners[4].imgSrc} imgAlt={partners[4].imgAlt} />
+				</div>
 			</div>
 		</div>
 	</div>
