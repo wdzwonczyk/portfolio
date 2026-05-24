@@ -16,7 +16,7 @@ metaTitle: Innolegals | Website/Dashboard Case Study
 metaDescription: |
   Explore the Innolegals project — UX/UI case study of a full website and dashboard redesign for an immigration service, featuring a Free Assessment flow, improved conversions, and user adoption.
 productType: Website | Freelance project
-tagName: Product | UX | UI
+tagName: Product Design | Design System
 roles:
   - Product Designer
 tools:

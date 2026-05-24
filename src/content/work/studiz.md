@@ -16,7 +16,7 @@ metaTitle: Studiz - Student Life with Discounts | Mobile App Redesign Case Study
 metaDescription: |
   Explore the redesign of the Studiz mobile app case study. Discover how I enhanced the user experience, created a design system, and improved the flow for students. Gain insights into the development process and design decisions for a smarter and more rewarding student experience.
 productType: Mobile App | Work project
-tagName: UX/UI | Design System
+tagName: Product Design | Design System
 roles:
   - UX/UI Designer
 tools:
